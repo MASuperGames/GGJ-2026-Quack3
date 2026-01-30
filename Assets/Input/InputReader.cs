@@ -21,6 +21,7 @@ public class InputReader : ScriptableObject, IPlayerActions, IUIActions
     public event Action NextEvent;
     public event Action<bool> SprintEvent;
     public event Action PauseEvent;
+    public event Action<bool> UnlockCursorEvent;
 
     private void OnEnable()
     {
@@ -163,6 +164,18 @@ public class InputReader : ScriptableObject, IPlayerActions, IUIActions
         if (context.performed)
         {
             PauseEvent?.Invoke();
+        }
+    }
+
+    public void OnUnlockCursor(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            UnlockCursorEvent?.Invoke(true);
+        }
+        else if (context.canceled)
+        {
+            UnlockCursorEvent?.Invoke(false);
         }
     }
 
