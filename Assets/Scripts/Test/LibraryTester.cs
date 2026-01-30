@@ -55,13 +55,13 @@ public class LibraryTester : MonoBehaviour
     }
 
     // Test Object Pool
-    public void TestSpawnBullet()
+    public void TestSpawnObject()
     {
         GameObject bullet = bulletPool.Get(2f); // Auto-return after 2 seconds
         if (bullet != null)
         {
             bullet.transform.position = Random.insideUnitSphere * 3f;
-            UpdateStatus("Spawned bullet from pool!");
+            UpdateStatus("Spawned object from pool!");
         }
     }
 
