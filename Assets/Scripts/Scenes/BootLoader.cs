@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class BootLoader : MonoBehaviour
 {
-    [SerializeField] private string firstSceneName = "MainMenuScene";
     [SerializeField] private float bootDelay = 0.5f; // Optional: show logo/splash
 
     private void Start()
@@ -31,6 +30,6 @@ public class BootLoader : MonoBehaviour
         yield return new WaitForSeconds(bootDelay);
 
         // Load main menu
-        SceneController.Instance.LoadScene(firstSceneName);
+        SceneController.Instance.LoadNextScene();
     }
 }
