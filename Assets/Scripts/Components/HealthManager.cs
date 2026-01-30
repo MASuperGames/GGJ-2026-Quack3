@@ -3,7 +3,7 @@ using UnityEngine.Events;
 
 public class HealthManager : MonoBehaviour
 {
-    public UnityEvent<float> onHealthChange;
+    public UnityEvent<float, float> onHealthChange;
     public UnityEvent onHealthDepleted;
 
     public float MaxHealth = 100;
@@ -14,7 +14,7 @@ public class HealthManager : MonoBehaviour
         float PrevHealth = Health;
         Health = Mathf.Clamp(Health + delta, 0, MaxHealth);
         if (Health == PrevHealth) return;
-        onHealthChange.Invoke(Health);
+        onHealthChange.Invoke(Health, Health - PrevHealth);
         if (Health == 0)
             onHealthDepleted.Invoke();
     }
