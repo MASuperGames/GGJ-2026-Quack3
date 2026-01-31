@@ -11,10 +11,7 @@ public class EnemyBase : MonoBehaviour
         Backoff
     };
 
-    [SerializeField] private float hitDistance = 0.5f;
     [SerializeField] private float damage = 10;
-    [SerializeField] private float damageFrequency = 1;
-
     [SerializeField] private float hitSphereDistance = 1;
     [SerializeField] private float hitSphereRadius = 1;
 
