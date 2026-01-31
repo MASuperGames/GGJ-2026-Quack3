@@ -8,8 +8,7 @@ public class ShootEnemy : MonoBehaviour
 {
     enum State
     {
-        Attack,
-        Fly,
+        Live,
         Dead
     };
 
@@ -18,7 +17,10 @@ public class ShootEnemy : MonoBehaviour
 
     [SerializeField] private float rotationStrength = 10;
 
+    [SerializeField] private GameObject projectile;
+    [SerializeField] private float shootInterval;
 
+    [SerializeField] private float deathDuration;
 
     private Vector3 trajectory;
     private Vector3 deviationTrajectory;
@@ -26,13 +28,11 @@ public class ShootEnemy : MonoBehaviour
     private Vector3 lookDirection;
 
 
-    [SerializeField] private float trajectorySpread;
 
-    [SerializeField] private float deathDuration;
+    private State state = State.Live;
 
-    State state = State.Fly;
-
-    float deathStart;
+    private float deathStart;
+    private float lastShot;
 
     private Animator animator;
 
@@ -49,6 +49,7 @@ public class ShootEnemy : MonoBehaviour
             lookDirection = Vector3.Normalize(player.transform.position - transform.position);
         }
         deviationTrajectory = UnityEngine.Random.onUnitSphere;
+        lastShot = -Mathf.Infinity;
     }
 
     public void onHealthChange(float health, float delta)
@@ -95,6 +96,13 @@ public class ShootEnemy : MonoBehaviour
         }
 
         transform.position += trajectory * Time.deltaTime;
+        
+        if (lastShot + shootInterval < Time.time)
+        {
+            Vector3 toPlayer = Vector3.Normalize(player.transform.position - transform.position);
+            Instantiate(projectile, transform.position + 2.0f * toPlayer, Quaternion.LookRotation(toPlayer));
+            lastShot = Time.time;
+        }
     }
 
     void OnDrawGizmos()

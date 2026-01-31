@@ -252,5 +252,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ShootEnemy
   deviationStrength: 25
   targetStrength: 25
-  trajectorySpread: 0
+  rotationStrength: 10
+  projectile: {fileID: 3873049572572264774, guid: 92a5b9484ad304af5a16d85eb5773b39, type: 3}
+  shootInterval: 2
   deathDuration: 2
