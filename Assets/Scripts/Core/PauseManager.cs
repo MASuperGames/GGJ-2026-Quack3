@@ -53,7 +53,7 @@ public class PauseManager : Singleton<PauseManager>
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        statusText.text = "Unpaused";
+        statusText.text = "";
         blur.SetActive(false);
     }
 

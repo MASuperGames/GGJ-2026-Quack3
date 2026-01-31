@@ -1,5 +1,6 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using Unity.Cinemachine;
 
 public class FirstPersonCombat : MonoBehaviour
 {
@@ -7,6 +8,8 @@ public class FirstPersonCombat : MonoBehaviour
     [SerializeField] private InputReader inputReader;
     [SerializeField] private Animator primaryAnimator;
     [SerializeField] private Animator secondaryAnimator;
+    [SerializeField] private CinemachineImpulseSource impulseSource;
+
     
 
     private void OnEnable()
@@ -36,6 +39,7 @@ public class FirstPersonCombat : MonoBehaviour
         if (isPressed)
         {
             primaryAnimator.SetTrigger("Attack");
+            impulseSource.GenerateImpulse();
         }
         else
         {
@@ -49,6 +53,7 @@ public class FirstPersonCombat : MonoBehaviour
         if (isPressed)
         {
             secondaryAnimator.SetTrigger("Attack");
+            impulseSource.GenerateImpulse();
         }
         else
         {
