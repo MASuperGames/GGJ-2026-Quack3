@@ -6,6 +6,7 @@ public class FirstPersonController : MonoBehaviour
     [SerializeField] private InputReader inputReader;
     [SerializeField] private CharacterController characterController;
     [SerializeField] private Camera playerCamera;
+    [SerializeField] private GameObject cameraTarget;
 
     [Header("Movement")]
     [SerializeField] private float walkSpeed = 5f;
@@ -97,11 +98,10 @@ public class FirstPersonController : MonoBehaviour
 
         // Rotate player body (Y-axis)
         transform.Rotate(Vector3.up * lookInput.x * lookSensitivity);
-
         // Rotate camera (X-axis)
         cameraPitch -= lookInput.y * lookSensitivity;
         cameraPitch = Mathf.Clamp(cameraPitch, -maxLookAngle, maxLookAngle);
-        playerCamera.transform.localRotation = Quaternion.Euler(cameraPitch, 0, 0);
+        cameraTarget.transform.localRotation = Quaternion.Euler(cameraPitch, 0, 0);
     }
 
     private void OnMove(Vector2 input)

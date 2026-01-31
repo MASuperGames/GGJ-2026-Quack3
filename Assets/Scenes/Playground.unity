@@ -3701,6 +3701,43 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -478882678752539408, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!1 &479801198 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 175553355044262042, guid: e0ecf18eb495c8b4c859dd9cd8912c00, type: 3}
+  m_PrefabInstance: {fileID: 1871926704}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &479801202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479801198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4afa82ae3200b82408d605c3dbdd1e38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineRotateWithFollowTarget
+  Damping: 0
+--- !u!114 &479801203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479801198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b617507da6d07e749b7efdb34e1173e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineFollow
+  TrackerSettings:
+    BindingMode: 4
+    PositionDamping: {x: 0, y: 0, z: 0}
+    AngularDampingMode: 0
+    RotationDamping: {x: 1, y: 1, z: 1}
+    QuaternionDamping: 1
+  FollowOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &487270059
 GameObject:
   m_ObjectHideFlags: 0
@@ -3905,7 +3942,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &527852285
 Transform:
   m_ObjectHideFlags: 0
@@ -13464,12 +13501,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 837197095214678147, guid: e0ecf18eb495c8b4c859dd9cd8912c00, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4943334681788269947, guid: e0ecf18eb495c8b4c859dd9cd8912c00, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 4943334681788269947, guid: e0ecf18eb495c8b4c859dd9cd8912c00, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8279580629129059082, guid: e0ecf18eb495c8b4c859dd9cd8912c00, type: 3}
+      propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9100399527585459585, guid: e0ecf18eb495c8b4c859dd9cd8912c00, type: 3}
@@ -13515,7 +13560,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 175553355044262042, guid: e0ecf18eb495c8b4c859dd9cd8912c00, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 479801203}
+    - targetCorrespondingSourceObject: {fileID: 175553355044262042, guid: e0ecf18eb495c8b4c859dd9cd8912c00, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 479801202}
   m_SourcePrefab: {fileID: 100100000, guid: e0ecf18eb495c8b4c859dd9cd8912c00, type: 3}
 --- !u!1 &1877235392
 GameObject:
