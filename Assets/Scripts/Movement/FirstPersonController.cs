@@ -92,6 +92,7 @@ public class FirstPersonController : MonoBehaviour
 
     private void HandleLook()
     {
+        if (PauseManager.Instance.IsPaused()) return;
         if (isCursorUnlocked) return;
 
         // Rotate player body (Y-axis)

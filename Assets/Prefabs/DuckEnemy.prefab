@@ -27,13 +27,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1647206644358886995}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0.675376, z: 0}
   m_LocalScale: {x: 2.069025, y: 1.3507521, z: 2.069025}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8169593431218506119}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!33 &2867362004061769224
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -126,6 +126,7 @@ GameObject:
   - component: {fileID: 3788537599139806604}
   - component: {fileID: 2205212537509493665}
   - component: {fileID: 2950104180177101968}
+  - component: {fileID: 8346490543512847287}
   m_Layer: 0
   m_Name: DuckEnemy
   m_TagString: Enemy
@@ -142,7 +143,7 @@ Transform:
   m_GameObject: {fileID: 7214298378690074326}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.8824, y: 3.48, z: -2.43644}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -171,7 +172,7 @@ CapsuleCollider:
   m_Radius: 0.5
   m_Height: 1.350752
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.675376, z: 0}
 --- !u!195 &3788537599139806604
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -191,7 +192,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 1.350752
-  m_BaseOffset: 1
+  m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!114 &2205212537509493665
@@ -236,8 +237,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  MaxHealth: 100
-  Health: 100
+  MaxHealth: 30
+  Health: 30
 --- !u!114 &2950104180177101968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -250,9 +251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32f73b0e65eef4933b079ef4d59033c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  hitDistance: 0.5
   damage: 10
-  damageFrequency: 1
   hitSphereDistance: 0.5
   hitSphereRadius: 0.5
   attackDistance: 8
@@ -262,3 +261,27 @@ MonoBehaviour:
   slowSpeed: 1
   quad: {fileID: 1647206644358886995}
   flipDistance: 0.4
+  deathDuration: 2
+  capsule: {fileID: 4387231821161245760}
+--- !u!95 &8346490543512847287
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7214298378690074326}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a1ffd7d97768d4b7fb937a752f6f4693, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
