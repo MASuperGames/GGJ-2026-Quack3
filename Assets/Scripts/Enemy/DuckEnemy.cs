@@ -8,7 +8,8 @@ public class EnemyBase : MonoBehaviour
     {
         Slow,
         Attack,
-        Backoff
+        Backoff,
+        Dead
     };
 
     [SerializeField] private float damage = 10;
@@ -28,14 +29,21 @@ public class EnemyBase : MonoBehaviour
 
     [SerializeField] private float flipDistance = 1;
 
+    [SerializeField] private float deathDuration = 2;
+
+
     private float accDistance;
     private Vector3 prevPosition;
 
     private NavMeshAgent navMeshAgent;
-    private CapsuleCollider capsule;
+    [SerializeField] private CapsuleCollider capsule;
 
     State state = State.Slow;
     float backoffStart;
+
+    float deathStart;
+
+    private Animator animator;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -44,6 +52,7 @@ public class EnemyBase : MonoBehaviour
         capsule = GetComponent<CapsuleCollider>();
         accDistance = 0;
         prevPosition = transform.position;
+        animator = GetComponent<Animator>();
     }
 
     public void onHealthChange(float health, float delta)
@@ -53,12 +62,23 @@ public class EnemyBase : MonoBehaviour
 
     public void onHealthDepleted()
     {
-        Destroy(this);
+        state = State.Dead;
+        deathStart = Time.time;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (state == State.Dead)
+        {
+            animator.enabled = true;
+
+            if (deathStart + deathDuration < Time.time)
+            {
+                Destroy(gameObject);
+            }
+        }
+
         var player = GameObject.FindGameObjectWithTag("Player");
         if (player == null) return;
 
@@ -106,7 +126,7 @@ public class EnemyBase : MonoBehaviour
     void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(
-            transform.position + hitSphereDistance * transform.forward,
+            transform.TransformPoint(capsule.center) + hitSphereDistance * transform.forward,
             hitSphereRadius
         );
     }
