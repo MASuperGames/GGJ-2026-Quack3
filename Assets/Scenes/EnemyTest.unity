@@ -475,6 +475,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8346490543512847287, guid: 8f6bb6e5a891d49efb1665cb72bb1b66, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 866cb15c55f4d4822b00ab97a9bee139, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -521,6 +525,9 @@ MonoBehaviour:
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 0
+  onPlayerSpawned:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &355457795
 Transform:
   m_ObjectHideFlags: 0
@@ -1282,7 +1289,7 @@ Transform:
   m_GameObject: {fileID: 1640715217}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.62, y: 4.74, z: -0.11}
+  m_LocalPosition: {x: -0.62, y: 4.74, z: 13.69}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1569,7 +1576,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8169593431218506119, guid: ead5cdc010ff445c3adf34863078e511, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.43644
+      value: -14.15
       objectReference: {fileID: 0}
     - target: {fileID: 8169593431218506119, guid: ead5cdc010ff445c3adf34863078e511, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1622,7 +1629,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8374365996140325417, guid: 069221a7992a04d89a20f467a4ef4c2e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.83
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8374365996140325417, guid: 069221a7992a04d89a20f467a4ef4c2e, type: 3}
       propertyPath: m_LocalPosition.z
