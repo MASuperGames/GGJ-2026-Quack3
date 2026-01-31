@@ -4360,7 +4360,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b88f78ae20d5a840a9e4e634524e8bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Spawner
-  playerPrefab: {fileID: 4943334681788269947, guid: e0ecf18eb495c8b4c859dd9cd8912c00, type: 3}
+  playerPrefab: {fileID: 992494533}
   playerSpawnPoint: {fileID: 1797169780}
   destroyOnRespawn: 0
   enemyPrefab: {fileID: 3135050184147024364, guid: d634b643419423b4cbeb238c81d01b48, type: 3}
@@ -7239,6 +7239,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 824185461}
   m_CullTransparentMesh: 1
+--- !u!114 &824185466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824185461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0ad90971616a4863aa12c371e3da700, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MaskUI
 --- !u!1 &839523723
 GameObject:
   m_ObjectHideFlags: 0
@@ -8823,6 +8835,11 @@ MonoBehaviour:
   m_IgnoreFromBuild: 1
   m_ApplyToChildren: 1
   m_AffectedAgents: ffffffff
+--- !u!1 &992494533 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4943334681788269947, guid: e0ecf18eb495c8b4c859dd9cd8912c00, type: 3}
+  m_PrefabInstance: {fileID: 1871926704}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1005939101
 GameObject:
   m_ObjectHideFlags: 0
