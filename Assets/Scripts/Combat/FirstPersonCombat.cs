@@ -1,6 +1,7 @@
 using Unity.VisualScripting;
 using UnityEngine;
 using Unity.Cinemachine;
+using UnityEngine.VFX;
 
 public class FirstPersonCombat : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class FirstPersonCombat : MonoBehaviour
     [SerializeField] private InputReader inputReader;
     [SerializeField] private Weapon primaryWeapon;
     [SerializeField] private Weapon secondaryWeapon;
+    [SerializeField] private VisualEffect gunHitVFX;
     [SerializeField] private CinemachineImpulseSource impulseSource;
 
 
@@ -74,6 +76,8 @@ public class FirstPersonCombat : MonoBehaviour
             Debug.DrawLine(cam.transform.position, 10000 * cam.transform.forward);
             if (Physics.Raycast(ray, out RaycastHit hit))
             {
+                gunHitVFX.gameObject.transform.position = hit.point;
+                gunHitVFX.SendEvent("OnPlay");
                 var health = hit.collider.GetComponent<HealthManager>();
                 if (health != null)
                     health.ChangeHealth(-damage);
