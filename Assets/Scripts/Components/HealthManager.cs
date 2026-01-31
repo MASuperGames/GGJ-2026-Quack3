@@ -9,7 +9,7 @@ public class HealthManager : MonoBehaviour
     public float MaxHealth = 100;
     public float Health = 100;
 
-    void ChangeHealth(float delta)
+    public void ChangeHealth(float delta)
     {
         float PrevHealth = Health;
         Health = Mathf.Clamp(Health + delta, 0, MaxHealth);
