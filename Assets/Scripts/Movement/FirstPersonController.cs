@@ -21,7 +21,7 @@ public class FirstPersonController : MonoBehaviour
     private Vector2 moveInput;
     private Vector2 lookInput;
     private bool isSprinting;
-    private bool isCursorUnlocked;
+    private bool isCursorUnlocked = false;
     private bool hasReceivedFirstInput;
     private float verticalVelocity;
     private float cameraPitch;

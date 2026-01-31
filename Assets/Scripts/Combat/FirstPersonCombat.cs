@@ -6,8 +6,8 @@ public class FirstPersonCombat : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private InputReader inputReader;
-    [SerializeField] private Animator primaryAnimator;
-    [SerializeField] private Animator secondaryAnimator;
+    [SerializeField] private Weapon primaryWeapon;
+    [SerializeField] private Weapon secondaryWeapon;
     [SerializeField] private CinemachineImpulseSource impulseSource;
 
 
@@ -41,7 +41,8 @@ public class FirstPersonCombat : MonoBehaviour
     {
         if (isPressed)
         {
-            primaryAnimator.SetTrigger("Attack");
+            primaryWeapon.GetAnimator().SetTrigger("Attack");
+            primaryWeapon.PlayVFX();
             impulseSource.GenerateImpulse();
 
             var res = Physics.OverlapSphere(transform.position + attackDistance * transform.forward, attackRadius);
@@ -64,7 +65,8 @@ public class FirstPersonCombat : MonoBehaviour
     {
         if (isPressed)
         {
-            secondaryAnimator.SetTrigger("Attack");
+            secondaryWeapon.GetAnimator().SetTrigger("Attack");
+            secondaryWeapon.PlayVFX();
             impulseSource.GenerateImpulse();
 
             var cam = Camera.main;
