@@ -16,12 +16,14 @@ public class Item : MonoBehaviour
 
     private Animator animator;
     private MeshCollider myCollider;
+    private Rigidbody rb;
 
     private float pickedUpTime = Mathf.Infinity;
 
     public void PickUp()
     {
         myCollider.enabled = false;
+        if (rb != null) rb.isKinematic = true;
         animator.SetTrigger("FadeOut");
         pickedUpTime = Time.time;
     }
@@ -31,6 +33,7 @@ public class Item : MonoBehaviour
     {        
         myCollider = GetComponent<MeshCollider>();
         animator = GetComponent<Animator>();        
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame

@@ -759,6 +759,8 @@ MonoBehaviour:
   attackDistance: 1
   attackRadius: 1
   damage: 10
+  boneFragmentMode: 0
+  zombieFleshmode: 0
 --- !u!114 &3732221544798751824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -815,8 +817,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80df9ab265a7040a5bf5c61cb129e3e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
-  featherMaskUI: {fileID: 0}
   roidPickupRadius: 1
+  onFeatherCollected:
+    m_PersistentCalls:
+      m_Calls: []
+  onBoneFragmentCollected:
+    m_PersistentCalls:
+      m_Calls: []
+  onZombieFleshFragmentCollected:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &7892564930963575150
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1420,7 +1430,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 119
+    m_Bits: 375
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
