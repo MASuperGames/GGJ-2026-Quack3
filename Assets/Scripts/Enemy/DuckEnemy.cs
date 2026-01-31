@@ -77,6 +77,7 @@ public class EnemyBase : MonoBehaviour
             {
                 Destroy(gameObject);
             }
+            return;
         }
 
         var player = GameObject.FindGameObjectWithTag("Player");
