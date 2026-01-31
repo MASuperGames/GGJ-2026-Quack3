@@ -126,6 +126,7 @@ GameObject:
   - component: {fileID: 1423834867822585989}
   - component: {fileID: 5827593813043088974}
   - component: {fileID: 8188329615190106519}
+  - component: {fileID: 1236228626270595019}
   m_Layer: 0
   m_Name: LeftWeapon
   m_TagString: Untagged
@@ -227,6 +228,28 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &1236228626270595019
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1136298757513939874}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 618e892dabb2b554e8aa44ad17a85240, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &4943334681788269947
 GameObject:
   m_ObjectHideFlags: 0
@@ -238,6 +261,7 @@ GameObject:
   - component: {fileID: 9100399527585459585}
   - component: {fileID: 1573016933219669325}
   - component: {fileID: 3188287989619135019}
+  - component: {fileID: 1116612772253809252}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -310,6 +334,21 @@ MonoBehaviour:
   gravity: -9.81
   lookSensitivity: 0.5
   maxLookAngle: 45
+--- !u!114 &1116612772253809252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4943334681788269947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d1498d481595e142bb2791b5a2490ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FirstPersonCombat
+  inputReader: {fileID: 11400000, guid: 943b1169df7f19b4e8e724e9d2694a01, type: 2}
+  primaryAnimator: {fileID: 1236228626270595019}
+  secondaryAnimator: {fileID: 9124826547317033793}
 --- !u!1 &8028544117754440971
 GameObject:
   m_ObjectHideFlags: 0
@@ -322,6 +361,7 @@ GameObject:
   - component: {fileID: 2752030464338061976}
   - component: {fileID: 8189444336754575027}
   - component: {fileID: 3990242854028321890}
+  - component: {fileID: 9124826547317033793}
   m_Layer: 0
   m_Name: RightWeapon
   m_TagString: Untagged
@@ -423,6 +463,28 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &9124826547317033793
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8028544117754440971}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 618e892dabb2b554e8aa44ad17a85240, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &8093664060175096366
 GameObject:
   m_ObjectHideFlags: 0
