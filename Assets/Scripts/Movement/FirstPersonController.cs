@@ -11,12 +11,15 @@ public class FirstPersonController : MonoBehaviour
     [Header("Movement")]
     [SerializeField] private float walkSpeed = 5f;
     [SerializeField] private float sprintSpeed = 8f;
-    [SerializeField] private float jumpHeight = 2f;
+    [SerializeField] private float normalJumpHeight = 2f;
+    [SerializeField] private float featherJumpHeight = 4f;
     [SerializeField] private float gravity = -9.81f;
 
     [Header("Look")]
     [SerializeField] private float lookSensitivity = 2f;
     [SerializeField] private float maxLookAngle = 45f;
+
+    public bool featherMode = false;
 
     private Vector2 moveInput;
     private Vector2 lookInput;
@@ -125,6 +128,7 @@ public class FirstPersonController : MonoBehaviour
     {
         if (isPressed && characterController.isGrounded)
         {
+            float jumpHeight = featherMode ? featherJumpHeight : normalJumpHeight;
             verticalVelocity = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
     }
