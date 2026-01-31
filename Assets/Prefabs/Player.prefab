@@ -99,7 +99,7 @@ MonoBehaviour:
     AmplitudeGain: 1
     FrequencyGain: 1
     Duration: 1
-    m_NoiseOffsets: {x: 0, y: 0, z: 0}
+    m_NoiseOffsets: {x: 858.1605, y: -500.70337, z: -627.8899}
 --- !u!1 &546072681830104253
 GameObject:
   m_ObjectHideFlags: 0
@@ -365,6 +365,7 @@ GameObject:
   - component: {fileID: 3732221544798751824}
   - component: {fileID: 8404526259482239300}
   - component: {fileID: 7892564930963575150}
+  - component: {fileID: 5714241811417796958}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -437,7 +438,7 @@ MonoBehaviour:
   jumpHeight: 2
   gravity: -9.81
   lookSensitivity: 0.5
-  maxLookAngle: 45
+  maxLookAngle: 90
 --- !u!114 &1116612772253809252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -567,6 +568,26 @@ MonoBehaviour:
     DissipationDistance: 100
     PropagationSpeed: 343
   DefaultVelocity: {x: 0, y: 0.3, z: 0}
+--- !u!114 &5714241811417796958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4943334681788269947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifier
+  m_SerializedVersion: 0
+  m_OverrideArea: 0
+  m_Area: 0
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 1
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &8028544117754440971
 GameObject:
   m_ObjectHideFlags: 0
