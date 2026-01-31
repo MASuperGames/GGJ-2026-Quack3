@@ -1,7 +1,15 @@
 using UnityEngine;
 
-public class Roid : MonoBehaviour
+public class Item : MonoBehaviour
 {
+    public enum Type
+    {
+        Roid,
+        Feather
+    }
+
+    [SerializeField] public Type itemType;
+
     [SerializeField] private float rotationSpeed = 60;
     [SerializeField] public float healthAmount = 30;
 
