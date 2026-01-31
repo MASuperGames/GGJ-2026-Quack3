@@ -1599,6 +1599,7 @@ GameObject:
   - component: {fileID: 192412237}
   - component: {fileID: 192412239}
   - component: {fileID: 192412238}
+  - component: {fileID: 192412240}
   m_Layer: 5
   m_Name: HealthDisplay
   m_TagString: Untagged
@@ -1645,7 +1646,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 100
+  m_text: XXX
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1725,6 +1726,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 192412236}
   m_CullTransparentMesh: 1
+--- !u!114 &192412240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192412236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71312f1de450041459274d14f141e0cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerHealthDisplay
+  spawner: {fileID: 527852286}
+  healthText: {fileID: 192412238}
 --- !u!1 &198611712
 GameObject:
   m_ObjectHideFlags: 0
@@ -2295,8 +2310,8 @@ Transform:
   m_GameObject: {fileID: 245558382}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -25, y: 0, z: 0.7}
-  m_LocalScale: {x: 2, y: 2, z: 10}
+  m_LocalPosition: {x: -25, y: -1.3, z: 0.7}
+  m_LocalScale: {x: 3, y: 3, z: 12}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1734397415}
@@ -3286,8 +3301,8 @@ Transform:
   m_GameObject: {fileID: 429701831}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -10, y: 0, z: 0.70000076}
-  m_LocalScale: {x: 2, y: 2, z: 10}
+  m_LocalPosition: {x: -10, y: -1.3, z: 0.70000076}
+  m_LocalScale: {x: 3, y: 3, z: 12}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1734397415}
@@ -3890,7 +3905,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &527852285
 Transform:
   m_ObjectHideFlags: 0
@@ -3930,6 +3945,9 @@ MonoBehaviour:
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 0
+  onPlayerSpawned:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &534835316
 GameObject:
   m_ObjectHideFlags: 0
@@ -6580,8 +6598,8 @@ Transform:
   m_GameObject: {fileID: 839523723}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 10, y: 0, z: 0.70000076}
-  m_LocalScale: {x: 2, y: 2, z: 10}
+  m_LocalPosition: {x: 10, y: -1.3, z: 0.70000076}
+  m_LocalScale: {x: 3, y: 3, z: 12}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1734397415}
@@ -10208,31 +10226,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
---- !u!1 &1348462592 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4943334681788269947, guid: e0ecf18eb495c8b4c859dd9cd8912c00, type: 3}
-  m_PrefabInstance: {fileID: 1871926704}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1348462600
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1348462592}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifier
-  m_SerializedVersion: 0
-  m_OverrideArea: 0
-  m_Area: 0
-  m_OverrideGenerateLinks: 0
-  m_GenerateLinks: 0
-  m_IgnoreFromBuild: 1
-  m_ApplyToChildren: 1
-  m_AffectedAgents: ffffffff
 --- !u!1 &1356191832
 GameObject:
   m_ObjectHideFlags: 0
@@ -11097,8 +11090,8 @@ Transform:
   m_GameObject: {fileID: 1501491741}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 25, y: 0, z: 0.70000076}
-  m_LocalScale: {x: 2, y: 2, z: 10}
+  m_LocalPosition: {x: 25, y: -1.3, z: 0.70000076}
+  m_LocalScale: {x: 3, y: 3, z: 12}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1734397415}
@@ -12955,7 +12948,7 @@ Transform:
   m_GameObject: {fileID: 1797169779}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.2, y: 0, z: 3.14}
+  m_LocalPosition: {x: 0, y: 1, z: -50}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13475,6 +13468,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4943334681788269947, guid: e0ecf18eb495c8b4c859dd9cd8912c00, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9100399527585459585, guid: e0ecf18eb495c8b4c859dd9cd8912c00, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -13518,10 +13515,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4943334681788269947, guid: e0ecf18eb495c8b4c859dd9cd8912c00, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1348462600}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0ecf18eb495c8b4c859dd9cd8912c00, type: 3}
 --- !u!1 &1877235392
 GameObject:

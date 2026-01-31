@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Spawner : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class Spawner : MonoBehaviour
     [SerializeField] private float enemyRadius = 0.5f;
     [SerializeField] private LayerMask obstacleLayer;
 
+    public UnityEvent<GameObject> onPlayerSpawned;
     private GameObject spawnedPlayer;
 
     private void Start()
@@ -73,6 +75,8 @@ public class Spawner : MonoBehaviour
             spawnedPlayer = Instantiate(playerPrefab, spawnPosition, spawnRotation);
             Debug.Log("Player spawned at: " + spawnPosition);
         }
+
+        onPlayerSpawned?.Invoke(spawnedPlayer);
     }
 
     public void SpawnEnemy()
