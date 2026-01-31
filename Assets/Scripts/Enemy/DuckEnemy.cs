@@ -27,6 +27,13 @@ public class EnemyBase : MonoBehaviour
     [SerializeField] private float attackSpeed = 3.5f;
     [SerializeField] private float slowSpeed = 1;
 
+    [SerializeField] private GameObject quad;
+
+    [SerializeField] private float flipDistance = 1;
+
+    private float accDistance;
+    private Vector3 prevPosition;
+
     private NavMeshAgent navMeshAgent;
     private CapsuleCollider capsule;
 
@@ -38,6 +45,8 @@ public class EnemyBase : MonoBehaviour
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
         capsule = GetComponent<CapsuleCollider>();
+        accDistance = 0;
+        prevPosition = transform.position;
     }
 
     public void onHealthChange(float health, float delta)
@@ -85,6 +94,16 @@ public class EnemyBase : MonoBehaviour
 
         if (state == State.Slow || state == State.Attack)
             navMeshAgent.destination = player.transform.position;
+
+        accDistance += Vector3.Distance(transform.position, prevPosition);
+        prevPosition = transform.position;
+        if (accDistance > flipDistance)
+        {
+            accDistance -= flipDistance;
+            Vector3 newScale = quad.transform.localScale;
+            newScale.x *= -1;
+            quad.transform.localScale = newScale;
+        }
     }
 
     void OnDrawGizmos()
