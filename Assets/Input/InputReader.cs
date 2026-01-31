@@ -23,6 +23,10 @@ public class InputReader : ScriptableObject, IPlayerActions, IUIActions
     public event Action PauseEvent;
     public event Action<bool> UnlockCursorEvent;
 
+    // UI actions
+    public event Action<Vector2> NavigateEvent;
+    public event Action SubmitEvent;
+
     private void OnEnable()
     {
         if (controls == null)
@@ -185,12 +189,16 @@ public class InputReader : ScriptableObject, IPlayerActions, IUIActions
 
     public void OnNavigate(InputAction.CallbackContext context)
     {
+        if (context.performed) NavigateEvent?.Invoke(context.ReadValue<Vector2>());
 
     }
 
     public void OnSubmit(InputAction.CallbackContext context)
     {
-
+        if (context.performed)
+        {
+            SubmitEvent?.Invoke();
+        }
     }
 
     public void OnCancel(InputAction.CallbackContext context)
