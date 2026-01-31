@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.Events;
 
 public class Spawner : MonoBehaviour
@@ -14,8 +15,9 @@ public class Spawner : MonoBehaviour
     [SerializeField] private Vector3 spawnAreaSize = new Vector3(20f, 0f, 20f);
     [SerializeField] private float spawnHeight = 1f;
     [SerializeField] private int maxSpawnAttempts = 30;
-    [SerializeField] private float enemyRadius = 0.5f;
-    [SerializeField] private LayerMask obstacleLayer;
+    [SerializeField] private float navMeshSearchRadius = 2f;
+    [SerializeField] private float minDistanceBetweenEnemies = 2f;
+    [SerializeField] private int navMeshAreaMask = NavMesh.AllAreas;
 
     public UnityEvent<GameObject> onPlayerSpawned;
     private GameObject spawnedPlayer;
@@ -73,7 +75,7 @@ public class Spawner : MonoBehaviour
         {
             // No existing player, spawn new one
             spawnedPlayer = Instantiate(playerPrefab, spawnPosition, spawnRotation);
-            Debug.Log("Player spawned at: " + spawnPosition);
+            // Debug.Log("Player spawned at: " + spawnPosition);
         }
 
         onPlayerSpawned?.Invoke(spawnedPlayer);
@@ -97,23 +99,47 @@ public class Spawner : MonoBehaviour
             float randomX = Random.Range(-spawnAreaSize.x / 2f, spawnAreaSize.x / 2f);
             float randomZ = Random.Range(-spawnAreaSize.z / 2f, spawnAreaSize.z / 2f);
 
-            spawnPosition = spawnAreaCenter + new Vector3(randomX, spawnHeight, randomZ);
+            Vector3 randomPosition = spawnAreaCenter + new Vector3(randomX, spawnHeight, randomZ);
 
-            // Check if position is valid (no collision with walls/obstacles)
-            if (!Physics.CheckSphere(spawnPosition, enemyRadius, obstacleLayer))
+            // Try to find nearest point on NavMesh
+            NavMeshHit hit;
+            if (NavMesh.SamplePosition(randomPosition, out hit, navMeshSearchRadius, navMeshAreaMask))
             {
-                // Valid position found!
-                Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);
-                Debug.Log($"Enemy spawned at: {spawnPosition}");
-                foundValidPosition = true;
-                break;
+                spawnPosition = hit.position;
+
+                // Optional: Check if there's enough space (no other enemies too close)
+                if (IsPositionClearOfEnemies(spawnPosition))
+                {
+                    // Valid position found on NavMesh!
+                    Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);
+                    Debug.Log($"Enemy spawned at: {spawnPosition}");
+                    foundValidPosition = true;
+                    break;
+                }
             }
         }
 
         if (!foundValidPosition)
         {
-            Debug.LogWarning($"Failed to find valid spawn position after {maxSpawnAttempts} attempts!");
+            Debug.LogWarning($"Failed to find valid spawn position on NavMesh after {maxSpawnAttempts} attempts!");
         }
+    }
+
+    private bool IsPositionClearOfEnemies(Vector3 position)
+    {
+        // Find all NavMeshAgents in the scene
+        NavMeshAgent[] existingAgents = FindObjectsOfType<NavMeshAgent>();
+
+        foreach (NavMeshAgent agent in existingAgents)
+        {
+            float distance = Vector3.Distance(position, agent.transform.position);
+            if (distance < minDistanceBetweenEnemies)
+            {
+                return false; // Too close to another enemy
+            }
+        }
+
+        return true; // Position is clear
     }
 
     public GameObject GetSpawnedPlayer()
@@ -121,9 +147,19 @@ public class Spawner : MonoBehaviour
         return spawnedPlayer;
     }
 
+    public void SetEnemyPrefab(GameObject newPrefab)
+    {
+        enemyPrefab = newPrefab;
+    }
+
     private void OnDrawGizmosSelected()
     {
+        // Draw spawn area
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireCube(spawnAreaCenter, spawnAreaSize);
+
+        // Draw NavMesh search radius indicator at center
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawWireSphere(spawnAreaCenter, navMeshSearchRadius);
     }
 }
