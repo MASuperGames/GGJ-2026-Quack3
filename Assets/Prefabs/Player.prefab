@@ -125,6 +125,8 @@ GameObject:
   - component: {fileID: 9100399527585459585}
   - component: {fileID: 1573016933219669325}
   - component: {fileID: 3188287989619135019}
+  - component: {fileID: 8120476450143053741}
+  - component: {fileID: 8959567751944952267}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -195,6 +197,64 @@ MonoBehaviour:
   gravity: -9.81
   lookSensitivity: 0.5
   maxLookAngle: 80
+--- !u!114 &8120476450143053741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4943334681788269947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f12972e8afc6849f2a697827c0f105c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HealthManager
+  onHealthChange:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8959567751944952267}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
+        m_MethodName: onHealthChange
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onHealthDepleted:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8959567751944952267}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
+        m_MethodName: onHealthDepleted
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  MaxHealth: 100
+  Health: 100
+--- !u!114 &8959567751944952267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4943334681788269947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80df9ab265a7040a5bf5c61cb129e3e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Player
+  spawner: {fileID: 0}
+  childCamera: {fileID: 8287774816531818348}
 --- !u!1 &8093664060175096366
 GameObject:
   m_ObjectHideFlags: 0
