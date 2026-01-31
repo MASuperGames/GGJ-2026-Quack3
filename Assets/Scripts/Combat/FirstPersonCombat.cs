@@ -34,7 +34,7 @@ public class FirstPersonCombat : MonoBehaviour
 
     void Update()
     {
-        
+    
     }
 
     private void OnPrimaryAction(bool isPressed)
@@ -67,13 +67,14 @@ public class FirstPersonCombat : MonoBehaviour
             secondaryAnimator.SetTrigger("Attack");
             impulseSource.GenerateImpulse();
 
-            var res = Physics.OverlapSphere(transform.position + attackDistance * transform.forward, attackRadius);
-            foreach (var col in res)
+            var cam = Camera.main;
+            var ray = cam.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2, 0));
+            Debug.DrawLine(cam.transform.position, 10000 * cam.transform.forward);
+            if (Physics.Raycast(ray, out RaycastHit hit))
             {
-                if (col.gameObject == gameObject) continue;
-                var health = col.GetComponent<HealthManager>();
-                if (health == null) continue;
-                health.ChangeHealth(-damage);
+                var health = hit.collider.GetComponent<HealthManager>();
+                if (health != null)
+                    health.ChangeHealth(-damage);
             }
         }
         else
