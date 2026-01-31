@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8722484256561153514}
   - component: {fileID: 1519514354292407145}
   m_Layer: 0
-  m_Name: Feather
+  m_Name: BoneFragment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -69,7 +69,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: bfdad41e76f87486eb9db6279be77b06, type: 2}
+  - {fileID: 2100000, guid: 2768d6fbbe9dd49e3949b86056fadbdf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -127,9 +127,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 834ef6b045ad54a89b968ee33a4c3416, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  itemType: 1
+  itemType: 2
   rotationSpeed: 90
-  healthAmount: 30
+  healthAmount: 0
 --- !u!95 &1519514354292407145
 Animator:
   serializedVersion: 7

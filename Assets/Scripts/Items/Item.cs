@@ -5,7 +5,8 @@ public class Item : MonoBehaviour
     public enum Type
     {
         Roid,
-        Feather
+        Feather,
+        BoneFragment,
     }
 
     [SerializeField] public Type itemType;

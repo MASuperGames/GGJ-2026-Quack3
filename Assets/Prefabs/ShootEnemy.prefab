@@ -250,6 +250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc17917e1be3249fbb9147b7e3cffc0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ShootEnemy
+  boneFragment: {fileID: 2105802541053626456, guid: 99c0dd95f2e574c5c95e15d314371ac4, type: 3}
   deviationStrength: 25
   targetStrength: 25
   rotationStrength: 10

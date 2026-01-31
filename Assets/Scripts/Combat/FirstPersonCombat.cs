@@ -17,6 +17,9 @@ public class FirstPersonCombat : MonoBehaviour
     [SerializeField] private float attackRadius = 0.5f;
     [SerializeField] private float damage = 10;
 
+    public bool boneFragmentMode = false;
+    public bool zombieFleshmode = false;
+    
     private void OnEnable()
     {
         inputReader.PrimaryActionEvent += OnPrimaryAction;
@@ -53,7 +56,7 @@ public class FirstPersonCombat : MonoBehaviour
                 if (col.gameObject == gameObject) continue;
                 var health = col.GetComponent<HealthManager>();
                 if (health == null) continue;
-                health.ChangeHealth(-damage);
+                health.ChangeHealth(-damage * (zombieFleshmode ? 2 : 1));
             }
         }
         else
@@ -80,7 +83,7 @@ public class FirstPersonCombat : MonoBehaviour
                 gunHitVFX.SendEvent("OnPlay");
                 var health = hit.collider.GetComponent<HealthManager>();
                 if (health != null)
-                    health.ChangeHealth(-damage);
+                    health.ChangeHealth(-damage * (boneFragmentMode ? 2 : 1));
             }
         }
         else
