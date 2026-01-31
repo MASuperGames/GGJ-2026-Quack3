@@ -15,12 +15,13 @@ public class FirstPersonController : MonoBehaviour
 
     [Header("Look")]
     [SerializeField] private float lookSensitivity = 2f;
-    [SerializeField] private float maxLookAngle = 80f;
+    [SerializeField] private float maxLookAngle = 45f;
 
     private Vector2 moveInput;
     private Vector2 lookInput;
     private bool isSprinting;
     private bool isCursorUnlocked;
+    private bool hasReceivedFirstInput;
     private float verticalVelocity;
     private float cameraPitch;
 
@@ -109,6 +110,13 @@ public class FirstPersonController : MonoBehaviour
 
     private void OnLook(Vector2 input)
     {
+        // Ignore the very first look input to prevent initial camera snap
+        if (!hasReceivedFirstInput)
+        {
+            hasReceivedFirstInput = true;
+            return;
+        }
+
         lookInput = input;
     }
 
