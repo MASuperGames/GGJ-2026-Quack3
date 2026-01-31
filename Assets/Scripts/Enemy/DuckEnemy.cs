@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class EnemyBase : MonoBehaviour
+public class DuckEnemy : MonoBehaviour
 {
     enum State
     {
@@ -31,6 +31,7 @@ public class EnemyBase : MonoBehaviour
 
     [SerializeField] private float deathDuration = 2;
 
+    [SerializeField] private GameObject feather;
 
     private float accDistance;
     private Vector3 prevPosition;
@@ -64,6 +65,7 @@ public class EnemyBase : MonoBehaviour
     {
         state = State.Dead;
         deathStart = Time.time;
+        Instantiate(feather, transform.TransformPoint(feather.transform.position), transform.rotation);
     }
 
     // Update is called once per frame

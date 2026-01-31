@@ -294,6 +294,7 @@ MonoBehaviour:
   quad: {fileID: 1647206644358886995}
   flipDistance: 0.4
   deathDuration: 2
+  feather: {fileID: 2105802541053626456, guid: 521721a1f802e47adb6243e1d434defc, type: 3}
   capsule: {fileID: 4387231821161245760}
 --- !u!95 &8346490543512847287
 Animator:
