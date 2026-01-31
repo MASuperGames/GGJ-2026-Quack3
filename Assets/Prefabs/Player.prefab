@@ -407,6 +407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80df9ab265a7040a5bf5c61cb129e3e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
+  roidPickupRadius: 1
 --- !u!1 &8028544117754440971
 GameObject:
   m_ObjectHideFlags: 0
