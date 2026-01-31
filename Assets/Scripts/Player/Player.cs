@@ -27,11 +27,19 @@ public class Player : MonoBehaviour
         var res = Physics.OverlapSphere(transform.position, roidPickupRadius);
         foreach (var col in res)
         {
-            var roid = col.GetComponent<Roid>();
-            if (roid == null)
+
+            var item = col.GetComponent<Item>();
+            if (item == null)
                 continue;
-            healthManager.ChangeHealth(roid.healthAmount);
-            roid.PickUp();
+            switch (item.itemType) {
+                case Item.Type.Feather:
+                    // TODO
+                    break;
+                case Item.Type.Roid:
+                    healthManager.ChangeHealth(item.healthAmount);
+                    break;
+            }
+            item.PickUp();
         }
     }
 
