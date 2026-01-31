@@ -10,7 +10,10 @@ public class FirstPersonCombat : MonoBehaviour
     [SerializeField] private Animator secondaryAnimator;
     [SerializeField] private CinemachineImpulseSource impulseSource;
 
-    
+
+    [SerializeField] private float attackDistance = 1f;
+    [SerializeField] private float attackRadius = 0.5f;
+    [SerializeField] private float damage = 10;
 
     private void OnEnable()
     {
@@ -40,6 +43,15 @@ public class FirstPersonCombat : MonoBehaviour
         {
             primaryAnimator.SetTrigger("Attack");
             impulseSource.GenerateImpulse();
+
+            var res = Physics.OverlapSphere(transform.position + attackDistance * transform.forward, attackRadius);
+            foreach (var col in res)
+            {
+                if (col.gameObject == gameObject) continue;
+                var health = col.GetComponent<HealthManager>();
+                if (health == null) continue;
+                health.ChangeHealth(-damage);
+            }
         }
         else
         {
@@ -54,10 +66,24 @@ public class FirstPersonCombat : MonoBehaviour
         {
             secondaryAnimator.SetTrigger("Attack");
             impulseSource.GenerateImpulse();
+
+            var res = Physics.OverlapSphere(transform.position + attackDistance * transform.forward, attackRadius);
+            foreach (var col in res)
+            {
+                if (col.gameObject == gameObject) continue;
+                var health = col.GetComponent<HealthManager>();
+                if (health == null) continue;
+                health.ChangeHealth(-damage);
+            }
         }
         else
         {
             // Release
         }
+    }
+
+    void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(transform.position + attackDistance * transform.forward, attackRadius);
     }
 }

@@ -351,6 +351,9 @@ MonoBehaviour:
   inputReader: {fileID: 11400000, guid: 943b1169df7f19b4e8e724e9d2694a01, type: 2}
   primaryAnimator: {fileID: 1236228626270595019}
   secondaryAnimator: {fileID: 9124826547317033793}
+  attackDistance: 1
+  attackRadius: 1
+  damage: 10
 --- !u!114 &3732221544798751824
 MonoBehaviour:
   m_ObjectHideFlags: 0
