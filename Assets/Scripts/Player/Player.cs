@@ -1,12 +1,8 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Player : MonoBehaviour
 {
-
-    [SerializeField] private MaskUI featherMaskUI;
-    [SerializeField] private MaskUI boneFragmentUI;
-    [SerializeField] private MaskUI zombieFleshUI;
-
     [SerializeField] private float roidPickupRadius;
 
     private HealthManager healthManager;
@@ -16,6 +12,10 @@ public class Player : MonoBehaviour
     private int numFeathers = 0;
     private int numBoneFragments = 0;
     private int numZombieFleshFragments = 0;
+
+    public UnityEvent<int> onFeatherCollected;
+    public UnityEvent<int> onBoneFragmentCollected;
+    public UnityEvent<int> onZombieFleshFragmentCollected;
 
     public void onHealthChange(float health, float delta)
     {
@@ -33,9 +33,9 @@ public class Player : MonoBehaviour
         fpc = GetComponent<FirstPersonController>();
         fpcom = GetComponent<FirstPersonCombat>();
 
-        featherMaskUI.SetCount(0);
-        boneFragmentUI.SetCount(0);
-        zombieFleshUI.SetCount(0);
+        onFeatherCollected.Invoke(0);
+        onBoneFragmentCollected.Invoke(0);
+        onZombieFleshFragmentCollected.Invoke(0);
     }
 
     // Update is called once per frame
@@ -50,20 +50,20 @@ public class Player : MonoBehaviour
             switch (item.itemType) {
                 case Item.Type.Feather:
                     numFeathers++;
-                    featherMaskUI.SetCount(numFeathers);
+                    onFeatherCollected.Invoke(numFeathers);
                     if (numFeathers < 4) break;
                     fpc.featherMode = true;
                     break;
                 case Item.Type.BoneFragment:
                     numBoneFragments++;
-                    boneFragmentUI.SetCount(numBoneFragments);
+                    onBoneFragmentCollected.Invoke(numBoneFragments);
                     if (numBoneFragments < 4) break;
                     fpcom.boneFragmentMode = true;
                     break;
                 case Item.Type.Roid:
                     healthManager.ChangeHealth(item.healthAmount);
                     numZombieFleshFragments++;
-                    zombieFleshUI.SetCount(numZombieFleshFragments);
+                    onZombieFleshFragmentCollected.Invoke(numZombieFleshFragments);
                     if (numZombieFleshFragments < 4) break;
                     fpcom.zombieFleshmode = true;
                     break;

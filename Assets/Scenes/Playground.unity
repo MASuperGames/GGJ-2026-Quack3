@@ -1517,8 +1517,9 @@ GameObject:
   - component: {fileID: 167076672}
   - component: {fileID: 167076674}
   - component: {fileID: 167076673}
+  - component: {fileID: 167076675}
   m_Layer: 5
-  m_Name: Mask02
+  m_Name: MaskFeather
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1611,6 +1612,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &167076675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167076669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0ad90971616a4863aa12c371e3da700, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MaskUI
 --- !u!1 &171974693
 GameObject:
   m_ObjectHideFlags: 0
@@ -4418,7 +4431,19 @@ MonoBehaviour:
   navMeshAreaMask: -1
   onPlayerSpawned:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1661594925}
+        m_TargetAssemblyTypeName: MaskFragmentSetup, Assembly-CSharp
+        m_MethodName: OnPlayerSpawned
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &534835316
 GameObject:
   m_ObjectHideFlags: 0
@@ -7188,8 +7213,9 @@ GameObject:
   - component: {fileID: 824185465}
   - component: {fileID: 824185464}
   - component: {fileID: 824185463}
+  - component: {fileID: 824185466}
   m_Layer: 5
-  m_Name: Mask03
+  m_Name: MaskZombieFleshFragment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7282,6 +7308,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 824185461}
   m_CullTransparentMesh: 1
+--- !u!114 &824185466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824185461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0ad90971616a4863aa12c371e3da700, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MaskUI
 --- !u!1 &839523723
 GameObject:
   m_ObjectHideFlags: 0
@@ -13522,8 +13560,9 @@ GameObject:
   - component: {fileID: 1598379118}
   - component: {fileID: 1598379117}
   - component: {fileID: 1598379116}
+  - component: {fileID: 1598379119}
   m_Layer: 5
-  m_Name: Mask02
+  m_Name: MaskBoneFragment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13616,6 +13655,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1598379114}
   m_CullTransparentMesh: 1
+--- !u!114 &1598379119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1598379114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0ad90971616a4863aa12c371e3da700, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MaskUI
 --- !u!1 &1654530578
 GameObject:
   m_ObjectHideFlags: 0
@@ -13753,6 +13804,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1661594923}
   - component: {fileID: 1661594924}
+  - component: {fileID: 1661594925}
   m_Layer: 5
   m_Name: MasksParent
   m_TagString: Untagged
@@ -13808,6 +13860,21 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &1661594925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1661594922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98caa1dd0162c48c78cfccf337e13150, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  maskFeather: {fileID: 167076675}
+  maskBoneFragments: {fileID: 1598379119}
+  maskZombieFleshFragments: {fileID: 824185466}
 --- !u!1 &1686002042
 GameObject:
   m_ObjectHideFlags: 0
