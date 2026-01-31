@@ -99,7 +99,7 @@ MonoBehaviour:
     AmplitudeGain: 1
     FrequencyGain: 1
     Duration: 1
-    m_NoiseOffsets: {x: 0, y: 0, z: 0}
+    m_NoiseOffsets: {x: 858.1605, y: -500.70337, z: -627.8899}
 --- !u!1 &546072681830104253
 GameObject:
   m_ObjectHideFlags: 0
@@ -438,7 +438,7 @@ MonoBehaviour:
   jumpHeight: 2
   gravity: -9.81
   lookSensitivity: 0.5
-  maxLookAngle: 45
+  maxLookAngle: 90
 --- !u!114 &1116612772253809252
 MonoBehaviour:
   m_ObjectHideFlags: 0
