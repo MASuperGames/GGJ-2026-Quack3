@@ -12,6 +12,8 @@ public class ShootEnemy : MonoBehaviour
         Dead
     };
 
+    [SerializeField] private GameObject boneFragment;
+
     [SerializeField] private float deviationStrength = 1;
     [SerializeField] private float targetStrength = 1;
 
@@ -61,6 +63,8 @@ public class ShootEnemy : MonoBehaviour
     {
         state = State.Dead;
         deathStart = Time.time;
+
+        Instantiate(boneFragment, transform.position, Quaternion.identity);
     }
 
     // Update is called once per frame
