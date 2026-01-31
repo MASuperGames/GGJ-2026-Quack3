@@ -63,7 +63,7 @@ public class ShootEnemy : MonoBehaviour
     {
         state = State.Dead;
         deathStart = Time.time;
-
+        GetComponent<CapsuleCollider>().enabled = false;
         Instantiate(boneFragment, transform.position, Quaternion.identity);
     }
 

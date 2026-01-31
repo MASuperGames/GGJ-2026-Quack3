@@ -65,6 +65,8 @@ public class DuckEnemy : MonoBehaviour
     {
         state = State.Dead;
         deathStart = Time.time;
+        GetComponent<CapsuleCollider>().enabled = false;
+        GetComponent<NavMeshAgent>().enabled = false;
         Instantiate(feather, transform.TransformPoint(feather.transform.position), transform.rotation);
     }
 
