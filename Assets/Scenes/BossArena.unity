@@ -1291,8 +1291,8 @@ MonoBehaviour:
   spawner: {fileID: 527852286}
   waves: []
   delayBetweenWaves: 5
-  backgroundMusic: {fileID: 0}
-  ambienceSound: {fileID: 0}
+  backgroundMusic: {fileID: 8300000, guid: 91602d34fe2b49345aedc2ac25e0d582, type: 3}
+  ambienceSound: {fileID: 8300000, guid: d9881bb0f0907084499b74824978a27e, type: 3}
   fadeInMusic: 0
   fadeDuration: 2
 --- !u!1001 &283339659
@@ -5854,8 +5854,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f253fe50c5ea4131a103045a82aec73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Orchestrator
-  enemySpawner: {fileID: 0}
-  thunderSpawner: {fileID: 0}
+  enemySpawner: {fileID: 1613819703}
+  thunderSpawner: {fileID: 1275786672}
 --- !u!4 &1563211998
 Transform:
   m_ObjectHideFlags: 0
