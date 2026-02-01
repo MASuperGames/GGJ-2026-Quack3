@@ -112,7 +112,7 @@ public class Spawner : MonoBehaviour
                 {
                     // Valid position found on NavMesh!
                     Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);
-                    Debug.Log($"Enemy spawned at: {spawnPosition}");
+                    //Debug.Log($"Enemy spawned at: {spawnPosition}");
                     foundValidPosition = true;
                     break;
                 }
@@ -128,7 +128,7 @@ public class Spawner : MonoBehaviour
     private bool IsPositionClearOfEnemies(Vector3 position)
     {
         // Find all NavMeshAgents in the scene
-        NavMeshAgent[] existingAgents = FindObjectsOfType<NavMeshAgent>();
+        NavMeshAgent[] existingAgents = FindObjectsByType<NavMeshAgent>(FindObjectsSortMode.None);
 
         foreach (NavMeshAgent agent in existingAgents)
         {

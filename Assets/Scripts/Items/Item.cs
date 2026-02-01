@@ -22,17 +22,15 @@ public class Item : MonoBehaviour
 
     public void PickUp()
     {
-        myCollider.enabled = false;
+        GetComponent<MeshCollider>().enabled = false;
         if (rb != null) rb.isKinematic = true;
-        animator.SetTrigger("FadeOut");
+        GetComponent<Animator>().SetTrigger("FadeOut");
         pickedUpTime = Time.time;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {        
-        myCollider = GetComponent<MeshCollider>();
-        animator = GetComponent<Animator>();        
         rb = GetComponent<Rigidbody>();
     }
 

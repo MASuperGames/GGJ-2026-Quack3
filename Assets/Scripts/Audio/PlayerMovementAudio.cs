@@ -6,6 +6,7 @@ public class PlayerMovementAudio : MonoBehaviour
 
     [Header("Footsteps")]
     [SerializeField] private AudioClip[] footstepClips;
+    [SerializeField] private float footstepVolume = 2.0f;
     [SerializeField] private float walkStepInterval = 0.5f;
     [SerializeField] private float sprintStepInterval = 0.3f;
 
@@ -18,6 +19,7 @@ public class PlayerMovementAudio : MonoBehaviour
 
     private float stepTimer;
     private bool wasGrounded = true;
+    private float minLandingVelocity = -2f;
 
     private void Update()
     {
@@ -36,7 +38,7 @@ public class PlayerMovementAudio : MonoBehaviour
 
             if (stepTimer <= 0)
             {
-                PlayRandomClip(footstepClips);
+                PlayRandomClip(footstepClips, footstepVolume);
 
                 float speed = characterController.velocity.magnitude;
                 stepTimer = speed > 6f ? sprintStepInterval : walkStepInterval;
@@ -53,7 +55,7 @@ public class PlayerMovementAudio : MonoBehaviour
         bool isGrounded = characterController.isGrounded;
 
         // Detect landing
-        if (isGrounded && !wasGrounded)
+        if (isGrounded && !wasGrounded && characterController.velocity.y < minLandingVelocity)
         {
             PlayRandomClip(landClips);
         }
@@ -63,15 +65,16 @@ public class PlayerMovementAudio : MonoBehaviour
 
     public void PlayJumpSound()
     {
+        Debug.Log("playing jump audio");
         PlayRandomClip(jumpClips);
     }
 
-    private void PlayRandomClip(AudioClip[] clips)
+    private void PlayRandomClip(AudioClip[] clips, float volumeScale = 1f)
     {
         if (clips.Length > 0)
         {
             AudioClip clip = clips[Random.Range(0, clips.Length)];
-            AudioManager.Instance.PlaySFXWithPitchVariation(clip, pitchVariationMin, pitchVariationMax);
+            AudioManager.Instance.PlaySFXWithPitchVariation(clip, pitchVariationMin, pitchVariationMax, footstepVolume);
         }
     }
 }
