@@ -1,5 +1,7 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.Rendering;
 using UnityEngine.UI;
 
@@ -74,20 +76,27 @@ public class MenuSelector : MonoBehaviour
 
     private void HandleSubmit()
     {
-        AudioManager.Instance.PlaySFX(confirmClip, 2.0f);
-
         switch (selectedIndex)
         {
             case 0:
-                mainMenu.OnPlayClicked();
+                AudioManager.Instance.PlaySFXWithPitchVariation(confirmClip, 2.0f);
+                StartCoroutine(StartGame());
                 break;
             case 1:
+                AudioManager.Instance.PlaySFXWithPitchVariation(selectClip, 1.0f);
                 mainMenu.OnSettingsClicked();
                 break;
             case 2:
+                AudioManager.Instance.PlaySFXWithPitchVariation(selectClip, 1.0f);
                 mainMenu.OnQuitClicked();
                 break;
         }
+    }
+
+    private IEnumerator StartGame()
+    {
+        yield return new WaitForSeconds(0.75f);
+        mainMenu.OnPlayClicked();
     }
 
     private void PlayRandomClip(AudioClip[] clips)
