@@ -759,12 +759,15 @@ MonoBehaviour:
   gunHitVFX: {fileID: 1998038178201817070}
   impulseSource: {fileID: 7892564930963575150}
   primaryAttackClips:
+  - {fileID: 8300000, guid: 1cadf1f1fe1f2044d8aea643a7e7fd0d, type: 3}
+  - {fileID: 8300000, guid: 6aefc09346f5ead4ea5d01ffedbdb9f6, type: 3}
+  secondaryAttackClips:
+  - {fileID: 8300000, guid: d11cb4563a07a4121addcc711d0a0842, type: 3}
+  hitImpactClips:
   - {fileID: 8300000, guid: dc9862ffc01554a4fa527b174b28cdfd, type: 3}
   - {fileID: 8300000, guid: 29cac9cc6fb9c426290290a5ba4a515e, type: 3}
   - {fileID: 8300000, guid: d09a3e032bad1404fa1f3b723b931ddc, type: 3}
   - {fileID: 8300000, guid: 93f53327af6414528b9cc6df6401f581, type: 3}
-  secondaryAttackClips: []
-  hitImpactClips: []
   attackDistance: 1
   attackRadius: 1
   damage: 10
@@ -812,8 +815,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  MaxHealth: 100
-  Health: 100
+  MaxHealth: 30
+  Health: 30
   damageTakenClips:
   - {fileID: 8300000, guid: 0e105e755a0964393b779fbdca34bf78, type: 3}
   - {fileID: 8300000, guid: 8b77a4631c7294f42947e476e25b308d, type: 3}

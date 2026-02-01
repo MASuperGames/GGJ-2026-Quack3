@@ -45,10 +45,21 @@ public class PlayerHealthDisplay : MonoBehaviour
     private void OnPlayerDeath()
     {
         Debug.Log("Player died!");
+
+        // Update UI to show death
+        if (healthText != null)
+        {
+            healthText.text = "R.I.P.";
+        }
     }
 
     private void OnDestroy()
     {
+        if (spawner != null)
+        {
+            spawner.onPlayerSpawned.RemoveListener(OnPlayerSpawned);
+        }
+
         // Clean up
         if (currentPlayerHealth != null)
         {
