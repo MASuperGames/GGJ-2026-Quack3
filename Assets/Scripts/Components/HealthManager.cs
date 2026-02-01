@@ -14,15 +14,17 @@ public class HealthManager : MonoBehaviour
     [SerializeField] private AudioClip[] damageTakenClips;
     [SerializeField] private AudioClip[] deathClips;
 
+    private float nextDamageTime = -Mathf.Infinity;
+
     public void ChangeHealth(float delta)
     {
         float PrevHealth = Health;
         Health = Mathf.Clamp(Health + delta, 0, MaxHealth);
         if (Health == PrevHealth) return;
 
-        if (delta < 0)
+        if (delta < 0 && nextDamageTime < Time.time)
         {
-            PlayRandomClip(damageTakenClips);
+            nextDamageTime = Time.time + PlayRandomClip(damageTakenClips);
         }
 
         onHealthChange.Invoke(Health, Health - PrevHealth);
@@ -36,12 +38,14 @@ public class HealthManager : MonoBehaviour
 
     }
 
-    private void PlayRandomClip(AudioClip[] clips)
+    private float PlayRandomClip(AudioClip[] clips)
     {
         if (clips != null && clips.Length > 0)
         {
             AudioClip clip = clips[Random.Range(0, clips.Length)];
             AudioManager.Instance.PlaySFX(clip);
+            return clip.length;
         }
+        return 0.0f;
     }
 }
