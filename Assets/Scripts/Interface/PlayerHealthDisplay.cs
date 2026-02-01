@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerHealthDisplay : MonoBehaviour
 {
+    [Header("References")]
     [SerializeField] private Spawner spawner;
     [SerializeField] private TextMeshProUGUI healthText;
 

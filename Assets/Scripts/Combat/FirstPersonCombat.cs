@@ -2,6 +2,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using Unity.Cinemachine;
 using UnityEngine.VFX;
+using UnityEngine.Events;
 
 public class FirstPersonCombat : MonoBehaviour
 {
@@ -27,10 +28,18 @@ public class FirstPersonCombat : MonoBehaviour
     [SerializeField] private int maxAmmo = 30;
     [SerializeField] private int ammo = 30;
 
+    public UnityEvent<int> onAmmoChange;
+
     public void AddAmmo(int amount)
     {
         ammo += amount;
         if (ammo > maxAmmo) ammo = maxAmmo;
+        onAmmoChange?.Invoke(ammo);
+    }
+
+    public int getCurrentAmmo()
+    {
+        return ammo;
     }
 
     public bool boneFragmentMode = false;
@@ -102,6 +111,7 @@ public class FirstPersonCombat : MonoBehaviour
                 return;
             }
             --ammo;
+            onAmmoChange?.Invoke(ammo);
             secondaryWeapon.GetAnimator().SetTrigger("Attack");
             secondaryWeapon.PlayVFX();
             impulseSource.GenerateImpulse();
