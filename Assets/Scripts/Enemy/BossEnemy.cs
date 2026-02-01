@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class BossEnemy : MonoBehaviour
 {
@@ -47,8 +48,9 @@ public class BossEnemy : MonoBehaviour
     {
         state = State.Dead;
         deathStart = Time.time;
-        GetComponent<CapsuleCollider>().enabled = false;
+        GetComponent<BoxCollider>().enabled = false;
         GetComponent<NavMeshAgent>().enabled = false;
+        SceneManager.LoadScene(4);
     }
 
     // Update is called once per frame

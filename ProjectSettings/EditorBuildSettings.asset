@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BossArena.unity
     guid: 205ba1ccfee06794ea9d2e1499cca308
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 6ac19bebc283944ffab92d487ec392c9
   - enabled: 0
     path: Assets/Scenes/TestScene.unity
     guid: e5713e33771d7344db86cd35fcbcc4f9
