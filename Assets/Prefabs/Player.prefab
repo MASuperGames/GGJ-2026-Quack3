@@ -662,6 +662,7 @@ GameObject:
   - component: {fileID: 7892564930963575150}
   - component: {fileID: 5714241811417796958}
   - component: {fileID: 5578555676001818601}
+  - component: {fileID: 5241121582370512878}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -995,6 +996,29 @@ MonoBehaviour:
     footstepVolume: 1
     jumpVolume: 1
     landVolume: 1
+--- !u!136 &5241121582370512878
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4943334681788269947}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 1.8798705
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.07088989, z: 0}
 --- !u!1 &5071661520864491417
 GameObject:
   m_ObjectHideFlags: 0
