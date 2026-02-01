@@ -3,14 +3,15 @@ using UnityEngine;
 
 public class BootLoader : MonoBehaviour
 {
-    [SerializeField] private float bootDelay = 0.5f; // Optional: show logo/splash
+    [SerializeField] private float bootDelay = 0.5f;
+    [SerializeField] private float soundDelay = 0.5f;
+    [SerializeField] private AudioClip clip;
 
     private void Start()
     {
-        // Optional: Initialize other systems here
-        InitializeManagers();
 
-        // Load first real scene
+        InitializeManagers();
+        StartCoroutine(PlaySplashSound());
         StartCoroutine(LoadFirstScene());
     }
 
@@ -24,11 +25,15 @@ public class BootLoader : MonoBehaviour
         Debug.Log("Managers initialized!");
     }
 
+    private IEnumerator PlaySplashSound()
+    {
+        yield return new WaitForSeconds(soundDelay);
+
+        AudioManager.Instance.PlaySFXWithPitchVariation(clip, 1.0f, 1.0f, 0.5f);
+    }
+
     private IEnumerator LoadFirstScene()
     {
-        // Optional: Show splash screen, company logo, etc.
-
-
         yield return new WaitForSeconds(bootDelay);
 
         // Load main menu

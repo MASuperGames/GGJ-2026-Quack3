@@ -169,7 +169,7 @@ public class AudioManager : Singleton<AudioManager>
         GameObject tempAudio = new GameObject("TempAudio");
         AudioSource tempSource = tempAudio.AddComponent<AudioSource>();
         tempSource.clip = clip;
-        tempSource.volume = sfxVolume * masterVolume;
+        tempSource.volume = sfxVolume * masterVolume * volumeScale;
         tempSource.pitch = Random.Range(minPitch, maxPitch);
         tempSource.Play();
 

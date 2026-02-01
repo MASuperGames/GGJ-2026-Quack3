@@ -4,14 +4,28 @@ using UnityEngine.SceneManagement;
 
 public class SceneController : Singleton<SceneController>
 {
+    [SerializeField] private CanvasGroup fadeCanvasGroup;
+    [SerializeField] private float fadeDuration = 1f;
+
     private bool isLoading = false;
+
+    protected override void Awake()
+    {
+        base.Awake();
+
+        // Ensure the fade panel starts invisible
+        if (fadeCanvasGroup != null)
+        {
+            fadeCanvasGroup.alpha = 0f;
+        }
+    }
 
     // Load by name
     public void LoadScene(string sceneName)
     {
         if (!isLoading)
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);
+            StartCoroutine(FadeAndLoadScene(sceneName));
         }
     }
 
@@ -20,7 +34,7 @@ public class SceneController : Singleton<SceneController>
     {
         if (!isLoading)
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene(sceneIndex);
+            StartCoroutine(FadeAndLoadScene(sceneIndex));
         }
     }
 
@@ -29,7 +43,6 @@ public class SceneController : Singleton<SceneController>
         int currentSceneIndex = UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex;
         int nextSceneIndex = currentSceneIndex + 1;
 
-        // Check if next scene exists in build settings
         if (nextSceneIndex < UnityEngine.SceneManagement.SceneManager.sceneCountInBuildSettings)
         {
             LoadScene(nextSceneIndex);
@@ -40,33 +53,48 @@ public class SceneController : Singleton<SceneController>
         }
     }
 
-    // Async load (for loading screens)
-    public void LoadSceneAsync(string sceneName)
-    {
-        if (!isLoading)
-        {
-            StartCoroutine(LoadSceneAsyncCoroutine(sceneName));
-        }
-    }
-
     public void ReloadCurrentScene()
     {
         string currentScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
         LoadScene(currentScene);
     }
 
-    private IEnumerator LoadSceneAsyncCoroutine(string sceneName)
+    private IEnumerator FadeAndLoadScene(string sceneName)
     {
         isLoading = true;
 
-        AsyncOperation asyncLoad = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(sceneName);
+        yield return StartCoroutine(Fade(1f));
+        UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);
+        yield return StartCoroutine(Fade(0f));
 
-        while (!asyncLoad.isDone)
+        isLoading = false;
+    }
+
+    private IEnumerator FadeAndLoadScene(int sceneIndex)
+    {
+        isLoading = true;
+
+        yield return StartCoroutine(Fade(1f));
+        UnityEngine.SceneManagement.SceneManager.LoadScene(sceneIndex);
+        yield return StartCoroutine(Fade(0f));
+
+        isLoading = false;
+    }
+
+    private IEnumerator Fade(float targetAlpha)
+    {
+        if (fadeCanvasGroup == null) yield break;
+
+        float startAlpha = fadeCanvasGroup.alpha;
+        float elapsed = 0f;
+
+        while (elapsed < fadeDuration)
         {
-            // Optional: Update loading bar with asyncLoad.progress
+            elapsed += Time.deltaTime;
+            fadeCanvasGroup.alpha = Mathf.Lerp(startAlpha, targetAlpha, elapsed / fadeDuration);
             yield return null;
         }
 
-        isLoading = false;
+        fadeCanvasGroup.alpha = targetAlpha;
     }
 }
