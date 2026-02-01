@@ -256,9 +256,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 834ef6b045ad54a89b968ee33a4c3416, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  itemType: 2
+  itemType: 3
   rotationSpeed: 90
   healthAmount: 0
+  ammoAmount: 10
 --- !u!95 &1519514354292407145
 Animator:
   serializedVersion: 7
