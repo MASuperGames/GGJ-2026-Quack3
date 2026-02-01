@@ -2,6 +2,7 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.EventSystems;
 using UnityEngine.Rendering;
 using UnityEngine.UI;
 
@@ -22,6 +23,12 @@ public class MenuSelector : MonoBehaviour
     {
         inputReader.NavigateEvent += HandleNavigate;
         inputReader.SubmitEvent += HandleSubmit;
+
+        for (int i = 0; i < selectors.Length; i++)
+        {
+            int index = i;
+            AddMouseHoverListener(selectors[i].gameObject, index);
+        }
     }
 
     private void OnDisable()
@@ -38,6 +45,45 @@ public class MenuSelector : MonoBehaviour
         {
             selectors[i].enabled = false;
         }
+    }
+
+    private void AddMouseHoverListener(GameObject obj, int index)
+    {
+        // Add EventTrigger component if it doesn't exist
+        EventTrigger trigger = obj.GetComponent<EventTrigger>();
+        if (trigger == null)
+        {
+            trigger = obj.AddComponent<EventTrigger>();
+        }
+
+        // Create PointerEnter event
+        EventTrigger.Entry pointerEnter = new EventTrigger.Entry();
+        pointerEnter.eventID = EventTriggerType.PointerEnter;
+        pointerEnter.callback.AddListener((data) => { OnMouseHover(index); });
+        trigger.triggers.Add(pointerEnter);
+
+        // Create PointerClick event for mouse click support
+        EventTrigger.Entry pointerClick = new EventTrigger.Entry();
+        pointerClick.eventID = EventTriggerType.PointerClick;
+        pointerClick.callback.AddListener((data) => { OnMouseClick(index); });
+        trigger.triggers.Add(pointerClick);
+    }
+
+    private void OnMouseHover(int index)
+    {
+        if (selectedIndex != index)
+        {
+            selectedIndex = index;
+            AudioManager.Instance.PlaySFX(selectClip, 0.2f);
+            UpdateSelector();
+        }
+    }
+
+    private void OnMouseClick(int index)
+    {
+        selectedIndex = index;
+        UpdateSelector();
+        HandleSubmit();
     }
 
     // Update is called once per frame
@@ -87,6 +133,10 @@ public class MenuSelector : MonoBehaviour
                 mainMenu.OnSettingsClicked();
                 break;
             case 2:
+                AudioManager.Instance.PlaySFXWithPitchVariation(selectClip, 1.0f);
+                mainMenu.OnCreditsClicked();
+                break;
+            case 3:
                 AudioManager.Instance.PlaySFXWithPitchVariation(selectClip, 1.0f);
                 mainMenu.OnQuitClicked();
                 break;

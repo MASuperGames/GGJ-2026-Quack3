@@ -3,6 +3,7 @@ using UnityEngine;
 public class MainMenu : MonoBehaviour
 {
     [SerializeField] private InputReader inputReader;
+    [SerializeField] private GameObject credits;
 
     [Header("Audio")]
     [SerializeField] private AudioClip backgroundMusic;
@@ -37,6 +38,11 @@ public class MainMenu : MonoBehaviour
     {
         // Open settings panel
     }
+
+    public void OnCreditsClicked()
+    {
+        credits.SetActive(true);
+    }    
 
     public void OnQuitClicked()
     {
