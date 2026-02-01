@@ -71,7 +71,10 @@ public class DuckEnemy : MonoBehaviour
         deathStart = Time.time;
         GetComponent<CapsuleCollider>().enabled = false;
         GetComponent<NavMeshAgent>().enabled = false;
-        Instantiate(feather, transform.TransformPoint(feather.transform.position), transform.rotation);
+        if (UnityEngine.Random.value < 0.25f)
+        {
+            Instantiate(feather, transform.TransformPoint(feather.transform.position), transform.rotation);
+        }
     }
 
     // Update is called once per frame
