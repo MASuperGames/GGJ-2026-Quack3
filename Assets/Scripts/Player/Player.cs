@@ -67,6 +67,9 @@ public class Player : MonoBehaviour
                     if (numZombieFleshFragments < 4) break;
                     fpcom.zombieFleshmode = true;
                     break;
+                case Item.Type.Ammo:
+                    fpcom.AddAmmo(item.ammoAmount);
+                    break;
             }
             item.PickUp();
         }

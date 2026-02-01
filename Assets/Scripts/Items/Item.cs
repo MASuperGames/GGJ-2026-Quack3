@@ -5,6 +5,7 @@ public class Item : MonoBehaviour
     public enum Type
     {
         Roid,
+        Ammo,
         Feather,
         BoneFragment,
     }
@@ -13,6 +14,7 @@ public class Item : MonoBehaviour
 
     [SerializeField] private float rotationSpeed = 60;
     [SerializeField] public float healthAmount = 30;
+    [SerializeField] public int ammoAmount = 10;
 
     private Animator animator;
     private MeshCollider myCollider;

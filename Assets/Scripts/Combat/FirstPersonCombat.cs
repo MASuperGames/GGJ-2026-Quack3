@@ -23,6 +23,15 @@ public class FirstPersonCombat : MonoBehaviour
     [SerializeField] private float attackDistance = 1f;
     [SerializeField] private float attackRadius = 0.5f;
     [SerializeField] private float damage = 10;
+    
+    [SerializeField] private int maxAmmo = 30;
+    [SerializeField] private int ammo = 30;
+
+    public void AddAmmo(int amount)
+    {
+        ammo += amount;
+        if (ammo > maxAmmo) ammo = maxAmmo;
+    }
 
     public bool boneFragmentMode = false;
     public bool zombieFleshmode = false;
@@ -88,6 +97,11 @@ public class FirstPersonCombat : MonoBehaviour
     {
         if (isPressed)
         {
+            if (ammo == 0)
+            {
+                return;
+            }
+            --ammo;
             secondaryWeapon.GetAnimator().SetTrigger("Attack");
             secondaryWeapon.PlayVFX();
             impulseSource.GenerateImpulse();
