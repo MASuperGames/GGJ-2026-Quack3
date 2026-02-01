@@ -2335,6 +2335,7 @@ GameObject:
   - component: {fileID: 220752793}
   - component: {fileID: 220752792}
   - component: {fileID: 220752795}
+  - component: {fileID: 220752796}
   m_Layer: 8
   m_Name: SidePlatform
   m_TagString: Stone
@@ -2436,6 +2437,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -1608767148462965333, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &220752796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 220752791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 8.1, y: 3.51, z: 4}
+  m_Center: {x: 0, y: 0.74, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &229930621
 GameObject:
   m_ObjectHideFlags: 0
@@ -4430,7 +4448,7 @@ MonoBehaviour:
   spawnAreaSize: {x: 150, y: 0, z: 120}
   spawnHeight: 1
   maxSpawnAttempts: 30
-  navMeshSearchRadius: 8
+  navMeshSearchRadius: 10
   minDistanceBetweenEnemies: 2
   navMeshAreaMask: -1
   onPlayerSpawned:
@@ -12041,6 +12059,7 @@ GameObject:
   - component: {fileID: 1457846934}
   - component: {fileID: 1457846933}
   - component: {fileID: 1457846936}
+  - component: {fileID: 1457846937}
   m_Layer: 8
   m_Name: SidePlatform (1)
   m_TagString: Stone
@@ -12142,6 +12161,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -943676140157650362, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &1457846937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1457846932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 8.1, y: 3.84, z: 4}
+  m_Center: {x: 0, y: 0.8, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1501491741
 GameObject:
   m_ObjectHideFlags: 0
