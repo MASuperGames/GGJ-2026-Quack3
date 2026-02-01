@@ -1292,7 +1292,7 @@ MonoBehaviour:
   waves: []
   delayBetweenWaves: 5
   backgroundMusic: {fileID: 8300000, guid: 91602d34fe2b49345aedc2ac25e0d582, type: 3}
-  ambienceSound: {fileID: 8300000, guid: d9881bb0f0907084499b74824978a27e, type: 3}
+  ambienceSound: {fileID: 8300000, guid: ee3dcf9ce17b3e0449f8962e400e94a0, type: 3}
   fadeInMusic: 0
   fadeDuration: 2
 --- !u!1001 &283339659

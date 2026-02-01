@@ -7472,7 +7472,7 @@ MonoBehaviour:
       spawnDelay: 0.25
       spawnHeight: 0
     waveStartDelay: 5
-  - waveName: Wave 1
+  - waveName: Wave 3
     enemyGroups:
     - enemyPrefab: {fileID: 7214298378690074326, guid: ead5cdc010ff445c3adf34863078e511, type: 3}
       count: 10
