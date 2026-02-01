@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 
@@ -38,7 +39,7 @@ public class PlayerHealthDisplay : MonoBehaviour
     {
         if (healthText != null)
         {
-            healthText.text = $"{newHealth}";
+            healthText.text = $"{(int)Math.Round(newHealth)}";
         }
     }
 
