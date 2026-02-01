@@ -12,7 +12,12 @@ public class FirstPersonCombat : MonoBehaviour
     [SerializeField] private VisualEffect gunHitVFX;
     [SerializeField] private CinemachineImpulseSource impulseSource;
 
+    [Header("Audio")]
+    [SerializeField] private AudioClip[] primaryAttackClips;
+    [SerializeField] private AudioClip[] secondaryAttackClips;
+    [SerializeField] private AudioClip[] hitImpactClips;
 
+    [Header("Combat Settings")]
     [SerializeField] private float attackDistance = 1f;
     [SerializeField] private float attackRadius = 0.5f;
     [SerializeField] private float damage = 10;
@@ -50,13 +55,22 @@ public class FirstPersonCombat : MonoBehaviour
             primaryWeapon.PlayVFX();
             impulseSource.GenerateImpulse();
 
+            PlayRandomClip(primaryAttackClips);
+
             var res = Physics.OverlapSphere(transform.position + attackDistance * transform.forward, attackRadius);
+            bool hitEnemy = false;
             foreach (var col in res)
             {
                 if (col.gameObject == gameObject) continue;
                 var health = col.GetComponent<HealthManager>();
                 if (health == null) continue;
                 health.ChangeHealth(-damage * (zombieFleshmode ? 2 : 1));
+                hitEnemy = true;
+            }
+
+            if (hitEnemy)
+            {
+                PlayRandomClip(hitImpactClips);
             }
         }
         else
@@ -74,6 +88,8 @@ public class FirstPersonCombat : MonoBehaviour
             secondaryWeapon.PlayVFX();
             impulseSource.GenerateImpulse();
 
+            PlayRandomClip(secondaryAttackClips);
+
             var cam = Camera.main;
             var ray = cam.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2, 0));
             Debug.DrawLine(cam.transform.position, 10000 * cam.transform.forward);
@@ -83,12 +99,25 @@ public class FirstPersonCombat : MonoBehaviour
                 gunHitVFX.SendEvent("OnPlay");
                 var health = hit.collider.GetComponent<HealthManager>();
                 if (health != null)
+                {
                     health.ChangeHealth(-damage * (boneFragmentMode ? 2 : 1));
+                    PlayRandomClip(hitImpactClips);
+                }
+                   
             }
         }
         else
         {
             // Release
+        }
+    }
+
+    private void PlayRandomClip(AudioClip[] clips)
+    {
+        if (clips != null && clips.Length > 0)
+        {
+            AudioClip clip = clips[Random.Range(0, clips.Length)];
+            AudioManager.Instance.PlaySFXWithPitchVariation(clip);
         }
     }
 

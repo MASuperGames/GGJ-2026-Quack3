@@ -36,7 +36,7 @@ public class AudioManager : Singleton<AudioManager>
             sfxSource = CreateAudioSource("SFXSource");
         }
 
-        LoadVolumes();
+        //LoadVolumes();
         ApplyVolumes();
     }
 
@@ -162,7 +162,7 @@ public class AudioManager : Singleton<AudioManager>
         AudioSource.PlayClipAtPoint(clip, position, sfxVolume * masterVolume);
     }
 
-    public void PlaySFXWithPitchVariation(AudioClip clip, float minPitch = 0.9f, float maxPitch = 1.1f)
+    public void PlaySFXWithPitchVariation(AudioClip clip, float minPitch = 0.9f, float maxPitch = 1.1f, float volumeScale = 1f)
     {
         if (clip == null) return;
 

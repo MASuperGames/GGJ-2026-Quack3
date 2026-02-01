@@ -8,12 +8,16 @@ public class FirstPersonController : MonoBehaviour
     [SerializeField] private Camera playerCamera;
     [SerializeField] private GameObject cameraTarget;
 
+
     [Header("Movement")]
     [SerializeField] private float walkSpeed = 5f;
     [SerializeField] private float sprintSpeed = 8f;
     [SerializeField] private float normalJumpHeight = 2f;
     [SerializeField] private float featherJumpHeight = 4f;
     [SerializeField] private float gravity = -9.81f;
+
+    [Header("Audio")]
+    [SerializeField] private PlayerMovementAudio movementAudio;
 
     [Header("Look")]
     [SerializeField] private float lookSensitivity = 2f;
@@ -130,6 +134,8 @@ public class FirstPersonController : MonoBehaviour
         {
             float jumpHeight = featherMode ? featherJumpHeight : normalJumpHeight;
             verticalVelocity = Mathf.Sqrt(jumpHeight * -2f * gravity);
+
+            movementAudio.PlayJumpSound();
         }
     }
 
