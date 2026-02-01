@@ -19,7 +19,7 @@ public class Thunder : MonoBehaviour
     {
         if (damageEnabled)
         {
-            var res = Physics.OverlapSphere(transform.position, 5);
+            var res = Physics.OverlapCapsule(transform.position, transform.position + new Vector3(0, 10, 0), 5);
             foreach (var col in res)
             {
                 if (col.tag != "Player") continue;
@@ -34,5 +34,6 @@ public class Thunder : MonoBehaviour
     void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(transform.position, 5);
+        Gizmos.DrawWireSphere(transform.position + new Vector3(0, 10, 0), 5);
     }
 }
