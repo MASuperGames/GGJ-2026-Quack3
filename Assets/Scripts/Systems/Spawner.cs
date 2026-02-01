@@ -12,7 +12,7 @@ public class Spawner : MonoBehaviour
     [Header("Enemy Spawning")]
     [SerializeField] private GameObject enemyPrefab;
     [SerializeField] private Vector3 spawnAreaCenter = Vector3.zero;
-    [SerializeField] private Vector3 spawnAreaSize = new Vector3(20f, 0f, 20f);
+    [SerializeField] private Vector3 spawnAreaSize = new Vector3(20f, 10f, 20f);
     [SerializeField] private float spawnHeight = 1f;
     [SerializeField] private int maxSpawnAttempts = 30;
     [SerializeField] private float navMeshSearchRadius = 2f;
@@ -105,15 +105,17 @@ public class Spawner : MonoBehaviour
         {
             // Generate random position within spawn area
             float randomX = Random.Range(-spawnAreaSize.x / 2f, spawnAreaSize.x / 2f);
+            float randomY = Random.Range(-spawnAreaSize.y / 2f, spawnAreaSize.y / 2f);
             float randomZ = Random.Range(-spawnAreaSize.z / 2f, spawnAreaSize.z / 2f);
 
-            Vector3 randomPosition = spawnAreaCenter + new Vector3(randomX, spawnHeight, randomZ);
+            Vector3 randomPosition = spawnAreaCenter + new Vector3(randomX, randomY, randomZ);
 
             // Try to find nearest point on NavMesh
             NavMeshHit hit;
             if (NavMesh.SamplePosition(randomPosition, out hit, navMeshSearchRadius, navMeshAreaMask))
             {
                 spawnPosition = hit.position;
+                spawnPosition.y += spawnHeight;
 
                 // Optional: Check if there's enough space (no other enemies too close)
                 if (IsPositionClearOfEnemies(spawnPosition))
@@ -158,6 +160,11 @@ public class Spawner : MonoBehaviour
     public void SetEnemyPrefab(GameObject newPrefab)
     {
         enemyPrefab = newPrefab;
+    }
+
+    public void SetSpawnHeight(float height)
+    {
+        spawnHeight = height;
     }
 
     private void OnDrawGizmosSelected()

@@ -9,6 +9,8 @@ public class EnemyWaveGroup
     public GameObject enemyPrefab;
     public int count;
     public float spawnDelay = 0.5f;
+
+    public float spawnHeight = 1f;
 }
 
 [System.Serializable]
@@ -75,6 +77,7 @@ public class Level : MonoBehaviour
             foreach (EnemyWaveGroup group in wave.enemyGroups)
             {
                 spawner.SetEnemyPrefab(group.enemyPrefab);
+                spawner.SetSpawnHeight(group.spawnHeight);
 
                 for (int i = 0; i < group.count; i++)
                 {
