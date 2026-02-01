@@ -64,7 +64,9 @@ public class Spawner : MonoBehaviour
                 spawnedPlayer.transform.rotation = spawnRotation;
 
                 // Reset health
-                spawnedPlayer.GetComponent<HealthManager>().ChangeHealth(100);
+                var healthManager = spawnedPlayer.GetComponent<HealthManager>();
+                healthManager.Health = healthManager.MaxHealth;
+                healthManager.onHealthChange?.Invoke(healthManager.Health, 0);
 
                 // Reset velocity if using CharacterController
                 CharacterController cc = spawnedPlayer.GetComponent<CharacterController>();
@@ -81,10 +83,9 @@ public class Spawner : MonoBehaviour
         {
             // No existing player, spawn new one
             spawnedPlayer = Instantiate(playerPrefab, spawnPosition, spawnRotation);
-            spawnedPlayer.GetComponent<HealthManager>().onHealthDepleted.AddListener(SpawnPlayer);
             Debug.Log("Player spawned at: " + spawnPosition);
         }
-
+        spawnedPlayer.GetComponent<HealthManager>().onHealthDepleted.AddListener(SpawnPlayer);
         onPlayerSpawned?.Invoke(spawnedPlayer);
     }
 
