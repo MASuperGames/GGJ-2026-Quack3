@@ -3,14 +3,21 @@ using UnityEngine;
 public class Thunder : MonoBehaviour
 {
     [SerializeField] private float dps = 30;
+    [SerializeField] private float audioFreq = 10f;
 
     [SerializeField] private bool damageEnabled = false;
 
+    [SerializeField] private AudioClip[] thunderClips;
+
+    [SerializeField] private bool playAudio = false;
+
     private float startedTime;
+    private float nextAudioTime;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        nextAudioTime = -Mathf.Infinity;
         startedTime = Time.time;
     }
 
@@ -25,6 +32,13 @@ public class Thunder : MonoBehaviour
                 if (col.tag != "Player") continue;
                 col.GetComponent<HealthManager>()?.ChangeHealth(-dps * Time.deltaTime);
             }
+        }
+
+        if (playAudio && nextAudioTime < Time.time)
+        {
+            AudioClip clip = thunderClips[Random.Range(0, thunderClips.Length)];
+            AudioManager.Instance.PlaySFX(clip, 0.1f);
+            nextAudioTime = Time.time + 1.0f / audioFreq; 
         }
 
         if (startedTime + 8.0f < Time.time)
