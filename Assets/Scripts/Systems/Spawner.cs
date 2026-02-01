@@ -47,8 +47,11 @@ public class Spawner : MonoBehaviour
         // Check if player already exists
         if (spawnedPlayer != null)
         {
+            spawnedPlayer.GetComponent<HealthManager>().onHealthDepleted.RemoveListener(SpawnPlayer);
+
             if (destroyOnRespawn)
             {
+                Debug.Log("destroying...");
                 // Destroy and create new instance
                 Destroy(spawnedPlayer);
                 spawnedPlayer = Instantiate(playerPrefab, spawnPosition, spawnRotation);
@@ -59,6 +62,11 @@ public class Spawner : MonoBehaviour
                 // Just reposition existing player
                 spawnedPlayer.transform.position = spawnPosition;
                 spawnedPlayer.transform.rotation = spawnRotation;
+
+                // Reset health
+                var healthManager = spawnedPlayer.GetComponent<HealthManager>();
+                healthManager.Health = healthManager.MaxHealth;
+                healthManager.onHealthChange?.Invoke(healthManager.Health, 0);
 
                 // Reset velocity if using CharacterController
                 CharacterController cc = spawnedPlayer.GetComponent<CharacterController>();
@@ -75,9 +83,9 @@ public class Spawner : MonoBehaviour
         {
             // No existing player, spawn new one
             spawnedPlayer = Instantiate(playerPrefab, spawnPosition, spawnRotation);
-            // Debug.Log("Player spawned at: " + spawnPosition);
+            Debug.Log("Player spawned at: " + spawnPosition);
         }
-
+        spawnedPlayer.GetComponent<HealthManager>().onHealthDepleted.AddListener(SpawnPlayer);
         onPlayerSpawned?.Invoke(spawnedPlayer);
     }
 

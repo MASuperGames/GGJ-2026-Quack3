@@ -266,7 +266,7 @@ GameObject:
   - component: {fileID: 34487878}
   m_Layer: 8
   m_Name: Box (13)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -400,7 +400,7 @@ GameObject:
   - component: {fileID: 75489558}
   m_Layer: 8
   m_Name: Box (22)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -533,7 +533,7 @@ GameObject:
   - component: {fileID: 75947202}
   m_Layer: 8
   m_Name: Box (49)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -773,7 +773,7 @@ GameObject:
   - component: {fileID: 81903444}
   m_Layer: 8
   m_Name: Box (50)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -917,7 +917,7 @@ GameObject:
   - component: {fileID: 97113480}
   m_Layer: 8
   m_Name: Box (51)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1030,7 +1030,7 @@ GameObject:
   - component: {fileID: 116212216}
   m_Layer: 8
   m_Name: Box (59)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1218,7 +1218,7 @@ GameObject:
   - component: {fileID: 135996561}
   m_Layer: 8
   m_Name: Box (10)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1331,7 +1331,7 @@ GameObject:
   - component: {fileID: 139215221}
   m_Layer: 8
   m_Name: Box (63)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1638,7 +1638,7 @@ GameObject:
   - component: {fileID: 171974697}
   m_Layer: 8
   m_Name: Box (14)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1756,7 +1756,7 @@ GameObject:
   - component: {fileID: 183569226}
   m_Layer: 8
   m_Name: Box (52)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2224,7 +2224,7 @@ GameObject:
   - component: {fileID: 212402501}
   m_Layer: 8
   m_Name: Ramp (2)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2337,7 +2337,7 @@ GameObject:
   - component: {fileID: 220752795}
   m_Layer: 8
   m_Name: SidePlatform
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2450,7 +2450,7 @@ GameObject:
   - component: {fileID: 229930625}
   m_Layer: 8
   m_Name: Box (38)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2563,7 +2563,7 @@ GameObject:
   - component: {fileID: 245558386}
   m_Layer: 8
   m_Name: RoundPillar
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2676,7 +2676,7 @@ GameObject:
   - component: {fileID: 251125584}
   m_Layer: 8
   m_Name: Rock (6)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2789,7 +2789,7 @@ GameObject:
   - component: {fileID: 256125493}
   m_Layer: 8
   m_Name: Box (77)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2954,15 +2954,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8374365996140325417, guid: 069221a7992a04d89a20f467a4ef4c2e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.07
+      value: 62.7
       objectReference: {fileID: 0}
     - target: {fileID: 8374365996140325417, guid: 069221a7992a04d89a20f467a4ef4c2e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8374365996140325417, guid: 069221a7992a04d89a20f467a4ef4c2e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -41.26
+      value: 2.3
       objectReference: {fileID: 0}
     - target: {fileID: 8374365996140325417, guid: 069221a7992a04d89a20f467a4ef4c2e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3011,7 +3011,7 @@ GameObject:
   - component: {fileID: 295857770}
   m_Layer: 8
   m_Name: Box (33)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3124,7 +3124,7 @@ GameObject:
   - component: {fileID: 329203884}
   m_Layer: 8
   m_Name: Box (80)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3462,7 +3462,7 @@ GameObject:
   - component: {fileID: 352729144}
   m_Layer: 8
   m_Name: Box (5)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3575,7 +3575,7 @@ GameObject:
   - component: {fileID: 398779563}
   m_Layer: 8
   m_Name: Rock (7)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3719,7 +3719,7 @@ GameObject:
   - component: {fileID: 429701835}
   m_Layer: 8
   m_Name: RoundPillar (1)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3832,7 +3832,7 @@ GameObject:
   - component: {fileID: 454092330}
   m_Layer: 8
   m_Name: Box (79)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4091,7 +4091,7 @@ GameObject:
   - component: {fileID: 466074230}
   m_Layer: 8
   m_Name: Ramp
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4204,7 +4204,7 @@ GameObject:
   - component: {fileID: 487270063}
   m_Layer: 8
   m_Name: Box (8)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4404,7 +4404,7 @@ Transform:
   m_GameObject: {fileID: 527852284}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -14.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4601,7 +4601,7 @@ GameObject:
   - component: {fileID: 539984513}
   m_Layer: 8
   m_Name: Box (39)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4714,7 +4714,7 @@ GameObject:
   - component: {fileID: 565469468}
   m_Layer: 8
   m_Name: Box (9)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4827,7 +4827,7 @@ GameObject:
   - component: {fileID: 566830284}
   m_Layer: 8
   m_Name: Rock (3)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4940,7 +4940,7 @@ GameObject:
   - component: {fileID: 582519490}
   m_Layer: 8
   m_Name: Box (37)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5053,7 +5053,7 @@ GameObject:
   - component: {fileID: 588858830}
   m_Layer: 8
   m_Name: Rock (1)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5152,6 +5152,124 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4013275331872712965, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!1 &623810434
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 623810437}
+  - component: {fileID: 623810436}
+  - component: {fileID: 623810435}
+  m_Layer: 0
+  m_Name: Fireflies
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!73398921 &623810435
+VFXRenderer:
+  serializedVersion: 1
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623810434}
+  m_Enabled: 0
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+--- !u!2083052967 &623810436
+VisualEffect:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623810434}
+  m_Enabled: 1
+  m_Asset: {fileID: 8926484042661614526, guid: 9c8cae3fd79b5c343947758b2a888b2f, type: 3}
+  m_InitialEventName: OnPlay
+  m_InitialEventNameOverriden: 0
+  m_StartSeed: 0
+  m_ResetSeedOnPlay: 1
+  m_AllowInstancing: 1
+  m_ResourceVersion: 1
+  m_PropertySheet:
+    m_Float:
+      m_Array: []
+    m_Vector2f:
+      m_Array: []
+    m_Vector3f:
+      m_Array: []
+    m_Vector4f:
+      m_Array: []
+    m_Uint:
+      m_Array: []
+    m_Int:
+      m_Array: []
+    m_Matrix4x4f:
+      m_Array: []
+    m_AnimationCurve:
+      m_Array: []
+    m_Gradient:
+      m_Array: []
+    m_NamedObject:
+      m_Array: []
+    m_Bool:
+      m_Array: []
+--- !u!4 &623810437
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623810434}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &633694089
 GameObject:
   m_ObjectHideFlags: 0
@@ -5167,7 +5285,7 @@ GameObject:
   - component: {fileID: 633694094}
   m_Layer: 8
   m_Name: Box (61)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5300,7 +5418,7 @@ GameObject:
   - component: {fileID: 642103488}
   m_Layer: 8
   m_Name: Box (40)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5413,7 +5531,7 @@ GameObject:
   - component: {fileID: 650922405}
   m_Layer: 8
   m_Name: Ramp (3)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5526,7 +5644,7 @@ GameObject:
   - component: {fileID: 651448812}
   m_Layer: 8
   m_Name: Rock (2)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5847,7 +5965,7 @@ GameObject:
   - component: {fileID: 705592440}
   m_Layer: 8
   m_Name: Box (42)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5961,7 +6079,7 @@ GameObject:
   - component: {fileID: 731929708}
   m_Layer: 8
   m_Name: Box (26)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6094,7 +6212,7 @@ GameObject:
   - component: {fileID: 739742714}
   m_Layer: 8
   m_Name: Rock
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6419,7 +6537,7 @@ GameObject:
   - component: {fileID: 770198392}
   m_Layer: 8
   m_Name: Box (69)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6607,7 +6725,7 @@ GameObject:
   - component: {fileID: 776098661}
   m_Layer: 8
   m_Name: Box (3)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6856,7 +6974,7 @@ GameObject:
   - component: {fileID: 793593751}
   m_Layer: 8
   m_Name: Box (11)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6969,7 +7087,7 @@ GameObject:
   - component: {fileID: 804351426}
   m_Layer: 8
   m_Name: Box (31)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7338,7 +7456,7 @@ GameObject:
   - component: {fileID: 839523727}
   m_Layer: 8
   m_Name: RoundPillar (2)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7456,7 +7574,7 @@ GameObject:
   - component: {fileID: 855641334}
   m_Layer: 8
   m_Name: Box (70)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7702,7 +7820,7 @@ GameObject:
   - component: {fileID: 902430108}
   m_Layer: 8
   m_Name: Box (46)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7877,7 +7995,7 @@ GameObject:
   - component: {fileID: 913450440}
   m_Layer: 8
   m_Name: Ramp (1)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7990,7 +8108,7 @@ GameObject:
   - component: {fileID: 914367640}
   m_Layer: 8
   m_Name: Box (44)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8105,7 +8223,7 @@ GameObject:
   - component: {fileID: 917368256}
   m_Layer: 8
   m_Name: MainBuilding
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8410,7 +8528,7 @@ GameObject:
   - component: {fileID: 970086011}
   m_Layer: 8
   m_Name: Box (32)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8523,7 +8641,7 @@ GameObject:
   - component: {fileID: 971537066}
   m_Layer: 8
   m_Name: Box (7)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8685,7 +8803,7 @@ GameObject:
   - component: {fileID: 975655213}
   m_Layer: 8
   m_Name: Box (41)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8799,7 +8917,7 @@ GameObject:
   - component: {fileID: 983124937}
   m_Layer: 8
   m_Name: Box (28)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8932,7 +9050,7 @@ GameObject:
   - component: {fileID: 1005939105}
   m_Layer: 8
   m_Name: Box (45)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9045,7 +9163,7 @@ GameObject:
   - component: {fileID: 1047881374}
   m_Layer: 8
   m_Name: Box (1)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9158,7 +9276,7 @@ GameObject:
   - component: {fileID: 1051052962}
   m_Layer: 8
   m_Name: Box (48)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9271,7 +9389,7 @@ GameObject:
   - component: {fileID: 1062812237}
   m_Layer: 8
   m_Name: Rock (5)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9384,7 +9502,7 @@ GameObject:
   - component: {fileID: 1066534447}
   m_Layer: 8
   m_Name: Box (43)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9646,7 +9764,7 @@ GameObject:
   - component: {fileID: 1162084374}
   m_Layer: 8
   m_Name: Box (20)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9759,7 +9877,7 @@ GameObject:
   - component: {fileID: 1175587623}
   m_Layer: 8
   m_Name: Rock (4)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9872,7 +9990,7 @@ GameObject:
   - component: {fileID: 1176097762}
   m_Layer: 8
   m_Name: Box (68)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9985,7 +10103,7 @@ GameObject:
   - component: {fileID: 1182595617}
   m_Layer: 8
   m_Name: Octapillar (1)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10098,7 +10216,7 @@ GameObject:
   - component: {fileID: 1202550135}
   m_Layer: 8
   m_Name: Box (16)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10211,7 +10329,7 @@ GameObject:
   - component: {fileID: 1209100952}
   m_Layer: 8
   m_Name: Box (29)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10419,6 +10537,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!4 &1242895418 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8169593431218506119, guid: 8f6bb6e5a891d49efb1665cb72bb1b66, type: 3}
+  m_PrefabInstance: {fileID: 1547467550}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1246093926
 GameObject:
   m_ObjectHideFlags: 0
@@ -10433,7 +10556,7 @@ GameObject:
   - component: {fileID: 1246093930}
   m_Layer: 8
   m_Name: Box (66)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10546,7 +10669,7 @@ GameObject:
   - component: {fileID: 1254292728}
   m_Layer: 8
   m_Name: Box (30)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10659,7 +10782,7 @@ GameObject:
   - component: {fileID: 1274174496}
   m_Layer: 8
   m_Name: Box (62)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10820,7 +10943,7 @@ GameObject:
   - component: {fileID: 1304674652}
   m_Layer: 8
   m_Name: Box (56)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10954,6 +11077,7 @@ Transform:
   - {fileID: 916578155}
   - {fileID: 180730232}
   - {fileID: 846703276}
+  - {fileID: 1242895418}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1320216092
@@ -10970,7 +11094,7 @@ GameObject:
   - component: {fileID: 1320216096}
   m_Layer: 8
   m_Name: Box
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11083,7 +11207,7 @@ GameObject:
   - component: {fileID: 1326970151}
   m_Layer: 8
   m_Name: Box (74)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11410,7 +11534,7 @@ GameObject:
   - component: {fileID: 1409622345}
   m_Layer: 8
   m_Name: Box (2)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11559,7 +11683,7 @@ GameObject:
   - component: {fileID: 1419648498}
   m_Layer: 8
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: Sand
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11673,7 +11797,7 @@ GameObject:
   - component: {fileID: 1435206028}
   m_Layer: 8
   m_Name: Box (34)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11806,7 +11930,7 @@ GameObject:
   - component: {fileID: 1435412449}
   m_Layer: 8
   m_Name: Box (21)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11919,7 +12043,7 @@ GameObject:
   - component: {fileID: 1457846936}
   m_Layer: 8
   m_Name: SidePlatform (1)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12032,7 +12156,7 @@ GameObject:
   - component: {fileID: 1501491745}
   m_Layer: 8
   m_Name: RoundPillar (3)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12145,7 +12269,7 @@ GameObject:
   - component: {fileID: 1501996144}
   m_Layer: 8
   m_Name: Box (27)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12309,7 +12433,7 @@ GameObject:
   - component: {fileID: 1525792464}
   m_Layer: 8
   m_Name: Box (55)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12818,7 +12942,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1317196002}
     m_Modifications:
     - target: {fileID: 7214298378690074326, guid: 8f6bb6e5a891d49efb1665cb72bb1b66, type: 3}
       propertyPath: m_Name
@@ -12842,15 +12966,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8169593431218506119, guid: 8f6bb6e5a891d49efb1665cb72bb1b66, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8169593431218506119, guid: 8f6bb6e5a891d49efb1665cb72bb1b66, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8169593431218506119, guid: 8f6bb6e5a891d49efb1665cb72bb1b66, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8169593431218506119, guid: 8f6bb6e5a891d49efb1665cb72bb1b66, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -12883,7 +13007,7 @@ GameObject:
   - component: {fileID: 1563755256}
   m_Layer: 8
   m_Name: Box (57)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12996,7 +13120,7 @@ GameObject:
   - component: {fileID: 1571428937}
   m_Layer: 8
   m_Name: Box (53)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13109,7 +13233,7 @@ GameObject:
   - component: {fileID: 1574031708}
   m_Layer: 8
   m_Name: Box (18)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13222,7 +13346,7 @@ GameObject:
   - component: {fileID: 1580111054}
   m_Layer: 8
   m_Name: Box (12)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13335,7 +13459,7 @@ GameObject:
   - component: {fileID: 1593563283}
   m_Layer: 8
   m_Name: Octapillar (3)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13448,7 +13572,7 @@ GameObject:
   - component: {fileID: 1595567000}
   m_Layer: 8
   m_Name: Box (58)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13561,7 +13685,7 @@ GameObject:
   - component: {fileID: 1595709806}
   m_Layer: 8
   m_Name: Box (60)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14001,7 +14125,7 @@ GameObject:
   - component: {fileID: 1686002046}
   m_Layer: 8
   m_Name: Box (67)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14114,7 +14238,7 @@ GameObject:
   - component: {fileID: 1714925941}
   m_Layer: 8
   m_Name: Box (76)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14319,7 +14443,7 @@ GameObject:
   - component: {fileID: 1753615966}
   m_Layer: 8
   m_Name: Box (6)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14432,7 +14556,7 @@ GameObject:
   - component: {fileID: 1760541917}
   m_Layer: 8
   m_Name: Box (47)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14545,7 +14669,7 @@ GameObject:
   - component: {fileID: 1782062839}
   m_Layer: 8
   m_Name: Box (4)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14658,7 +14782,7 @@ GameObject:
   - component: {fileID: 1791261279}
   m_Layer: 8
   m_Name: Octapillar (2)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14782,7 +14906,7 @@ Transform:
   m_GameObject: {fileID: 1797169779}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -50}
+  m_LocalPosition: {x: 0, y: 1, z: -47.56}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14802,7 +14926,7 @@ GameObject:
   - component: {fileID: 1801369230}
   m_Layer: 8
   m_Name: Box (78)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15266,7 +15390,7 @@ GameObject:
   - component: {fileID: 1858555820}
   m_Layer: 8
   m_Name: Box (17)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15373,21 +15497,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3732221544798751824, guid: e0ecf18eb495c8b4c859dd9cd8912c00, type: 3}
+      propertyPath: Health
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3732221544798751824, guid: e0ecf18eb495c8b4c859dd9cd8912c00, type: 3}
+      propertyPath: MaxHealth
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 4943334681788269947, guid: e0ecf18eb495c8b4c859dd9cd8912c00, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 4943334681788269947, guid: e0ecf18eb495c8b4c859dd9cd8912c00, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5578555676001818601, guid: e0ecf18eb495c8b4c859dd9cd8912c00, type: 3}
+      propertyPath: tagAudio.Array.data[0].footstepVolume
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6738898636309951549, guid: e0ecf18eb495c8b4c859dd9cd8912c00, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7224732756239644568, guid: e0ecf18eb495c8b4c859dd9cd8912c00, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9100399527585459585, guid: e0ecf18eb495c8b4c859dd9cd8912c00, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15448,7 +15584,7 @@ GameObject:
   - component: {fileID: 1877235396}
   m_Layer: 8
   m_Name: Box (54)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15650,7 +15786,7 @@ GameObject:
   - component: {fileID: 1915676688}
   m_Layer: 8
   m_Name: Box (65)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15897,7 +16033,7 @@ GameObject:
   - component: {fileID: 1921279126}
   m_Layer: 8
   m_Name: Box (24)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16030,7 +16166,7 @@ GameObject:
   - component: {fileID: 1924762813}
   m_Layer: 8
   m_Name: Box (25)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16129,6 +16265,63 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!1001 &1933532142
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4514652842063211132, guid: 069221a7992a04d89a20f467a4ef4c2e, type: 3}
+      propertyPath: m_Name
+      value: RoidSpawner (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8374365996140325417, guid: 069221a7992a04d89a20f467a4ef4c2e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -65.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8374365996140325417, guid: 069221a7992a04d89a20f467a4ef4c2e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.209
+      objectReference: {fileID: 0}
+    - target: {fileID: 8374365996140325417, guid: 069221a7992a04d89a20f467a4ef4c2e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8374365996140325417, guid: 069221a7992a04d89a20f467a4ef4c2e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8374365996140325417, guid: 069221a7992a04d89a20f467a4ef4c2e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8374365996140325417, guid: 069221a7992a04d89a20f467a4ef4c2e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8374365996140325417, guid: 069221a7992a04d89a20f467a4ef4c2e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8374365996140325417, guid: 069221a7992a04d89a20f467a4ef4c2e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8374365996140325417, guid: 069221a7992a04d89a20f467a4ef4c2e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8374365996140325417, guid: 069221a7992a04d89a20f467a4ef4c2e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 069221a7992a04d89a20f467a4ef4c2e, type: 3}
 --- !u!1 &1934654266
 GameObject:
   m_ObjectHideFlags: 0
@@ -16336,7 +16529,7 @@ GameObject:
   - component: {fileID: 1961272219}
   m_Layer: 8
   m_Name: Box (23)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16731,7 +16924,7 @@ GameObject:
   - component: {fileID: 2035283327}
   m_Layer: 8
   m_Name: Box (15)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16845,7 +17038,7 @@ GameObject:
   - component: {fileID: 2040868527}
   m_Layer: 8
   m_Name: Box (64)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16978,7 +17171,7 @@ GameObject:
   - component: {fileID: 2055887435}
   m_Layer: 8
   m_Name: Box (72)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17092,7 +17285,7 @@ GameObject:
   - component: {fileID: 2065831685}
   m_Layer: 8
   m_Name: Box (35)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17225,7 +17418,7 @@ GameObject:
   - component: {fileID: 2072817477}
   m_Layer: 8
   m_Name: Box (36)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17413,7 +17606,7 @@ GameObject:
   - component: {fileID: 2093156275}
   m_Layer: 8
   m_Name: Box (73)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17526,7 +17719,7 @@ GameObject:
   - component: {fileID: 2100815574}
   m_Layer: 8
   m_Name: Octapillar
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17639,7 +17832,7 @@ GameObject:
   - component: {fileID: 2142041130}
   m_Layer: 8
   m_Name: Box (19)
-  m_TagString: Untagged
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17855,11 +18048,12 @@ SceneRoots:
   - {fileID: 1797169780}
   - {fileID: 1284032540}
   - {fileID: 283339659}
+  - {fileID: 1933532142}
+  - {fileID: 256944852}
   - {fileID: 1803080493}
   - {fileID: 1871926704}
   - {fileID: 1317196002}
   - {fileID: 419671532}
   - {fileID: 1228115439}
-  - {fileID: 256944852}
-  - {fileID: 1547467550}
   - {fileID: 1516272881}
+  - {fileID: 623810437}

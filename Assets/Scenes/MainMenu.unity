@@ -1742,6 +1742,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f1bee6ea6c11ef4dbbe38556036d439, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MainMenu
+  inputReader: {fileID: 11400000, guid: 943b1169df7f19b4e8e724e9d2694a01, type: 2}
+  backgroundMusic: {fileID: 8300000, guid: fdbd410965ae5654fa554cbd794f9443, type: 3}
+  fadeInMusic: 1
+  fadeDuration: 2
 --- !u!1 &1579821268
 GameObject:
   m_ObjectHideFlags: 0
@@ -2428,6 +2432,8 @@ MonoBehaviour:
   - {fileID: 1579821272}
   - {fileID: 1880907173}
   mainMenu: {fileID: 1472302965}
+  selectClip: {fileID: 8300000, guid: d59f9f478dfa74c74aa4a428c7a34d41, type: 3}
+  confirmClip: {fileID: 8300000, guid: 60b4e31af5b6a4a9289b60577f3e8932, type: 3}
 --- !u!1 &2131722167
 GameObject:
   m_ObjectHideFlags: 0
