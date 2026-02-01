@@ -12,11 +12,15 @@ public class DuckEnemy : MonoBehaviour
         Dead
     };
 
+    [Header("Audio")]
+    [SerializeField] private AudioSource source;
+    [SerializeField] private AudioClip[] footsteps;
+    [SerializeField] private float pitchVariationMin = 0.95f;
+    [SerializeField] private float pitchVariationMax = 1.05f;
+
     [SerializeField] private float damage = 10;
     [SerializeField] private float hitSphereDistance = 1;
     [SerializeField] private float hitSphereRadius = 1;
-
-
 
     [SerializeField] private float attackDistance = 8;
     [SerializeField] private float backoffDistance = 4;
@@ -121,6 +125,7 @@ public class DuckEnemy : MonoBehaviour
         prevPosition = transform.position;
         if (accDistance > flipDistance)
         {
+            PlayRandomClip(footsteps, 1.0f);
             accDistance -= flipDistance;
             Vector3 newScale = quad.transform.localScale;
             newScale.x *= -1;
@@ -134,5 +139,21 @@ public class DuckEnemy : MonoBehaviour
             transform.TransformPoint(capsule.center) + hitSphereDistance * transform.forward,
             hitSphereRadius
         );
+    }
+
+    private void PlayRandomClip(AudioClip[] clips, float volumeScale = 1f)
+    {
+        if (clips != null && clips.Length > 0)
+        {
+            AudioClip clip = clips[UnityEngine.Random.Range(0, clips.Length)];
+            //AudioManager.Instance.PlaySFXWithPitchVariation(clip, pitchVariationMin, pitchVariationMax, volumeScale);
+
+            source.clip = clip;
+
+            source.volume = AudioManager.Instance.sfxVolume * AudioManager.Instance.masterVolume;
+            source.pitch = UnityEngine.Random.Range(pitchVariationMin, pitchVariationMax);
+            source.Play();
+
+        }
     }
 }

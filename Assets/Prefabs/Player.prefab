@@ -738,7 +738,7 @@ MonoBehaviour:
   featherJumpHeight: 4
   gravity: -9.81
   movementAudio: {fileID: 5578555676001818601}
-  lookSensitivity: 0.5
+  lookSensitivity: 0.2
   maxLookAngle: 60
   featherMode: 0
 --- !u!114 &1116612772253809252
@@ -815,8 +815,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  MaxHealth: 30
-  Health: 30
+  MaxHealth: 100
+  Health: 100
   damageTakenClips:
   - {fileID: 8300000, guid: 0e105e755a0964393b779fbdca34bf78, type: 3}
   - {fileID: 8300000, guid: 8b77a4631c7294f42947e476e25b308d, type: 3}
@@ -963,7 +963,7 @@ MonoBehaviour:
     lands:
     - {fileID: 8300000, guid: 25ba62792ab53409387bea7d7de363ec, type: 3}
     - {fileID: 8300000, guid: 40905c5bdc2e4409ebee3d076bc40412, type: 3}
-    footstepVolume: 15
+    footstepVolume: 5
     jumpVolume: 1
     landVolume: 1
   - tag: Stone

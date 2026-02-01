@@ -6925,7 +6925,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8169593431218506119, guid: ead5cdc010ff445c3adf34863078e511, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -31.26
       objectReference: {fileID: 0}
     - target: {fileID: 8169593431218506119, guid: ead5cdc010ff445c3adf34863078e511, type: 3}
       propertyPath: m_LocalRotation.w
@@ -11072,12 +11072,12 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1952371294}
-  - {fileID: 2142146212}
   - {fileID: 26468275}
   - {fileID: 916578155}
   - {fileID: 180730232}
   - {fileID: 846703276}
   - {fileID: 1242895418}
+  - {fileID: 2142146212}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1320216092
@@ -15497,33 +15497,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3732221544798751824, guid: e0ecf18eb495c8b4c859dd9cd8912c00, type: 3}
-      propertyPath: Health
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 3732221544798751824, guid: e0ecf18eb495c8b4c859dd9cd8912c00, type: 3}
-      propertyPath: MaxHealth
-      value: 100
-      objectReference: {fileID: 0}
     - target: {fileID: 4943334681788269947, guid: e0ecf18eb495c8b4c859dd9cd8912c00, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 4943334681788269947, guid: e0ecf18eb495c8b4c859dd9cd8912c00, type: 3}
       propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5578555676001818601, guid: e0ecf18eb495c8b4c859dd9cd8912c00, type: 3}
-      propertyPath: tagAudio.Array.data[0].footstepVolume
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6738898636309951549, guid: e0ecf18eb495c8b4c859dd9cd8912c00, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7224732756239644568, guid: e0ecf18eb495c8b4c859dd9cd8912c00, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9100399527585459585, guid: e0ecf18eb495c8b4c859dd9cd8912c00, type: 3}
       propertyPath: m_LocalPosition.x
