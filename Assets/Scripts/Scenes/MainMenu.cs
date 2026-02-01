@@ -2,8 +2,16 @@ using UnityEngine;
 
 public class MainMenu : MonoBehaviour
 {
+    [SerializeField] private InputReader inputReader;
+
+    private void Start()
+    {
+        inputReader.EnableUIInput();
+    }
+
     public void OnPlayClicked()
     {
+        inputReader.EnableGameplayInput();
         SceneController.Instance.LoadNextScene();
     }
 
