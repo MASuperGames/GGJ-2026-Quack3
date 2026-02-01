@@ -266,8 +266,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  MaxHealth: 500
-  Health: 500
+  MaxHealth: 1000
+  Health: 1000
   damageTakenClips: []
   deathClips: []
 --- !u!114 &568467413932872117
