@@ -10,7 +10,7 @@ public class PlayerAmmoDisplay : MonoBehaviour
 
     private FirstPersonCombat currentPlayerFPSCombat;
 
-    private void Start()
+    private void Awake()
     {
         spawner.onPlayerSpawned.AddListener(OnPlayerSpawned);
     }

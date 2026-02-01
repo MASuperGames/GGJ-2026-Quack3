@@ -10,7 +10,7 @@ public class PlayerHealthDisplay : MonoBehaviour
 
     private HealthManager currentPlayerHealth;
 
-    private void Start()
+    private void Awake()
     {
         spawner.onPlayerSpawned.AddListener(OnPlayerSpawned);
     }
