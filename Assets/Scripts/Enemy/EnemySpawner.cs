@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.AI;
 
 public class EnemySpawner : MonoBehaviour
 {
@@ -11,6 +12,9 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private GameObject bone;
 
     [SerializeField] private float spawnInterval;
+
+    [SerializeField] private float navMeshSearchRadius = 2f;
+    [SerializeField] private int navMeshAreaMask = NavMesh.AllAreas;
 
     private float lastSpawned;
 
@@ -37,9 +41,14 @@ public class EnemySpawner : MonoBehaviour
             Vector3.Distance(ws, player.transform.position) < playerMinDistance
         );
 
-        GameObject prefab = Random.value < duckFraction ? duck : bone;
-        if (prefab == duck) ws += new Vector3(0, 2 + Random.value, 0);
-        Instantiate(prefab, ws, Quaternion.identity);
+        NavMeshHit hit;
+        if (NavMesh.SamplePosition(ws, out hit, navMeshSearchRadius, navMeshAreaMask))
+        {
+            ws = hit.position;
+            GameObject prefab = Random.value < duckFraction ? duck : bone;
+            if (prefab == duck) ws += new Vector3(0, 2 + Random.value, 0);
+            Instantiate(prefab, ws, Quaternion.identity);
+        }
     }
 
     void OnDrawGizmos()

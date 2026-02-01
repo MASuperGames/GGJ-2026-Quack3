@@ -763,7 +763,7 @@ Transform:
   m_GameObject: {fileID: 168299913}
   serializedVersion: 2
   m_LocalRotation: {x: 0.27059805, y: -0.6532815, z: -0.6532815, w: -0.27059805}
-  m_LocalPosition: {x: 106.8, y: 0, z: -0.3}
+  m_LocalPosition: {x: 106.4, y: 0, z: 10.8}
   m_LocalScale: {x: 20, y: 1, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -922,7 +922,7 @@ GameObject:
   - component: {fileID: 190093568}
   - component: {fileID: 190093567}
   - component: {fileID: 190093566}
-  - component: {fileID: 190093565}
+  - component: {fileID: 190093570}
   m_Layer: 8
   m_Name: Box (72)
   m_TagString: Stone
@@ -930,23 +930,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &190093565
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 190093564}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
-  m_SerializedVersion: 0
-  m_Size: {x: 2, y: 2, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!64 &190093566
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1041,6 +1024,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1094202372}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &190093570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190093564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 4}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &198611712
 GameObject:
   m_ObjectHideFlags: 0
@@ -1608,6 +1608,14 @@ PrefabInstance:
     - target: {fileID: 568467413932872117, guid: 669177b275a4e469cbb2320cc7f10e23, type: 3}
       propertyPath: stageChange.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2205212537509493665, guid: 669177b275a4e469cbb2320cc7f10e23, type: 3}
+      propertyPath: Health
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 2205212537509493665, guid: 669177b275a4e469cbb2320cc7f10e23, type: 3}
+      propertyPath: MaxHealth
+      value: 1500
       objectReference: {fileID: 0}
     - target: {fileID: 2205212537509493665, guid: 669177b275a4e469cbb2320cc7f10e23, type: 3}
       propertyPath: onHealthChange.m_PersistentCalls.m_Calls.Array.size
@@ -2362,7 +2370,7 @@ Transform:
   m_GameObject: {fileID: 540579354}
   serializedVersion: 2
   m_LocalRotation: {x: 0.6532815, y: 0.27059805, z: -0.27059805, w: 0.6532815}
-  m_LocalPosition: {x: -96.9, y: 0, z: -7.9}
+  m_LocalPosition: {x: -90.9, y: 0, z: 9.1}
   m_LocalScale: {x: 20, y: 1, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2475,7 +2483,7 @@ Transform:
   m_GameObject: {fileID: 558677702}
   serializedVersion: 2
   m_LocalRotation: {x: 0.6532815, y: -0.27059805, z: 0.27059805, w: 0.6532815}
-  m_LocalPosition: {x: -55.4, y: 0, z: 36.6}
+  m_LocalPosition: {x: -52.8, y: 0, z: 32.1}
   m_LocalScale: {x: 20, y: 1, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2801,7 +2809,7 @@ MonoBehaviour:
   ambienceSource: {fileID: 0}
   sfxSource: {fileID: 0}
   masterVolume: 1
-  musicVolume: 0.054
+  musicVolume: 1
   ambienceVolume: 1
   sfxVolume: 1
 --- !u!4 &708624558
@@ -3648,7 +3656,7 @@ GameObject:
   - component: {fileID: 883421585}
   - component: {fileID: 883421584}
   - component: {fileID: 883421583}
-  - component: {fileID: 883421582}
+  - component: {fileID: 883421587}
   m_Layer: 8
   m_Name: Box (69)
   m_TagString: Stone
@@ -3656,23 +3664,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &883421582
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 883421581}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
-  m_SerializedVersion: 0
-  m_Size: {x: 2, y: 2, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!64 &883421583
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3767,6 +3758,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1094202372}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &883421587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883421581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 4}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!4 &916578155 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8169593431218506119, guid: ead5cdc010ff445c3adf34863078e511, type: 3}
@@ -4558,7 +4566,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 360.013
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6058415775134398144, guid: 5e89b93bc7da14c429cc33e804af4822, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -5845,8 +5854,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f253fe50c5ea4131a103045a82aec73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Orchestrator
-  enemySpawner: {fileID: 1613819703}
-  thunderSpawner: {fileID: 1275786672}
+  enemySpawner: {fileID: 0}
+  thunderSpawner: {fileID: 0}
 --- !u!4 &1563211998
 Transform:
   m_ObjectHideFlags: 0
@@ -6017,6 +6026,8 @@ MonoBehaviour:
   duck: {fileID: 7214298378690074326, guid: ead5cdc010ff445c3adf34863078e511, type: 3}
   bone: {fileID: 7214298378690074326, guid: 8f6bb6e5a891d49efb1665cb72bb1b66, type: 3}
   spawnInterval: 3
+  navMeshSearchRadius: 2
+  navMeshAreaMask: -1
 --- !u!4 &1613819705
 Transform:
   m_ObjectHideFlags: 0
@@ -7528,7 +7539,7 @@ Transform:
   m_GameObject: {fileID: 1956220169}
   serializedVersion: 2
   m_LocalRotation: {x: 0.6532815, y: -0.27059805, z: -0.27059805, w: -0.6532815}
-  m_LocalPosition: {x: 54.1, y: 0, z: 47.4}
+  m_LocalPosition: {x: 43.8, y: 0, z: 42.2}
   m_LocalScale: {x: 20, y: 1, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8347,7 +8358,7 @@ GameObject:
   - component: {fileID: 2125134034}
   - component: {fileID: 2125134033}
   - component: {fileID: 2125134032}
-  - component: {fileID: 2125134031}
+  - component: {fileID: 2125134036}
   m_Layer: 8
   m_Name: Box (67)
   m_TagString: Stone
@@ -8355,23 +8366,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2125134031
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2125134030}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
-  m_SerializedVersion: 0
-  m_Size: {x: 2, y: 2, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
-  m_Area: 1
-  m_AffectedAgents: ffffffff
 --- !u!64 &2125134032
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8466,6 +8460,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1094202372}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &2125134036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2125134030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 4}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!4 &2142146212 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8169593431218506119, guid: ead5cdc010ff445c3adf34863078e511, type: 3}
@@ -8546,10 +8557,11 @@ SceneRoots:
   - {fileID: 256944852}
   - {fileID: 780431816}
   - {fileID: 527852285}
-  - {fileID: 1563211998}
   - {fileID: 1797169780}
   - {fileID: 1284032540}
+  - {fileID: 1563211998}
   - {fileID: 1613819705}
+  - {fileID: 1275786674}
   - {fileID: 283339659}
   - {fileID: 179550993}
   - {fileID: 19149484}
@@ -8563,4 +8575,3 @@ SceneRoots:
   - {fileID: 1317196002}
   - {fileID: 419671532}
   - {fileID: 1228115439}
-  - {fileID: 1275786674}
