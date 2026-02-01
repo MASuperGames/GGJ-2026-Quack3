@@ -351,6 +351,7 @@ GameObject:
   - component: {fileID: 8346490543512847287}
   - component: {fileID: 3389122166204108222}
   - component: {fileID: 9181294748203716714}
+  - component: {fileID: 2669852132394804607}
   m_Layer: 0
   m_Name: DuckEnemy
   m_TagString: Enemy
@@ -500,7 +501,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32f73b0e65eef4933b079ef4d59033c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  source: {fileID: 3389122166204108222}
+  sourceFoot: {fileID: 3389122166204108222}
+  sourceQuack: {fileID: 2669852132394804607}
   footsteps:
   - {fileID: 8300000, guid: e7f7ecd6056b3524eab8d5af195a760a, type: 3}
   - {fileID: 8300000, guid: 0063174d55547f14cbcc13a6c01d028a, type: 3}
@@ -509,6 +511,26 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 4db4d7b01d31a1341be419b1b3c26d87, type: 3}
   pitchVariationMin: 0.95
   pitchVariationMax: 1.05
+  quackClips:
+  - {fileID: 8300000, guid: f5c0cdf08b5d97445955fb2ebbdd5d4f, type: 3}
+  - {fileID: 8300000, guid: e1636ed1caac5e3428efae3f223b8134, type: 3}
+  - {fileID: 8300000, guid: cf3c3d36f7625824dbff52fc27549e25, type: 3}
+  - {fileID: 8300000, guid: dc37104a7e27ee644947edf95bd289b9, type: 3}
+  - {fileID: 8300000, guid: b339796fe8df12c43af7a25b9ef62a90, type: 3}
+  - {fileID: 8300000, guid: 4b0d8f5b6e0ad0f43a382e83511c7b82, type: 3}
+  - {fileID: 8300000, guid: e737e0179a3dbe3448d0cbf79e712b05, type: 3}
+  - {fileID: 8300000, guid: 05b0b000c4caf5749948b5ba95576f42, type: 3}
+  angryQuackClips:
+  - {fileID: 8300000, guid: f5c0cdf08b5d97445955fb2ebbdd5d4f, type: 3}
+  - {fileID: 8300000, guid: e1636ed1caac5e3428efae3f223b8134, type: 3}
+  - {fileID: 8300000, guid: cf3c3d36f7625824dbff52fc27549e25, type: 3}
+  - {fileID: 8300000, guid: dc37104a7e27ee644947edf95bd289b9, type: 3}
+  - {fileID: 8300000, guid: b339796fe8df12c43af7a25b9ef62a90, type: 3}
+  - {fileID: 8300000, guid: 4b0d8f5b6e0ad0f43a382e83511c7b82, type: 3}
+  - {fileID: 8300000, guid: e737e0179a3dbe3448d0cbf79e712b05, type: 3}
+  - {fileID: 8300000, guid: 05b0b000c4caf5749948b5ba95576f42, type: 3}
+  quackFrequency: 0.1
+  angryQuackFrequency: 3
   damage: 10
   hitSphereDistance: 0.5
   hitSphereRadius: 0.5
@@ -654,3 +676,100 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealthBar
   sliderImage: {fileID: 7020212922341214978}
+--- !u!82 &2669852132394804607
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7214298378690074326}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.5
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 15
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4

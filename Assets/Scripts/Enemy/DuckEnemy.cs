@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Timeline;
 
 public class DuckEnemy : MonoBehaviour
 {
@@ -13,10 +14,19 @@ public class DuckEnemy : MonoBehaviour
     };
 
     [Header("Audio")]
-    [SerializeField] private AudioSource source;
+    [SerializeField] private AudioSource sourceFoot;
+    [SerializeField] private AudioSource sourceQuack;
     [SerializeField] private AudioClip[] footsteps;
     [SerializeField] private float pitchVariationMin = 0.95f;
     [SerializeField] private float pitchVariationMax = 1.05f;
+
+
+    [SerializeField] private AudioClip[] quackClips;
+    [SerializeField] private AudioClip[] angryQuackClips;
+    [SerializeField] private float quackFrequency = 1.0f;
+    [SerializeField] private float angryQuackFrequency = 3.0f;
+
+
 
     [SerializeField] private float damage = 10;
     [SerializeField] private float hitSphereDistance = 1;
@@ -36,6 +46,10 @@ public class DuckEnemy : MonoBehaviour
     [SerializeField] private float deathDuration = 2;
 
     [SerializeField] private GameObject feather;
+
+    private AudioClip selectedQuackSound;
+    private AudioClip selectedAngryQuackSound;
+    private float lastQuackSound = -Mathf.Infinity;
 
     private float accDistance;
     private Vector3 prevPosition;
@@ -58,6 +72,9 @@ public class DuckEnemy : MonoBehaviour
         accDistance = 0;
         prevPosition = transform.position;
         animator = GetComponent<Animator>();
+
+        selectedQuackSound = quackClips[UnityEngine.Random.Range(0, quackClips.Length)];
+        selectedAngryQuackSound = angryQuackClips[UnityEngine.Random.Range(0, angryQuackClips.Length)];
     }
 
     public void onHealthChange(float health, float delta)
@@ -124,6 +141,31 @@ public class DuckEnemy : MonoBehaviour
         if (state == State.Slow || state == State.Attack)
             navMeshAgent.destination = player.transform.position;
 
+        if (state == State.Slow || state == State.Attack)
+        {
+            AudioClip clip;
+            float freq;
+            if (state == State.Slow)
+            {
+                clip = selectedQuackSound;
+                freq = quackFrequency;
+            } else
+            {
+                clip = selectedAngryQuackSound;
+                freq = angryQuackFrequency;
+            }
+
+            if (lastQuackSound + 1.0f / freq < Time.time)
+            {
+                sourceQuack.clip = clip;
+
+                sourceQuack.volume = AudioManager.Instance.sfxVolume * AudioManager.Instance.masterVolume;
+                sourceQuack.pitch = UnityEngine.Random.Range(1.0f, 1.0f);
+                sourceQuack.Play();
+                lastQuackSound = Time.time;
+            }
+        }
+
         accDistance += Vector3.Distance(transform.position, prevPosition);
         prevPosition = transform.position;
         if (accDistance > flipDistance)
@@ -151,11 +193,11 @@ public class DuckEnemy : MonoBehaviour
             AudioClip clip = clips[UnityEngine.Random.Range(0, clips.Length)];
             //AudioManager.Instance.PlaySFXWithPitchVariation(clip, pitchVariationMin, pitchVariationMax, volumeScale);
 
-            source.clip = clip;
+            sourceFoot.clip = clip;
 
-            source.volume = AudioManager.Instance.sfxVolume * AudioManager.Instance.masterVolume;
-            source.pitch = UnityEngine.Random.Range(pitchVariationMin, pitchVariationMax);
-            source.Play();
+            sourceFoot.volume = AudioManager.Instance.sfxVolume * AudioManager.Instance.masterVolume;
+            sourceFoot.pitch = UnityEngine.Random.Range(pitchVariationMin, pitchVariationMax);
+            sourceFoot.Play();
 
         }
     }
