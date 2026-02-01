@@ -10,6 +10,10 @@ public class MenuSelector : MonoBehaviour
     [SerializeField] private Image[] selectors;
     [SerializeField] private MainMenu mainMenu;
 
+    [Header("Audio")]
+    [SerializeField] private AudioClip selectClip;
+    [SerializeField] private AudioClip confirmClip;
+
     private int selectedIndex = 0;
 
     private void OnEnable()
@@ -42,6 +46,8 @@ public class MenuSelector : MonoBehaviour
 
     private void HandleNavigate(Vector2 input)
     {
+        AudioManager.Instance.PlaySFX(selectClip, 0.2f);
+
         if (input.y > 0.5f) // Up
         {
             selectedIndex--;
@@ -68,6 +74,8 @@ public class MenuSelector : MonoBehaviour
 
     private void HandleSubmit()
     {
+        AudioManager.Instance.PlaySFX(confirmClip, 2.0f);
+
         switch (selectedIndex)
         {
             case 0:
@@ -79,6 +87,15 @@ public class MenuSelector : MonoBehaviour
             case 2:
                 mainMenu.OnQuitClicked();
                 break;
+        }
+    }
+
+    private void PlayRandomClip(AudioClip[] clips)
+    {
+        if (clips != null && clips.Length > 0)
+        {
+            AudioClip clip = clips[Random.Range(0, clips.Length)];
+            AudioManager.Instance.PlaySFX(clip);
         }
     }
 }

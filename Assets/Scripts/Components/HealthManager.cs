@@ -19,7 +19,6 @@ public class HealthManager : MonoBehaviour
 
         float PrevHealth = Health;
         Health = Mathf.Clamp(Health + delta, 0, MaxHealth);
-        Debug.Log("changing from " + PrevHealth + " to " + Health);
         if (Health == PrevHealth) return;
 
         if (delta < 0)
