@@ -476,7 +476,17 @@ MonoBehaviour:
         m_CallState: 2
   MaxHealth: 30
   Health: 30
-  damageTakenClips: []
+  damageTakenClips:
+  - {fileID: 8300000, guid: 05b0b000c4caf5749948b5ba95576f42, type: 3}
+  - {fileID: 8300000, guid: e737e0179a3dbe3448d0cbf79e712b05, type: 3}
+  - {fileID: 8300000, guid: 4b0d8f5b6e0ad0f43a382e83511c7b82, type: 3}
+  - {fileID: 8300000, guid: b339796fe8df12c43af7a25b9ef62a90, type: 3}
+  - {fileID: 8300000, guid: dc37104a7e27ee644947edf95bd289b9, type: 3}
+  - {fileID: 8300000, guid: cf3c3d36f7625824dbff52fc27549e25, type: 3}
+  - {fileID: 8300000, guid: e1636ed1caac5e3428efae3f223b8134, type: 3}
+  - {fileID: 8300000, guid: f5c0cdf08b5d97445955fb2ebbdd5d4f, type: 3}
+  - {fileID: 8300000, guid: 4babdccdddcd4a14ba9f74ecd7fd7389, type: 3}
+  - {fileID: 8300000, guid: e689d1d9c68dccc4c9bb5267a103509c, type: 3}
   deathClips: []
 --- !u!114 &2950104180177101968
 MonoBehaviour:
