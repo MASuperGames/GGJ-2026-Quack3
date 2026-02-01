@@ -1611,11 +1611,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2205212537509493665, guid: 669177b275a4e469cbb2320cc7f10e23, type: 3}
       propertyPath: Health
-      value: 500
+      value: 1500
       objectReference: {fileID: 0}
     - target: {fileID: 2205212537509493665, guid: 669177b275a4e469cbb2320cc7f10e23, type: 3}
       propertyPath: MaxHealth
-      value: 500
+      value: 1500
       objectReference: {fileID: 0}
     - target: {fileID: 2205212537509493665, guid: 669177b275a4e469cbb2320cc7f10e23, type: 3}
       propertyPath: onHealthChange.m_PersistentCalls.m_Calls.Array.size

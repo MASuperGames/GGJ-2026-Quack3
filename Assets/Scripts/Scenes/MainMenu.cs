@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class MainMenu : MonoBehaviour
 {
@@ -13,7 +14,7 @@ public class MainMenu : MonoBehaviour
     private void Start()
     {
         inputReader.EnableUIInput();
-
+        credits.SetActive(false);
         // Start background music
         if (backgroundMusic != null)
         {
@@ -52,5 +53,13 @@ public class MainMenu : MonoBehaviour
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #endif
+    }
+
+    private void Update()
+    {
+        if(Keyboard.current.escapeKey.wasPressedThisFrame && credits.activeSelf)
+        {
+            credits.SetActive(false);
+        }
     }
 }
