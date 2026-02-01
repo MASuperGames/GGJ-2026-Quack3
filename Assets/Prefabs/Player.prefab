@@ -756,6 +756,7 @@ MonoBehaviour:
   inputReader: {fileID: 11400000, guid: 943b1169df7f19b4e8e724e9d2694a01, type: 2}
   primaryWeapon: {fileID: 7211391575477201521}
   secondaryWeapon: {fileID: 2154577176007502662}
+  tertiaryWeapon: {fileID: 0}
   gunHitVFX: {fileID: 1998038178201817070}
   impulseSource: {fileID: 7892564930963575150}
   primaryAttackClips:
@@ -768,6 +769,17 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 29cac9cc6fb9c426290290a5ba4a515e, type: 3}
   - {fileID: 8300000, guid: d09a3e032bad1404fa1f3b723b931ddc, type: 3}
   - {fileID: 8300000, guid: 93f53327af6414528b9cc6df6401f581, type: 3}
+  tauntClips:
+  - {fileID: 8300000, guid: f9632dec29089384fbf7c33057722814, type: 3}
+  - {fileID: 8300000, guid: 420ceacfc8447f643ad5a7b00ca94c90, type: 3}
+  - {fileID: 8300000, guid: 77172786fc27f5042aa83d000e8de94a, type: 3}
+  - {fileID: 8300000, guid: 45b60cfb2fa8d434fa819f3ce50e2545, type: 3}
+  - {fileID: 8300000, guid: 412b715b6353b074a86ba1bbaf3f1d52, type: 3}
+  - {fileID: 8300000, guid: cfa8bedfc61ddb446915f661ad3317f5, type: 3}
+  - {fileID: 8300000, guid: 51272031d581a894d99d74422b96687a, type: 3}
+  - {fileID: 8300000, guid: 45e2890c5b9f3ac4cbc98906b7084d5f, type: 3}
+  - {fileID: 8300000, guid: 614827fbb5a4d3b42b1991813cbc5d80, type: 3}
+  - {fileID: 8300000, guid: 957399517f3f9024a9a78ac5336d9e93, type: 3}
   attackDistance: 1
   attackRadius: 1
   damage: 10

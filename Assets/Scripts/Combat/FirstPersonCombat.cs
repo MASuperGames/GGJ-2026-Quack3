@@ -9,6 +9,7 @@ public class FirstPersonCombat : MonoBehaviour
     [SerializeField] private InputReader inputReader;
     [SerializeField] private Weapon primaryWeapon;
     [SerializeField] private Weapon secondaryWeapon;
+    [SerializeField] private Weapon tertiaryWeapon;
     [SerializeField] private VisualEffect gunHitVFX;
     [SerializeField] private CinemachineImpulseSource impulseSource;
 
@@ -16,6 +17,7 @@ public class FirstPersonCombat : MonoBehaviour
     [SerializeField] private AudioClip[] primaryAttackClips;
     [SerializeField] private AudioClip[] secondaryAttackClips;
     [SerializeField] private AudioClip[] hitImpactClips;
+    [SerializeField] private AudioClip[] tauntClips;
 
     [Header("Combat Settings")]
     [SerializeField] private float attackDistance = 1f;
@@ -29,12 +31,14 @@ public class FirstPersonCombat : MonoBehaviour
     {
         inputReader.PrimaryActionEvent += OnPrimaryAction;
         inputReader.SecondaryActionEvent += OnSecondaryAction;
+        inputReader.InteractEvent += OnTertiaryAction;
     }
 
     private void OnDisable()
     {
         inputReader.PrimaryActionEvent -= OnPrimaryAction;
         inputReader.SecondaryActionEvent -= OnSecondaryAction;
+        inputReader.InteractEvent -= OnTertiaryAction;
     }
 
     void Start()
@@ -109,6 +113,15 @@ public class FirstPersonCombat : MonoBehaviour
         else
         {
             // Release
+        }
+    }
+
+    private void OnTertiaryAction()
+    {
+        if (tauntClips != null && tauntClips.Length > 0)
+        {
+            AudioClip clip = tauntClips[Random.Range(0, tauntClips.Length)];
+            AudioManager.Instance.PlaySFXWithPitchVariation(clip, 0.75f, 0.9f);
         }
     }
 
