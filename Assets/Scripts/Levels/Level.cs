@@ -37,7 +37,7 @@ public class Level : MonoBehaviour
     [SerializeField] private float fadeDuration = 2f;
 
     private int currentWaveIndex = 0;
-    private bool spawningWaves = false;
+    // private bool spawningWaves = false;
 
     void Start()
     {
@@ -55,7 +55,7 @@ public class Level : MonoBehaviour
 
         if (ambienceSound != null)
         {
-            AudioManager.Instance.PlayAmbience(ambienceSound);
+            AudioManager.Instance.PlayAmbience(ambienceSound, true, 1.0f);
         }
 
         // Start spawning waves
@@ -64,7 +64,7 @@ public class Level : MonoBehaviour
 
     IEnumerator SpawnWaves()
     {
-        spawningWaves = true;
+        // spawningWaves = true;
 
         foreach (Wave wave in waves)
         {
@@ -95,7 +95,7 @@ public class Level : MonoBehaviour
             }
         }
 
-        spawningWaves = false;
+        // spawningWaves = false;
         Debug.Log("All waves completed!");
     }
 

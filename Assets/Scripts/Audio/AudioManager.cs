@@ -103,10 +103,10 @@ public class AudioManager : Singleton<AudioManager>
 
     #region Ambience
 
-    public void PlayAmbience(AudioClip clip, bool loop = true)
+    public void PlayAmbience(AudioClip clip, bool loop = true, float volume = 1.0f)
     {
         if (ambienceSource.clip == clip && ambienceSource.isPlaying) return;
-
+        ambienceSource.volume = volume;
         ambienceSource.clip = clip;
         ambienceSource.loop = loop;
         ambienceSource.Play();
