@@ -38,10 +38,13 @@ public class ShootEnemy : MonoBehaviour
 
     private Animator animator;
 
+    private CharacterController cg;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         animator = GetComponent<Animator>();
+        cg = GetComponent<CharacterController>();
         trajectory = new Vector3(1, 0, 0);
         lookDirection = new Vector3(1, 0, 0);
         var player = GameObject.FindGameObjectWithTag("Player");
@@ -99,7 +102,7 @@ public class ShootEnemy : MonoBehaviour
             transform.forward = lookDirection;
         }
 
-        transform.position += trajectory * Time.deltaTime;
+        cg.Move(trajectory * Time.deltaTime);
         
         if (lastShot + shootInterval < Time.time)
         {

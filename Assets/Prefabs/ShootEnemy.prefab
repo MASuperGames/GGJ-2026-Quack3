@@ -126,6 +126,7 @@ GameObject:
   - component: {fileID: 2205212537509493665}
   - component: {fileID: 8346490543512847287}
   - component: {fileID: 3352280437120439771}
+  - component: {fileID: 2840378014179039472}
   m_Layer: 0
   m_Name: ShootEnemy
   m_TagString: Enemy
@@ -216,6 +217,8 @@ MonoBehaviour:
         m_CallState: 2
   MaxHealth: 30
   Health: 30
+  damageTakenClips: []
+  deathClips: []
 --- !u!95 &8346490543512847287
 Animator:
   serializedVersion: 7
@@ -257,3 +260,28 @@ MonoBehaviour:
   projectile: {fileID: 3873049572572264774, guid: 92a5b9484ad304af5a16d85eb5773b39, type: 3}
   shootInterval: 2
   deathDuration: 2
+--- !u!143 &2840378014179039472
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7214298378690074326}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 0.9
+  m_Radius: 0.8
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
