@@ -101,7 +101,7 @@ public class FirstPersonCombat : MonoBehaviour
                 if (health != null)
                 {
                     health.ChangeHealth(-damage * (boneFragmentMode ? 2 : 1));
-                    PlayRandomClip(hitImpactClips);
+                    //PlayRandomClip(hitImpactClips);
                 }
                    
             }
