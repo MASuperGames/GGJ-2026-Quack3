@@ -264,6 +264,7 @@ GameObject:
   - component: {fileID: 34487875}
   - component: {fileID: 34487877}
   - component: {fileID: 34487878}
+  - component: {fileID: 34487879}
   m_Layer: 8
   m_Name: Box (13)
   m_TagString: Stone
@@ -385,6 +386,23 @@ MonoBehaviour:
   m_IgnoreFromBuild: 1
   m_ApplyToChildren: 1
   m_AffectedAgents: ffffffff
+--- !u!114 &34487879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 34487873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &75489553
 GameObject:
   m_ObjectHideFlags: 0
@@ -398,6 +416,7 @@ GameObject:
   - component: {fileID: 75489555}
   - component: {fileID: 75489557}
   - component: {fileID: 75489558}
+  - component: {fileID: 75489559}
   m_Layer: 8
   m_Name: Box (22)
   m_TagString: Stone
@@ -519,6 +538,23 @@ MonoBehaviour:
   m_IgnoreFromBuild: 1
   m_ApplyToChildren: 1
   m_AffectedAgents: ffffffff
+--- !u!114 &75489559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75489553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &75947198
 GameObject:
   m_ObjectHideFlags: 0
@@ -531,6 +567,7 @@ GameObject:
   - component: {fileID: 75947201}
   - component: {fileID: 75947200}
   - component: {fileID: 75947202}
+  - component: {fileID: 75947203}
   m_Layer: 8
   m_Name: Box (49)
   m_TagString: Stone
@@ -632,6 +669,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &75947203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75947198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &79906129
 GameObject:
   m_ObjectHideFlags: 0
@@ -771,6 +825,7 @@ GameObject:
   - component: {fileID: 81903443}
   - component: {fileID: 81903442}
   - component: {fileID: 81903444}
+  - component: {fileID: 81903445}
   m_Layer: 8
   m_Name: Box (50)
   m_TagString: Stone
@@ -872,6 +927,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &81903445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81903440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &85918888
 GameObject:
   m_ObjectHideFlags: 0
@@ -915,6 +987,7 @@ GameObject:
   - component: {fileID: 97113479}
   - component: {fileID: 97113478}
   - component: {fileID: 97113480}
+  - component: {fileID: 97113481}
   m_Layer: 8
   m_Name: Box (51)
   m_TagString: Stone
@@ -1016,6 +1089,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &97113481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97113476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &116212212
 GameObject:
   m_ObjectHideFlags: 0
@@ -1028,6 +1118,7 @@ GameObject:
   - component: {fileID: 116212215}
   - component: {fileID: 116212214}
   - component: {fileID: 116212216}
+  - component: {fileID: 116212217}
   m_Layer: 8
   m_Name: Box (59)
   m_TagString: Stone
@@ -1129,6 +1220,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &116212217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116212212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &126052162
 GameObject:
   m_ObjectHideFlags: 0
@@ -1216,6 +1324,7 @@ GameObject:
   - component: {fileID: 135996559}
   - component: {fileID: 135996558}
   - component: {fileID: 135996561}
+  - component: {fileID: 135996562}
   m_Layer: 8
   m_Name: Box (10)
   m_TagString: Stone
@@ -1317,6 +1426,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &135996562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135996557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &139215217
 GameObject:
   m_ObjectHideFlags: 0
@@ -1329,6 +1455,7 @@ GameObject:
   - component: {fileID: 139215220}
   - component: {fileID: 139215219}
   - component: {fileID: 139215221}
+  - component: {fileID: 139215222}
   m_Layer: 8
   m_Name: Box (63)
   m_TagString: Stone
@@ -1430,6 +1557,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &139215222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 139215217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &153248257
 GameObject:
   m_ObjectHideFlags: 0
@@ -1636,6 +1780,7 @@ GameObject:
   - component: {fileID: 171974696}
   - component: {fileID: 171974695}
   - component: {fileID: 171974697}
+  - component: {fileID: 171974698}
   m_Layer: 8
   m_Name: Box (14)
   m_TagString: Stone
@@ -1737,6 +1882,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &171974698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171974693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!4 &180730232 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8169593431218506119, guid: ead5cdc010ff445c3adf34863078e511, type: 3}
@@ -1754,6 +1916,7 @@ GameObject:
   - component: {fileID: 183569225}
   - component: {fileID: 183569224}
   - component: {fileID: 183569226}
+  - component: {fileID: 183569227}
   m_Layer: 8
   m_Name: Box (52)
   m_TagString: Stone
@@ -1855,6 +2018,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &183569227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183569222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &192412236
 GameObject:
   m_ObjectHideFlags: 0
@@ -2466,6 +2646,7 @@ GameObject:
   - component: {fileID: 229930624}
   - component: {fileID: 229930623}
   - component: {fileID: 229930625}
+  - component: {fileID: 229930626}
   m_Layer: 8
   m_Name: Box (38)
   m_TagString: Stone
@@ -2567,6 +2748,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &229930626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 229930621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &245558382
 GameObject:
   m_ObjectHideFlags: 0
@@ -2579,6 +2777,7 @@ GameObject:
   - component: {fileID: 245558384}
   - component: {fileID: 245558383}
   - component: {fileID: 245558386}
+  - component: {fileID: 245558387}
   m_Layer: 8
   m_Name: RoundPillar
   m_TagString: Stone
@@ -2680,6 +2879,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 3714782100452350123, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &245558387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 245558382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0.31}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &251125582
 GameObject:
   m_ObjectHideFlags: 0
@@ -2692,6 +2908,7 @@ GameObject:
   - component: {fileID: 251125586}
   - component: {fileID: 251125585}
   - component: {fileID: 251125584}
+  - component: {fileID: 251125587}
   m_Layer: 8
   m_Name: Rock (6)
   m_TagString: Stone
@@ -2793,6 +3010,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 251125582}
   m_Mesh: {fileID: 4013275331872712965, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &251125587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 251125582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2.3, y: 1, z: 1}
+  m_Center: {x: -0.75, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &256125489
 GameObject:
   m_ObjectHideFlags: 0
@@ -2805,6 +3039,7 @@ GameObject:
   - component: {fileID: 256125492}
   - component: {fileID: 256125491}
   - component: {fileID: 256125493}
+  - component: {fileID: 256125494}
   m_Layer: 8
   m_Name: Box (77)
   m_TagString: Stone
@@ -2906,6 +3141,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &256125494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256125489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &256944851
 GameObject:
   m_ObjectHideFlags: 0
@@ -3027,6 +3279,7 @@ GameObject:
   - component: {fileID: 295857769}
   - component: {fileID: 295857768}
   - component: {fileID: 295857770}
+  - component: {fileID: 295857771}
   m_Layer: 8
   m_Name: Box (33)
   m_TagString: Stone
@@ -3128,6 +3381,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &295857771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295857766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &329203880
 GameObject:
   m_ObjectHideFlags: 0
@@ -3140,6 +3410,7 @@ GameObject:
   - component: {fileID: 329203883}
   - component: {fileID: 329203882}
   - component: {fileID: 329203884}
+  - component: {fileID: 329203885}
   m_Layer: 8
   m_Name: Box (80)
   m_TagString: Stone
@@ -3241,6 +3512,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &329203885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 329203880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &331752687
 GameObject:
   m_ObjectHideFlags: 0
@@ -3253,6 +3541,7 @@ GameObject:
   - component: {fileID: 331752691}
   - component: {fileID: 331752690}
   - component: {fileID: 331752689}
+  - component: {fileID: 331752692}
   m_Layer: 8
   m_Name: Rock (8)
   m_TagString: Untagged
@@ -3354,6 +3643,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 331752687}
   m_Mesh: {fileID: 4013275331872712965, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &331752692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 331752687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2.32, y: 1, z: 1}
+  m_Center: {x: -0.7, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &345935955
 GameObject:
   m_ObjectHideFlags: 0
@@ -3478,6 +3784,7 @@ GameObject:
   - component: {fileID: 352729142}
   - component: {fileID: 352729141}
   - component: {fileID: 352729144}
+  - component: {fileID: 352729145}
   m_Layer: 8
   m_Name: Box (5)
   m_TagString: Stone
@@ -3579,6 +3886,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &352729145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352729140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &398779561
 GameObject:
   m_ObjectHideFlags: 0
@@ -3591,6 +3915,7 @@ GameObject:
   - component: {fileID: 398779565}
   - component: {fileID: 398779564}
   - component: {fileID: 398779563}
+  - component: {fileID: 398779566}
   m_Layer: 8
   m_Name: Rock (7)
   m_TagString: Stone
@@ -3692,6 +4017,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 398779561}
   m_Mesh: {fileID: 4013275331872712965, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &398779566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398779561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2.3, y: 1, z: 1}
+  m_Center: {x: -0.74, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &419671531
 GameObject:
   m_ObjectHideFlags: 0
@@ -3735,6 +4077,7 @@ GameObject:
   - component: {fileID: 429701833}
   - component: {fileID: 429701832}
   - component: {fileID: 429701835}
+  - component: {fileID: 429701836}
   m_Layer: 8
   m_Name: RoundPillar (1)
   m_TagString: Stone
@@ -3836,6 +4179,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 3714782100452350123, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &429701836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 429701831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0.02}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &454092326
 GameObject:
   m_ObjectHideFlags: 0
@@ -3848,6 +4208,7 @@ GameObject:
   - component: {fileID: 454092329}
   - component: {fileID: 454092328}
   - component: {fileID: 454092330}
+  - component: {fileID: 454092331}
   m_Layer: 8
   m_Name: Box (79)
   m_TagString: Stone
@@ -3949,6 +4310,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &454092331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454092326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &455200606
 GameObject:
   m_ObjectHideFlags: 0
@@ -4220,6 +4598,7 @@ GameObject:
   - component: {fileID: 487270061}
   - component: {fileID: 487270060}
   - component: {fileID: 487270063}
+  - component: {fileID: 487270064}
   m_Layer: 8
   m_Name: Box (8)
   m_TagString: Stone
@@ -4321,6 +4700,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &487270064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487270059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &496894295
 GameObject:
   m_ObjectHideFlags: 0
@@ -4617,6 +5013,7 @@ GameObject:
   - component: {fileID: 539984512}
   - component: {fileID: 539984511}
   - component: {fileID: 539984513}
+  - component: {fileID: 539984514}
   m_Layer: 8
   m_Name: Box (39)
   m_TagString: Stone
@@ -4718,6 +5115,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &539984514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 539984509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &565469464
 GameObject:
   m_ObjectHideFlags: 0
@@ -4730,6 +5144,7 @@ GameObject:
   - component: {fileID: 565469466}
   - component: {fileID: 565469465}
   - component: {fileID: 565469468}
+  - component: {fileID: 565469469}
   m_Layer: 8
   m_Name: Box (9)
   m_TagString: Stone
@@ -4831,6 +5246,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &565469469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565469464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &566830282
 GameObject:
   m_ObjectHideFlags: 0
@@ -4956,6 +5388,7 @@ GameObject:
   - component: {fileID: 582519489}
   - component: {fileID: 582519488}
   - component: {fileID: 582519490}
+  - component: {fileID: 582519491}
   m_Layer: 8
   m_Name: Box (37)
   m_TagString: Stone
@@ -5057,6 +5490,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &582519491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 582519486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &588858826
 GameObject:
   m_ObjectHideFlags: 0
@@ -5301,6 +5751,7 @@ GameObject:
   - component: {fileID: 633694091}
   - component: {fileID: 633694093}
   - component: {fileID: 633694094}
+  - component: {fileID: 633694095}
   m_Layer: 8
   m_Name: Box (61)
   m_TagString: Stone
@@ -5422,6 +5873,23 @@ MonoBehaviour:
   m_IgnoreFromBuild: 1
   m_ApplyToChildren: 1
   m_AffectedAgents: ffffffff
+--- !u!114 &633694095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 633694089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &642103484
 GameObject:
   m_ObjectHideFlags: 0
@@ -5434,6 +5902,7 @@ GameObject:
   - component: {fileID: 642103487}
   - component: {fileID: 642103486}
   - component: {fileID: 642103488}
+  - component: {fileID: 642103489}
   m_Layer: 8
   m_Name: Box (40)
   m_TagString: Stone
@@ -5535,6 +6004,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &642103489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642103484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &650922401
 GameObject:
   m_ObjectHideFlags: 0
@@ -5981,6 +6467,7 @@ GameObject:
   - component: {fileID: 705592439}
   - component: {fileID: 705592438}
   - component: {fileID: 705592440}
+  - component: {fileID: 705592441}
   m_Layer: 8
   m_Name: Box (42)
   m_TagString: Stone
@@ -6082,6 +6569,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &705592441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705592436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &731929703
 GameObject:
   m_ObjectHideFlags: 0
@@ -6095,6 +6599,7 @@ GameObject:
   - component: {fileID: 731929705}
   - component: {fileID: 731929707}
   - component: {fileID: 731929708}
+  - component: {fileID: 731929709}
   m_Layer: 8
   m_Name: Box (26)
   m_TagString: Stone
@@ -6215,6 +6720,23 @@ MonoBehaviour:
   m_GenerateLinks: 0
   m_IgnoreFromBuild: 1
   m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
+--- !u!114 &731929709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731929703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
   m_AffectedAgents: ffffffff
 --- !u!1 &739742710
 GameObject:
@@ -6553,6 +7075,7 @@ GameObject:
   - component: {fileID: 770198391}
   - component: {fileID: 770198390}
   - component: {fileID: 770198392}
+  - component: {fileID: 770198393}
   m_Layer: 8
   m_Name: Box (69)
   m_TagString: Stone
@@ -6654,6 +7177,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &770198393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770198388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &775449085
 GameObject:
   m_ObjectHideFlags: 0
@@ -6741,6 +7281,7 @@ GameObject:
   - component: {fileID: 776098659}
   - component: {fileID: 776098658}
   - component: {fileID: 776098661}
+  - component: {fileID: 776098662}
   m_Layer: 8
   m_Name: Box (3)
   m_TagString: Stone
@@ -6842,6 +7383,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &776098662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 776098657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &780431813
 GameObject:
   m_ObjectHideFlags: 0
@@ -6990,6 +7548,7 @@ GameObject:
   - component: {fileID: 793593749}
   - component: {fileID: 793593748}
   - component: {fileID: 793593751}
+  - component: {fileID: 793593752}
   m_Layer: 8
   m_Name: Box (11)
   m_TagString: Stone
@@ -7091,6 +7650,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &793593752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793593747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &804351422
 GameObject:
   m_ObjectHideFlags: 0
@@ -7103,6 +7679,7 @@ GameObject:
   - component: {fileID: 804351425}
   - component: {fileID: 804351424}
   - component: {fileID: 804351426}
+  - component: {fileID: 804351427}
   m_Layer: 8
   m_Name: Box (31)
   m_TagString: Stone
@@ -7204,6 +7781,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &804351427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804351422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &819366578
 GameObject:
   m_ObjectHideFlags: 0
@@ -7472,6 +8066,7 @@ GameObject:
   - component: {fileID: 839523725}
   - component: {fileID: 839523724}
   - component: {fileID: 839523727}
+  - component: {fileID: 839523728}
   m_Layer: 8
   m_Name: RoundPillar (2)
   m_TagString: Stone
@@ -7573,6 +8168,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 3714782100452350123, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &839523728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839523723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0.23}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!4 &846703276 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8169593431218506119, guid: 8f6bb6e5a891d49efb1665cb72bb1b66, type: 3}
@@ -7590,6 +8202,7 @@ GameObject:
   - component: {fileID: 855641333}
   - component: {fileID: 855641332}
   - component: {fileID: 855641334}
+  - component: {fileID: 855641335}
   m_Layer: 8
   m_Name: Box (70)
   m_TagString: Stone
@@ -7691,6 +8304,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &855641335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 855641330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &879194573
 GameObject:
   m_ObjectHideFlags: 0
@@ -7836,6 +8466,7 @@ GameObject:
   - component: {fileID: 902430107}
   - component: {fileID: 902430106}
   - component: {fileID: 902430108}
+  - component: {fileID: 902430109}
   m_Layer: 8
   m_Name: Box (46)
   m_TagString: Stone
@@ -7937,6 +8568,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &902430109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 902430104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &905640411
 GameObject:
   m_ObjectHideFlags: 0
@@ -8124,6 +8772,7 @@ GameObject:
   - component: {fileID: 914367639}
   - component: {fileID: 914367638}
   - component: {fileID: 914367640}
+  - component: {fileID: 914367641}
   m_Layer: 8
   m_Name: Box (44)
   m_TagString: Stone
@@ -8225,6 +8874,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &914367641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914367636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!4 &916578155 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8169593431218506119, guid: ead5cdc010ff445c3adf34863078e511, type: 3}
@@ -8544,6 +9210,7 @@ GameObject:
   - component: {fileID: 970086010}
   - component: {fileID: 970086009}
   - component: {fileID: 970086011}
+  - component: {fileID: 970086012}
   m_Layer: 8
   m_Name: Box (32)
   m_TagString: Stone
@@ -8645,6 +9312,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &970086012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970086007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &971537062
 GameObject:
   m_ObjectHideFlags: 0
@@ -8657,6 +9341,7 @@ GameObject:
   - component: {fileID: 971537064}
   - component: {fileID: 971537063}
   - component: {fileID: 971537066}
+  - component: {fileID: 971537067}
   m_Layer: 8
   m_Name: Box (7)
   m_TagString: Stone
@@ -8758,6 +9443,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &971537067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971537062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &974666144
 GameObject:
   m_ObjectHideFlags: 0
@@ -8819,6 +9521,7 @@ GameObject:
   - component: {fileID: 975655212}
   - component: {fileID: 975655211}
   - component: {fileID: 975655213}
+  - component: {fileID: 975655214}
   m_Layer: 8
   m_Name: Box (41)
   m_TagString: Stone
@@ -8920,6 +9623,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &975655214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975655209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &983124932
 GameObject:
   m_ObjectHideFlags: 0
@@ -8933,6 +9653,7 @@ GameObject:
   - component: {fileID: 983124934}
   - component: {fileID: 983124936}
   - component: {fileID: 983124937}
+  - component: {fileID: 983124938}
   m_Layer: 8
   m_Name: Box (28)
   m_TagString: Stone
@@ -9054,6 +9775,23 @@ MonoBehaviour:
   m_IgnoreFromBuild: 1
   m_ApplyToChildren: 1
   m_AffectedAgents: ffffffff
+--- !u!114 &983124938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983124932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1005939101
 GameObject:
   m_ObjectHideFlags: 0
@@ -9066,6 +9804,7 @@ GameObject:
   - component: {fileID: 1005939104}
   - component: {fileID: 1005939103}
   - component: {fileID: 1005939105}
+  - component: {fileID: 1005939106}
   m_Layer: 8
   m_Name: Box (45)
   m_TagString: Stone
@@ -9167,6 +9906,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &1005939106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005939101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1047881370
 GameObject:
   m_ObjectHideFlags: 0
@@ -9179,6 +9935,7 @@ GameObject:
   - component: {fileID: 1047881372}
   - component: {fileID: 1047881371}
   - component: {fileID: 1047881374}
+  - component: {fileID: 1047881375}
   m_Layer: 8
   m_Name: Box (1)
   m_TagString: Stone
@@ -9280,6 +10037,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &1047881375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047881370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1051052958
 GameObject:
   m_ObjectHideFlags: 0
@@ -9292,6 +10066,7 @@ GameObject:
   - component: {fileID: 1051052961}
   - component: {fileID: 1051052960}
   - component: {fileID: 1051052962}
+  - component: {fileID: 1051052963}
   m_Layer: 8
   m_Name: Box (48)
   m_TagString: Stone
@@ -9393,6 +10168,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &1051052963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1051052958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1062812235
 GameObject:
   m_ObjectHideFlags: 0
@@ -9518,6 +10310,7 @@ GameObject:
   - component: {fileID: 1066534446}
   - component: {fileID: 1066534445}
   - component: {fileID: 1066534447}
+  - component: {fileID: 1066534448}
   m_Layer: 8
   m_Name: Box (43)
   m_TagString: Stone
@@ -9619,6 +10412,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &1066534448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1066534443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1094202371
 GameObject:
   m_ObjectHideFlags: 0
@@ -9780,6 +10590,7 @@ GameObject:
   - component: {fileID: 1162084373}
   - component: {fileID: 1162084372}
   - component: {fileID: 1162084374}
+  - component: {fileID: 1162084375}
   m_Layer: 8
   m_Name: Box (20)
   m_TagString: Stone
@@ -9881,6 +10692,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &1162084375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162084370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1175587621
 GameObject:
   m_ObjectHideFlags: 0
@@ -10006,6 +10834,7 @@ GameObject:
   - component: {fileID: 1176097761}
   - component: {fileID: 1176097760}
   - component: {fileID: 1176097762}
+  - component: {fileID: 1176097763}
   m_Layer: 8
   m_Name: Box (68)
   m_TagString: Stone
@@ -10107,6 +10936,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &1176097763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1176097758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1182595613
 GameObject:
   m_ObjectHideFlags: 0
@@ -10232,6 +11078,7 @@ GameObject:
   - component: {fileID: 1202550134}
   - component: {fileID: 1202550133}
   - component: {fileID: 1202550135}
+  - component: {fileID: 1202550136}
   m_Layer: 8
   m_Name: Box (16)
   m_TagString: Stone
@@ -10333,6 +11180,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &1202550136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1202550131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1209100948
 GameObject:
   m_ObjectHideFlags: 0
@@ -10345,6 +11209,7 @@ GameObject:
   - component: {fileID: 1209100951}
   - component: {fileID: 1209100950}
   - component: {fileID: 1209100952}
+  - component: {fileID: 1209100953}
   m_Layer: 8
   m_Name: Box (29)
   m_TagString: Stone
@@ -10446,6 +11311,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &1209100953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209100948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1228115435
 GameObject:
   m_ObjectHideFlags: 0
@@ -10572,6 +11454,7 @@ GameObject:
   - component: {fileID: 1246093929}
   - component: {fileID: 1246093928}
   - component: {fileID: 1246093930}
+  - component: {fileID: 1246093931}
   m_Layer: 8
   m_Name: Box (66)
   m_TagString: Stone
@@ -10673,6 +11556,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &1246093931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246093926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1254292724
 GameObject:
   m_ObjectHideFlags: 0
@@ -10685,6 +11585,7 @@ GameObject:
   - component: {fileID: 1254292727}
   - component: {fileID: 1254292726}
   - component: {fileID: 1254292728}
+  - component: {fileID: 1254292729}
   m_Layer: 8
   m_Name: Box (30)
   m_TagString: Stone
@@ -10786,6 +11687,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &1254292729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1254292724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1274174492
 GameObject:
   m_ObjectHideFlags: 0
@@ -10798,6 +11716,7 @@ GameObject:
   - component: {fileID: 1274174495}
   - component: {fileID: 1274174494}
   - component: {fileID: 1274174496}
+  - component: {fileID: 1274174497}
   m_Layer: 8
   m_Name: Box (62)
   m_TagString: Stone
@@ -10899,6 +11818,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &1274174497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1274174492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1284032539
 GameObject:
   m_ObjectHideFlags: 0
@@ -10959,6 +11895,7 @@ GameObject:
   - component: {fileID: 1304674651}
   - component: {fileID: 1304674650}
   - component: {fileID: 1304674652}
+  - component: {fileID: 1304674653}
   m_Layer: 8
   m_Name: Box (56)
   m_TagString: Stone
@@ -11060,6 +11997,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &1304674653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1304674648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1317196001
 GameObject:
   m_ObjectHideFlags: 0
@@ -11110,6 +12064,7 @@ GameObject:
   - component: {fileID: 1320216094}
   - component: {fileID: 1320216093}
   - component: {fileID: 1320216096}
+  - component: {fileID: 1320216097}
   m_Layer: 8
   m_Name: Box
   m_TagString: Stone
@@ -11211,6 +12166,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &1320216097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1320216092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1326970147
 GameObject:
   m_ObjectHideFlags: 0
@@ -11223,6 +12195,7 @@ GameObject:
   - component: {fileID: 1326970150}
   - component: {fileID: 1326970149}
   - component: {fileID: 1326970151}
+  - component: {fileID: 1326970152}
   m_Layer: 8
   m_Name: Box (74)
   m_TagString: Stone
@@ -11324,6 +12297,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &1326970152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326970147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1356191832
 GameObject:
   m_ObjectHideFlags: 0
@@ -11550,6 +12540,8 @@ GameObject:
   - component: {fileID: 1409622343}
   - component: {fileID: 1409622342}
   - component: {fileID: 1409622345}
+  - component: {fileID: 1409622346}
+  - component: {fileID: 1409622347}
   m_Layer: 8
   m_Name: Box (2)
   m_TagString: Stone
@@ -11651,6 +12643,40 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &1409622346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409622341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
+--- !u!114 &1409622347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409622341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1415008571
 GameObject:
   m_ObjectHideFlags: 0
@@ -11813,6 +12839,7 @@ GameObject:
   - component: {fileID: 1435206025}
   - component: {fileID: 1435206027}
   - component: {fileID: 1435206028}
+  - component: {fileID: 1435206029}
   m_Layer: 8
   m_Name: Box (34)
   m_TagString: Stone
@@ -11934,6 +12961,23 @@ MonoBehaviour:
   m_IgnoreFromBuild: 1
   m_ApplyToChildren: 1
   m_AffectedAgents: ffffffff
+--- !u!114 &1435206029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1435206023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1435412445
 GameObject:
   m_ObjectHideFlags: 0
@@ -11946,6 +12990,7 @@ GameObject:
   - component: {fileID: 1435412448}
   - component: {fileID: 1435412447}
   - component: {fileID: 1435412449}
+  - component: {fileID: 1435412450}
   m_Layer: 8
   m_Name: Box (21)
   m_TagString: Stone
@@ -12047,6 +13092,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &1435412450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1435412445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1457846932
 GameObject:
   m_ObjectHideFlags: 0
@@ -12190,6 +13252,7 @@ GameObject:
   - component: {fileID: 1501491743}
   - component: {fileID: 1501491742}
   - component: {fileID: 1501491745}
+  - component: {fileID: 1501491746}
   m_Layer: 8
   m_Name: RoundPillar (3)
   m_TagString: Stone
@@ -12291,6 +13354,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 3714782100452350123, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &1501491746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1501491741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0.37}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1501996140
 GameObject:
   m_ObjectHideFlags: 0
@@ -12303,6 +13383,7 @@ GameObject:
   - component: {fileID: 1501996143}
   - component: {fileID: 1501996142}
   - component: {fileID: 1501996144}
+  - component: {fileID: 1501996145}
   m_Layer: 8
   m_Name: Box (27)
   m_TagString: Stone
@@ -12404,6 +13485,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &1501996145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1501996140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1516272879
 GameObject:
   m_ObjectHideFlags: 0
@@ -12467,6 +13565,7 @@ GameObject:
   - component: {fileID: 1525792463}
   - component: {fileID: 1525792462}
   - component: {fileID: 1525792464}
+  - component: {fileID: 1525792465}
   m_Layer: 8
   m_Name: Box (55)
   m_TagString: Stone
@@ -12568,6 +13667,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &1525792465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525792460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1533535648
 GameObject:
   m_ObjectHideFlags: 0
@@ -13041,6 +14157,7 @@ GameObject:
   - component: {fileID: 1563755255}
   - component: {fileID: 1563755254}
   - component: {fileID: 1563755256}
+  - component: {fileID: 1563755257}
   m_Layer: 8
   m_Name: Box (57)
   m_TagString: Stone
@@ -13142,6 +14259,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &1563755257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1563755252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1571428933
 GameObject:
   m_ObjectHideFlags: 0
@@ -13154,6 +14288,7 @@ GameObject:
   - component: {fileID: 1571428936}
   - component: {fileID: 1571428935}
   - component: {fileID: 1571428937}
+  - component: {fileID: 1571428938}
   m_Layer: 8
   m_Name: Box (53)
   m_TagString: Stone
@@ -13255,6 +14390,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &1571428938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571428933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1574031704
 GameObject:
   m_ObjectHideFlags: 0
@@ -13267,6 +14419,7 @@ GameObject:
   - component: {fileID: 1574031707}
   - component: {fileID: 1574031706}
   - component: {fileID: 1574031708}
+  - component: {fileID: 1574031709}
   m_Layer: 8
   m_Name: Box (18)
   m_TagString: Stone
@@ -13368,6 +14521,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &1574031709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574031704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1580111050
 GameObject:
   m_ObjectHideFlags: 0
@@ -13380,6 +14550,7 @@ GameObject:
   - component: {fileID: 1580111053}
   - component: {fileID: 1580111052}
   - component: {fileID: 1580111054}
+  - component: {fileID: 1580111055}
   m_Layer: 8
   m_Name: Box (12)
   m_TagString: Stone
@@ -13481,6 +14652,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &1580111055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1580111050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1593563279
 GameObject:
   m_ObjectHideFlags: 0
@@ -13606,6 +14794,7 @@ GameObject:
   - component: {fileID: 1595566999}
   - component: {fileID: 1595566998}
   - component: {fileID: 1595567000}
+  - component: {fileID: 1595567001}
   m_Layer: 8
   m_Name: Box (58)
   m_TagString: Stone
@@ -13707,6 +14896,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &1595567001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1595566996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1595709802
 GameObject:
   m_ObjectHideFlags: 0
@@ -13719,6 +14925,7 @@ GameObject:
   - component: {fileID: 1595709805}
   - component: {fileID: 1595709804}
   - component: {fileID: 1595709806}
+  - component: {fileID: 1595709807}
   m_Layer: 8
   m_Name: Box (60)
   m_TagString: Stone
@@ -13820,6 +15027,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &1595709807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1595709802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1598379114
 GameObject:
   m_ObjectHideFlags: 0
@@ -14159,6 +15383,7 @@ GameObject:
   - component: {fileID: 1686002045}
   - component: {fileID: 1686002044}
   - component: {fileID: 1686002046}
+  - component: {fileID: 1686002047}
   m_Layer: 8
   m_Name: Box (67)
   m_TagString: Stone
@@ -14260,6 +15485,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &1686002047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686002042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1714925937
 GameObject:
   m_ObjectHideFlags: 0
@@ -14272,6 +15514,7 @@ GameObject:
   - component: {fileID: 1714925940}
   - component: {fileID: 1714925939}
   - component: {fileID: 1714925941}
+  - component: {fileID: 1714925942}
   m_Layer: 8
   m_Name: Box (76)
   m_TagString: Stone
@@ -14373,6 +15616,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &1714925942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1714925937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1001 &1728476696
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14477,6 +15737,7 @@ GameObject:
   - component: {fileID: 1753615964}
   - component: {fileID: 1753615963}
   - component: {fileID: 1753615966}
+  - component: {fileID: 1753615967}
   m_Layer: 8
   m_Name: Box (6)
   m_TagString: Stone
@@ -14578,6 +15839,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &1753615967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753615962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1760541913
 GameObject:
   m_ObjectHideFlags: 0
@@ -14590,6 +15868,7 @@ GameObject:
   - component: {fileID: 1760541916}
   - component: {fileID: 1760541915}
   - component: {fileID: 1760541917}
+  - component: {fileID: 1760541918}
   m_Layer: 8
   m_Name: Box (47)
   m_TagString: Stone
@@ -14691,6 +15970,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &1760541918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1760541913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1782062835
 GameObject:
   m_ObjectHideFlags: 0
@@ -14703,6 +15999,8 @@ GameObject:
   - component: {fileID: 1782062837}
   - component: {fileID: 1782062836}
   - component: {fileID: 1782062839}
+  - component: {fileID: 1782062840}
+  - component: {fileID: 1782062841}
   m_Layer: 8
   m_Name: Box (4)
   m_TagString: Stone
@@ -14804,6 +16102,40 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &1782062840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782062835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
+--- !u!114 &1782062841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782062835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1791261275
 GameObject:
   m_ObjectHideFlags: 0
@@ -14960,6 +16292,7 @@ GameObject:
   - component: {fileID: 1801369229}
   - component: {fileID: 1801369228}
   - component: {fileID: 1801369230}
+  - component: {fileID: 1801369231}
   m_Layer: 8
   m_Name: Box (78)
   m_TagString: Stone
@@ -15061,6 +16394,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &1801369231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1801369226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1803080492
 GameObject:
   m_ObjectHideFlags: 0
@@ -15424,6 +16774,7 @@ GameObject:
   - component: {fileID: 1858555819}
   - component: {fileID: 1858555818}
   - component: {fileID: 1858555820}
+  - component: {fileID: 1858555821}
   m_Layer: 8
   m_Name: Box (17)
   m_TagString: Stone
@@ -15525,6 +16876,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &1858555821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858555816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1001 &1871926704
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15606,6 +16974,7 @@ GameObject:
   - component: {fileID: 1877235395}
   - component: {fileID: 1877235394}
   - component: {fileID: 1877235396}
+  - component: {fileID: 1877235397}
   m_Layer: 8
   m_Name: Box (54)
   m_TagString: Stone
@@ -15707,6 +17076,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &1877235397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877235392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1887606777
 GameObject:
   m_ObjectHideFlags: 0
@@ -15808,6 +17194,7 @@ GameObject:
   - component: {fileID: 1915676685}
   - component: {fileID: 1915676687}
   - component: {fileID: 1915676688}
+  - component: {fileID: 1915676689}
   m_Layer: 8
   m_Name: Box (65)
   m_TagString: Stone
@@ -15929,6 +17316,23 @@ MonoBehaviour:
   m_IgnoreFromBuild: 1
   m_ApplyToChildren: 1
   m_AffectedAgents: ffffffff
+--- !u!114 &1915676689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1915676683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1921120521
 GameObject:
   m_ObjectHideFlags: 0
@@ -15941,6 +17345,7 @@ GameObject:
   - component: {fileID: 1921120525}
   - component: {fileID: 1921120524}
   - component: {fileID: 1921120523}
+  - component: {fileID: 1921120526}
   m_Layer: 8
   m_Name: Rock (9)
   m_TagString: Untagged
@@ -16042,6 +17447,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1921120521}
   m_Mesh: {fileID: 4013275331872712965, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &1921120526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1921120521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2.3, y: 1, z: 1}
+  m_Center: {x: -0.85, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1921279121
 GameObject:
   m_ObjectHideFlags: 0
@@ -16055,6 +17477,7 @@ GameObject:
   - component: {fileID: 1921279123}
   - component: {fileID: 1921279125}
   - component: {fileID: 1921279126}
+  - component: {fileID: 1921279127}
   m_Layer: 8
   m_Name: Box (24)
   m_TagString: Stone
@@ -16176,6 +17599,23 @@ MonoBehaviour:
   m_IgnoreFromBuild: 1
   m_ApplyToChildren: 1
   m_AffectedAgents: ffffffff
+--- !u!114 &1921279127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1921279121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1924762809
 GameObject:
   m_ObjectHideFlags: 0
@@ -16188,6 +17628,7 @@ GameObject:
   - component: {fileID: 1924762812}
   - component: {fileID: 1924762811}
   - component: {fileID: 1924762813}
+  - component: {fileID: 1924762814}
   m_Layer: 8
   m_Name: Box (25)
   m_TagString: Stone
@@ -16289,6 +17730,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &1924762814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1924762809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1001 &1933532142
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16551,6 +18009,7 @@ GameObject:
   - component: {fileID: 1961272218}
   - component: {fileID: 1961272217}
   - component: {fileID: 1961272219}
+  - component: {fileID: 1961272220}
   m_Layer: 8
   m_Name: Box (23)
   m_TagString: Stone
@@ -16652,6 +18111,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &1961272220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961272215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1001 &1988266563
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16946,6 +18422,7 @@ GameObject:
   - component: {fileID: 2035283326}
   - component: {fileID: 2035283325}
   - component: {fileID: 2035283327}
+  - component: {fileID: 2035283328}
   m_Layer: 8
   m_Name: Box (15)
   m_TagString: Stone
@@ -17047,6 +18524,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &2035283328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2035283323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &2040868522
 GameObject:
   m_ObjectHideFlags: 0
@@ -17060,6 +18554,7 @@ GameObject:
   - component: {fileID: 2040868524}
   - component: {fileID: 2040868526}
   - component: {fileID: 2040868527}
+  - component: {fileID: 2040868528}
   m_Layer: 8
   m_Name: Box (64)
   m_TagString: Stone
@@ -17181,6 +18676,23 @@ MonoBehaviour:
   m_IgnoreFromBuild: 1
   m_ApplyToChildren: 1
   m_AffectedAgents: ffffffff
+--- !u!114 &2040868528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040868522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &2055887431
 GameObject:
   m_ObjectHideFlags: 0
@@ -17193,6 +18705,7 @@ GameObject:
   - component: {fileID: 2055887434}
   - component: {fileID: 2055887433}
   - component: {fileID: 2055887435}
+  - component: {fileID: 2055887436}
   m_Layer: 8
   m_Name: Box (72)
   m_TagString: Stone
@@ -17294,6 +18807,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &2055887436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055887431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &2065831680
 GameObject:
   m_ObjectHideFlags: 0
@@ -17307,6 +18837,7 @@ GameObject:
   - component: {fileID: 2065831682}
   - component: {fileID: 2065831684}
   - component: {fileID: 2065831685}
+  - component: {fileID: 2065831686}
   m_Layer: 8
   m_Name: Box (35)
   m_TagString: Stone
@@ -17428,6 +18959,23 @@ MonoBehaviour:
   m_IgnoreFromBuild: 1
   m_ApplyToChildren: 1
   m_AffectedAgents: ffffffff
+--- !u!114 &2065831686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2065831680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &2072817473
 GameObject:
   m_ObjectHideFlags: 0
@@ -17440,6 +18988,7 @@ GameObject:
   - component: {fileID: 2072817476}
   - component: {fileID: 2072817475}
   - component: {fileID: 2072817477}
+  - component: {fileID: 2072817478}
   m_Layer: 8
   m_Name: Box (36)
   m_TagString: Stone
@@ -17541,6 +19090,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &2072817478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2072817473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &2075013290
 GameObject:
   m_ObjectHideFlags: 0
@@ -17628,6 +19194,7 @@ GameObject:
   - component: {fileID: 2093156274}
   - component: {fileID: 2093156273}
   - component: {fileID: 2093156275}
+  - component: {fileID: 2093156276}
   m_Layer: 8
   m_Name: Box (73)
   m_TagString: Stone
@@ -17729,6 +19296,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &2093156276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2093156271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &2100815570
 GameObject:
   m_ObjectHideFlags: 0
@@ -17854,6 +19438,7 @@ GameObject:
   - component: {fileID: 2142041129}
   - component: {fileID: 2142041128}
   - component: {fileID: 2142041130}
+  - component: {fileID: 2142041131}
   m_Layer: 8
   m_Name: Box (19)
   m_TagString: Stone
@@ -17955,6 +19540,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3262789968867269347, guid: bd5b8ecfcbd6d9145b950e251f36ad4b, type: 3}
+--- !u!114 &2142041131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2142041126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifierVolume
+  m_SerializedVersion: 0
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!4 &2142146212 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8169593431218506119, guid: ead5cdc010ff445c3adf34863078e511, type: 3}
