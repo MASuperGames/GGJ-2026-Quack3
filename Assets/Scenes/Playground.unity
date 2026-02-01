@@ -3204,21 +3204,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Level01
   spawner: {fileID: 527852286}
   waves:
+  - waveName: Wave 2
+    enemyGroups:
+    - enemyPrefab: {fileID: 7214298378690074326, guid: 8f6bb6e5a891d49efb1665cb72bb1b66, type: 3}
+      count: 10
+      spawnDelay: 0.25
+      spawnHeight: 3
+    waveStartDelay: 5
   - waveName: Wave 1
     enemyGroups:
     - enemyPrefab: {fileID: 7214298378690074326, guid: ead5cdc010ff445c3adf34863078e511, type: 3}
       count: 10
       spawnDelay: 0.25
+      spawnHeight: 0
     waveStartDelay: 5
-  - waveName: Wave 2
+  - waveName: Wave 1
     enemyGroups:
     - enemyPrefab: {fileID: 7214298378690074326, guid: ead5cdc010ff445c3adf34863078e511, type: 3}
       count: 10
       spawnDelay: 0.25
+      spawnHeight: 0
     - enemyPrefab: {fileID: 7214298378690074326, guid: 8f6bb6e5a891d49efb1665cb72bb1b66, type: 3}
       count: 10
       spawnDelay: 0.25
-    waveStartDelay: 20
+      spawnHeight: 3
+    waveStartDelay: 5
   delayBetweenWaves: 5
   backgroundMusic: {fileID: 8300000, guid: 91602d34fe2b49345aedc2ac25e0d582, type: 3}
   ambienceSound: {fileID: 0}
@@ -4855,7 +4865,7 @@ MonoBehaviour:
   destroyOnRespawn: 0
   enemyPrefab: {fileID: 3135050184147024364, guid: d634b643419423b4cbeb238c81d01b48, type: 3}
   spawnAreaCenter: {x: 0, y: 0, z: 0}
-  spawnAreaSize: {x: 150, y: 0, z: 120}
+  spawnAreaSize: {x: 150, y: 30, z: 120}
   spawnHeight: 1
   maxSpawnAttempts: 30
   navMeshSearchRadius: 10
@@ -13606,7 +13616,7 @@ MonoBehaviour:
   ambienceSource: {fileID: 0}
   sfxSource: {fileID: 0}
   masterVolume: 1
-  musicVolume: 0.054
+  musicVolume: 1
   ambienceVolume: 1
   sfxVolume: 1
 --- !u!4 &1516272881
