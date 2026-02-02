@@ -12,6 +12,7 @@ public class FirstPersonCombat : MonoBehaviour
     [SerializeField] private Weapon secondaryWeapon;
     [SerializeField] private Weapon tertiaryWeapon;
     [SerializeField] private VisualEffect gunHitVFX;
+    [SerializeField] private ParticleSystem gunHitPS;
     [SerializeField] private CinemachineImpulseSource impulseSource;
 
     [Header("Audio")]
@@ -123,8 +124,18 @@ public class FirstPersonCombat : MonoBehaviour
             Debug.DrawLine(cam.transform.position, 10000 * cam.transform.forward);
             if (Physics.Raycast(ray, out RaycastHit hit))
             {
-                gunHitVFX.gameObject.transform.position = hit.point;
-                gunHitVFX.SendEvent("OnPlay");
+                if (gunHitVFX)
+                {
+                    gunHitVFX.gameObject.transform.position = hit.point;
+                    gunHitVFX.SendEvent("OnPlay");
+                }
+                if (gunHitPS)
+                {
+                    gunHitPS.gameObject.transform.position = hit.point;
+                    gunHitPS.gameObject.transform.rotation = Quaternion.LookRotation(hit.normal);
+                    gunHitPS.Play();
+                }
+
                 var health = hit.collider.GetComponent<HealthManager>();
                 if (health != null)
                 {

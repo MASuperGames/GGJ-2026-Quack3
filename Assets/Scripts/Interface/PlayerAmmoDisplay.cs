@@ -37,7 +37,7 @@ public class PlayerAmmoDisplay : MonoBehaviour
 
     private void OnAmmoChanged(int newAmmo)
     {
-        Debug.Log("new ammo : " + newAmmo);
+        //Debug.Log("new ammo : " + newAmmo);
         if (ammoText != null)
         {
             ammoText.text = $"x {newAmmo}";
