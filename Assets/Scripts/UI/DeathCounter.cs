@@ -8,12 +8,18 @@ public class DeathCounter : Singleton<DeathCounter>
 
     public void UpdateUI()
     {
-        deathCounterText.text = "deaths: " + deathCount;
+        if(deathCounterText != null)
+            deathCounterText.text = "deaths: " + deathCount;
     }
 
     public void CountDeath()
     {
         deathCount++;
         UpdateUI();
+    }
+
+    public int GetDeathCount()
+    {
+        return deathCount;
     }
 }

@@ -50,7 +50,7 @@ public class BossEnemy : MonoBehaviour
         deathStart = Time.time;
         GetComponent<BoxCollider>().enabled = false;
         GetComponent<NavMeshAgent>().enabled = false;
-        SceneManager.LoadScene(4);
+        SceneController.Instance.LoadScene(4);
     }
 
     // Update is called once per frame
