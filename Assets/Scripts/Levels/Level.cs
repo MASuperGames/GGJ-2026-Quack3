@@ -28,7 +28,7 @@ public class Level : MonoBehaviour
 
     [Header("Wave Configuration")]
     [SerializeField] private List<Wave> waves = new List<Wave>();
-    [SerializeField] private float delayBetweenWaves = 5f;
+    [SerializeField] private float delayBetweenWaves = 0f;
 
     [Header("Audio")]
     [SerializeField] private AudioClip backgroundMusic;

@@ -5,6 +5,7 @@ using UnityEngine.Events;
 public class Spawner : MonoBehaviour
 {
     [Header("Player Spawning")]
+    [SerializeField] private GameObject playerInScene;
     [SerializeField] private GameObject playerPrefab;
     [SerializeField] private Transform playerSpawnPoint;
     [SerializeField] private bool destroyOnRespawn = false;
@@ -24,6 +25,14 @@ public class Spawner : MonoBehaviour
 
     private void Start()
     {
+        if (Player.Instance != null)
+        {
+            spawnedPlayer = Player.Instance.gameObject;
+        }
+        else if (playerInScene.activeSelf)
+        {
+            spawnedPlayer = playerInScene;
+        }
         SpawnPlayer();
     }
 
@@ -85,8 +94,13 @@ public class Spawner : MonoBehaviour
             spawnedPlayer = Instantiate(playerPrefab, spawnPosition, spawnRotation);
             Debug.Log("Player spawned at: " + spawnPosition);
         }
-        spawnedPlayer.GetComponent<HealthManager>().onHealthDepleted.AddListener(SpawnPlayer);
+        spawnedPlayer.GetComponent<HealthManager>().onHealthDepleted.AddListener(HandlePlayerDeath);
         onPlayerSpawned?.Invoke(spawnedPlayer);
+    }
+
+    public void HandlePlayerDeath()
+    {
+        SpawnPlayer();
     }
 
     public void SpawnEnemy()

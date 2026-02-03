@@ -67,7 +67,7 @@ public class ShootEnemy : MonoBehaviour
         state = State.Dead;
         deathStart = Time.time;
         GetComponent<CapsuleCollider>().enabled = false;
-        if (UnityEngine.Random.value < 0.25f)
+        if (UnityEngine.Random.value < 0.5f)
         {
             Instantiate(boneFragment, transform.position, Quaternion.identity);
         }

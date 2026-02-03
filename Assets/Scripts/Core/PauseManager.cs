@@ -8,8 +8,7 @@ public class PauseManager : Singleton<PauseManager>
     [Header("References")]
     [SerializeField] private InputReader inputReader;
     [SerializeField] private TextMeshProUGUI statusText;
-    [SerializeField] private Volume postProcessVolume;
-    [SerializeField] private GameObject blur;
+    [SerializeField] private GameObject pauseScreen;
 
     private bool isPaused = false;
 
@@ -41,9 +40,9 @@ public class PauseManager : Singleton<PauseManager>
 
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
-        statusText.text = "Paused";
+        statusText.text = "Paused - press [P] to continue";
 
-        blur.SetActive(true);
+        pauseScreen.SetActive(true);
     }
 
     public void ResumeGame()
@@ -53,8 +52,8 @@ public class PauseManager : Singleton<PauseManager>
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        statusText.text = "";
-        blur.SetActive(false);
+        statusText.text = "Press [P] for help";
+        pauseScreen.SetActive(false);
     }
 
     public bool IsPaused()

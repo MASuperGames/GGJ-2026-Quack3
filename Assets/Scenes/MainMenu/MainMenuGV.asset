@@ -120,5 +120,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.ChromaticAberration
   active: 0
   intensity:
-    m_OverrideState: 0
-    m_Value: 0.098
+    m_OverrideState: 1
+    m_Value: 0

@@ -23,17 +23,15 @@ public class HealthManager : MonoBehaviour
         Health = Mathf.Clamp(Health + delta, 0, MaxHealth);
         if (Health == PrevHealth) return;
 
-        if (delta < 0 && nextDamageTime < Time.time)
-        {
-            nextDamageTime = Time.time + PlayRandomClip(damageTakenClips);
-        }
-
         if (Health == 0)
         {
             PlayRandomClip(deathClips);
             onHealthDepleted.Invoke();
         }
-
+        else if (delta < 0 && nextDamageTime < Time.time)
+        {
+            nextDamageTime = Time.time + PlayRandomClip(damageTakenClips);
+        }
         onHealthChange.Invoke(Health, Health - PrevHealth);
 
 

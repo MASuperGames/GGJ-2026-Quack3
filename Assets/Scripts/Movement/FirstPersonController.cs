@@ -41,6 +41,8 @@ public class FirstPersonController : MonoBehaviour
 
         if (playerCamera == null)
             playerCamera = GetComponentInChildren<Camera>();
+
+        inputReader.EnableGameplayInput();
     }
 
     private void OnEnable()

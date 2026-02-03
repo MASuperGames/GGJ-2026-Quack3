@@ -16,6 +16,7 @@ public class SceneController : Singleton<SceneController>
         // Ensure the fade panel starts invisible
         if (fadeCanvasGroup != null)
         {
+            fadeCanvasGroup.gameObject.SetActive(true);
             fadeCanvasGroup.alpha = 0f;
         }
     }

@@ -72,6 +72,7 @@ public class FirstPersonCombat : MonoBehaviour
 
     private void OnPrimaryAction(bool isPressed)
     {
+        if (PauseManager.Instance.IsPaused()) return;
         if (isPressed)
         {
             primaryWeapon.GetAnimator().SetTrigger("Attack");
@@ -105,6 +106,7 @@ public class FirstPersonCombat : MonoBehaviour
 
     private void OnSecondaryAction(bool isPressed)
     {
+        if (PauseManager.Instance.IsPaused()) return;
         if (isPressed)
         {
             if (ammo == 0)

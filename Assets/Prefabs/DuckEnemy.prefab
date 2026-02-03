@@ -487,8 +487,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: e1636ed1caac5e3428efae3f223b8134, type: 3}
   - {fileID: 8300000, guid: f5c0cdf08b5d97445955fb2ebbdd5d4f, type: 3}
   - {fileID: 8300000, guid: 4babdccdddcd4a14ba9f74ecd7fd7389, type: 3}
+  deathClips:
   - {fileID: 8300000, guid: e689d1d9c68dccc4c9bb5267a103509c, type: 3}
-  deathClips: []
 --- !u!114 &2950104180177101968
 MonoBehaviour:
   m_ObjectHideFlags: 0

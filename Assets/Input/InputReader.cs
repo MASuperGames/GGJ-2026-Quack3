@@ -24,6 +24,7 @@ public class InputReader : ScriptableObject, IPlayerActions, IUIActions
     public event Action<bool> UnlockCursorEvent;
 
     // UI actions
+    public event Action ClickEvent;
     public event Action<Vector2> NavigateEvent;
     public event Action SubmitEvent;
 
@@ -37,7 +38,7 @@ public class InputReader : ScriptableObject, IPlayerActions, IUIActions
         }
 
         // Set the default input mode
-        EnableGameplayInput();
+        DisableAllInputs();
     }
 
     private void OnDisable()
@@ -48,6 +49,18 @@ public class InputReader : ScriptableObject, IPlayerActions, IUIActions
             controls.UI.Disable();
         }
     }
+
+    public void EnableAllInputs()
+    {
+        controls.Player.Enable();
+        controls.UI.Enable();
+    }
+    public void DisableAllInputs()
+    {
+        controls.Player.Disable();
+        controls.UI.Disable();
+    }
+
 
     public void EnableGameplayInput()
     {
@@ -189,8 +202,10 @@ public class InputReader : ScriptableObject, IPlayerActions, IUIActions
 
     public void OnNavigate(InputAction.CallbackContext context)
     {
-        if (context.performed) NavigateEvent?.Invoke(context.ReadValue<Vector2>());
-
+        if (context.performed)
+        {
+            NavigateEvent?.Invoke(context.ReadValue<Vector2>());
+        }
     }
 
     public void OnSubmit(InputAction.CallbackContext context)
@@ -213,6 +228,10 @@ public class InputReader : ScriptableObject, IPlayerActions, IUIActions
 
     public void OnClick(InputAction.CallbackContext context)
     {
+        if (context.started)
+        {
+            ClickEvent?.Invoke();
+        }
 
     }
 

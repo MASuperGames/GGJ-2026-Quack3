@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public class Player : MonoBehaviour
+public class Player : Singleton<Player>
 {
     [SerializeField] private float roidPickupRadius;
 
@@ -9,13 +9,21 @@ public class Player : MonoBehaviour
     private FirstPersonController fpc;
     private FirstPersonCombat fpcom;
 
-    private int numFeathers = 0;
-    private int numBoneFragments = 0;
-    private int numZombieFleshFragments = 0;
+    public int numFeathers = 0;
+    public int numBoneFragments = 0;
+    public int numZombieFleshFragments = 0;
 
     public UnityEvent<int> onFeatherCollected;
     public UnityEvent<int> onBoneFragmentCollected;
     public UnityEvent<int> onZombieFleshFragmentCollected;
+
+    public void InvokeItemCollectedEvents()
+    {
+        Debug.Log("Invoking item collected events");
+        onFeatherCollected.Invoke(numFeathers);
+        onBoneFragmentCollected.Invoke(numBoneFragments);
+        onZombieFleshFragmentCollected.Invoke(numZombieFleshFragments);
+    }
 
     public void onHealthChange(float health, float delta)
     {

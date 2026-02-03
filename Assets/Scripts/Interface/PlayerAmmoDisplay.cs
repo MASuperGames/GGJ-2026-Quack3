@@ -30,7 +30,6 @@ public class PlayerAmmoDisplay : MonoBehaviour
             currentPlayerFPSCombat.onAmmoChange.AddListener(OnAmmoChanged);
 
             // Update UI immediately
-            Debug.Log("new subscribe: " + currentPlayerFPSCombat.getCurrentAmmo());
             OnAmmoChanged(currentPlayerFPSCombat.getCurrentAmmo());
         }
     }
