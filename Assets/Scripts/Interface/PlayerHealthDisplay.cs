@@ -40,7 +40,7 @@ public class PlayerHealthDisplay : MonoBehaviour
     {
         if (healthText != null)
         {
-            healthText.text = $"{(int)Math.Round(newHealth)}";
+            healthText.text = $"h {(int)Math.Round(newHealth)}";
         }
     }
 

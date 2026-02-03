@@ -37914,7 +37914,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -267.9, y: -25.7}
+  m_AnchoredPosition: {x: -267.8999, y: -25.699951}
   m_SizeDelta: {x: 49.389893, y: 107.25159}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1454218148
@@ -49543,69 +49543,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1190281497531607234, guid: e0ecf18eb495c8b4c859dd9cd8912c00, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2821751178287904385, guid: e0ecf18eb495c8b4c859dd9cd8912c00, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3732221544798751824, guid: e0ecf18eb495c8b4c859dd9cd8912c00, type: 3}
-      propertyPath: onHealthDepleted.m_PersistentCalls.m_Calls.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3732221544798751824, guid: e0ecf18eb495c8b4c859dd9cd8912c00, type: 3}
-      propertyPath: onHealthDepleted.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3732221544798751824, guid: e0ecf18eb495c8b4c859dd9cd8912c00, type: 3}
       propertyPath: onHealthDepleted.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 63961701}
-    - target: {fileID: 3732221544798751824, guid: e0ecf18eb495c8b4c859dd9cd8912c00, type: 3}
-      propertyPath: onHealthDepleted.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3732221544798751824, guid: e0ecf18eb495c8b4c859dd9cd8912c00, type: 3}
-      propertyPath: onHealthDepleted.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: CountDeath
-      objectReference: {fileID: 0}
-    - target: {fileID: 3732221544798751824, guid: e0ecf18eb495c8b4c859dd9cd8912c00, type: 3}
-      propertyPath: onHealthDepleted.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: DeathCounter, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 3732221544798751824, guid: e0ecf18eb495c8b4c859dd9cd8912c00, type: 3}
-      propertyPath: onHealthDepleted.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 4788316466379194458, guid: e0ecf18eb495c8b4c859dd9cd8912c00, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4943334681788269947, guid: e0ecf18eb495c8b4c859dd9cd8912c00, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 4943334681788269947, guid: e0ecf18eb495c8b4c859dd9cd8912c00, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5071661520864491417, guid: e0ecf18eb495c8b4c859dd9cd8912c00, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6738898636309951549, guid: e0ecf18eb495c8b4c859dd9cd8912c00, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7224732756239644568, guid: e0ecf18eb495c8b4c859dd9cd8912c00, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7419063829818826345, guid: e0ecf18eb495c8b4c859dd9cd8912c00, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9100399527585459585, guid: e0ecf18eb495c8b4c859dd9cd8912c00, type: 3}
       propertyPath: m_LocalPosition.x
